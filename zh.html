@@ -1,0 +1,971 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IROVA Studio — Color Makes You Special.</title>
+
+  <meta
+    name="description"
+    content="IROVA Studio 是一个以色彩为核心的原创角色与生活方式品牌，让色彩、角色与日常生活连接起来。"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        "Plus Jakarta Sans",
+        "Noto Sans SC",
+        sans-serif;
+
+      background: #ffffff;
+      color: #111111;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 24px 40px;
+
+      background: rgba(255, 255, 255, 0.84);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    /* =========================
+       LOGO
+    ========================= */
+
+    .logo {
+      display: flex;
+
+      align-items: baseline;
+
+      gap: 7px;
+
+      letter-spacing: -0.05em;
+    }
+
+    .logo-main {
+      font-size: 24px;
+
+      font-weight: 800;
+    }
+
+    .logo-studio {
+      font-size: 18px;
+
+      font-weight: 500;
+
+      letter-spacing: -0.03em;
+    }
+
+    /* =========================
+       NAV
+    ========================= */
+
+    nav {
+      display: flex;
+
+      align-items: center;
+
+      gap: 28px;
+    }
+
+    nav > a,
+    .language a {
+      font-size: 13px;
+
+      font-weight: 600;
+
+      color: #555;
+
+      transition: color 0.2s ease;
+    }
+
+    nav > a:hover,
+    .language a:hover {
+      color: #000;
+    }
+
+    .language {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      padding-left: 18px;
+
+      border-left: 1px solid #ddd;
+    }
+
+    .language a.active {
+      color: #111;
+
+      font-weight: 700;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 150px 24px 100px;
+
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin-bottom: 24px;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: 0.2em;
+
+      text-transform: uppercase;
+
+      color: #888;
+    }
+
+    .hero h1 {
+      max-width: 900px;
+
+      margin-bottom: 30px;
+
+      font-size: clamp(48px, 7vw, 88px);
+
+      line-height: 1.02;
+
+      letter-spacing: -0.07em;
+
+      font-weight: 800;
+    }
+
+    .hero-description {
+      max-width: 600px;
+
+      margin-bottom: 40px;
+
+      font-size: 16px;
+
+      line-height: 1.9;
+
+      color: #666;
+    }
+
+    .hero-button {
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 15px 28px;
+
+      border-radius: 999px;
+
+      background: #111;
+
+      color: #fff;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .hero-button:hover {
+      transform: translateY(-2px);
+
+      background: #333;
+    }
+
+    /* =========================
+       HERO IMAGE
+    ========================= */
+
+    .hero-image {
+      width: min(1100px, 100%);
+
+      margin-top: 90px;
+
+      overflow: hidden;
+
+      border-radius: 28px;
+
+      background: #f5f5f5;
+
+      box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.08);
+    }
+
+    .hero-image img {
+      display: block;
+
+      width: 100%;
+
+      height: auto;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      padding: 140px 24px;
+
+      background: #f7f7f5;
+    }
+
+    .intro-inner {
+      width: min(1000px, 100%);
+
+      margin: 0 auto;
+
+      display: grid;
+
+      grid-template-columns: 0.8fr 1.2fr;
+
+      gap: 80px;
+
+      align-items: start;
+    }
+
+    .section-label {
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: 0.18em;
+
+      text-transform: uppercase;
+
+      color: #888;
+    }
+
+    .intro h2 {
+      margin-top: 18px;
+
+      font-size: clamp(38px, 5vw, 64px);
+
+      line-height: 1.08;
+
+      letter-spacing: -0.06em;
+
+      font-weight: 800;
+    }
+
+    .intro-text p {
+      margin-bottom: 22px;
+
+      font-size: 16px;
+
+      line-height: 2;
+
+      color: #555;
+    }
+
+    /* =========================
+       WORLDS
+    ========================= */
+
+    .worlds {
+      padding: 140px 24px;
+
+      background: #fff;
+    }
+
+    .worlds-header {
+      width: min(700px, 100%);
+
+      margin: 0 auto 70px;
+
+      text-align: center;
+    }
+
+    .worlds-header h2 {
+      margin-top: 18px;
+
+      margin-bottom: 20px;
+
+      font-size: clamp(40px, 5vw, 64px);
+
+      line-height: 1.08;
+
+      letter-spacing: -0.06em;
+
+      font-weight: 800;
+    }
+
+    .worlds-header p {
+      font-size: 15px;
+
+      line-height: 1.9;
+
+      color: #666;
+    }
+
+    .world-grid {
+      width: min(1100px, 100%);
+
+      margin: 0 auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .world-card {
+      min-height: 300px;
+
+      padding: 30px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: flex-end;
+
+      border-radius: 24px;
+
+      background: #f5f5f5;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .world-card:hover {
+      transform: translateY(-4px);
+
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    .world-number {
+      margin-bottom: auto;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: 0.15em;
+
+      color: #888;
+    }
+
+    .world-card h3 {
+      margin-bottom: 8px;
+
+      font-size: 25px;
+
+      letter-spacing: -0.04em;
+    }
+
+    .world-card p {
+      font-size: 13px;
+
+      line-height: 1.8;
+
+      color: #666;
+    }
+
+    .olive {
+      background: #eef2e9;
+    }
+
+    .canyon {
+      background: #f5ebe3;
+    }
+
+    .purple {
+      background: #eeeaf5;
+    }
+
+    /* =========================
+       SHOP
+    ========================= */
+
+    .shop-section {
+      padding: 150px 24px;
+
+      text-align: center;
+
+      background: #f7f7f5;
+    }
+
+    .shop-section h2 {
+      margin-top: 18px;
+
+      margin-bottom: 20px;
+
+      font-size: clamp(40px, 5vw, 64px);
+
+      line-height: 1.08;
+
+      letter-spacing: -0.06em;
+
+      font-weight: 800;
+    }
+
+    .shop-section p {
+      max-width: 500px;
+
+      margin: 0 auto 36px;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+      color: #666;
+    }
+
+    .shop-button {
+      display: inline-flex;
+
+      padding: 15px 30px;
+
+      border-radius: 999px;
+
+      background: #111;
+
+      color: #fff;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      transition: transform 0.2s ease;
+    }
+
+    .shop-button:hover {
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       BUSINESS
+    ========================= */
+
+    .business {
+      padding: 100px 24px;
+
+      text-align: center;
+
+      background: #fff;
+    }
+
+    .business p {
+      margin-bottom: 18px;
+
+      font-size: 13px;
+
+      color: #888;
+    }
+
+    .business-link {
+      font-size: 15px;
+
+      font-weight: 700;
+
+      border-bottom: 1px solid #111;
+
+      padding-bottom: 4px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 38px 40px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      border-top: 1px solid #eee;
+
+      font-size: 11px;
+
+      color: #999;
+    }
+
+    .footer-links {
+      display: flex;
+
+      gap: 20px;
+    }
+
+    .footer-links a:hover {
+      color: #111;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      header {
+        padding: 20px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      nav > a {
+        display: none;
+      }
+
+      .language {
+        padding-left: 0;
+
+        border-left: none;
+      }
+
+      .hero {
+        padding-top: 130px;
+      }
+
+      .hero h1 {
+        font-size: clamp(48px, 14vw, 72px);
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-image {
+        margin-top: 65px;
+
+        border-radius: 18px;
+      }
+
+      .intro-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+      }
+
+      .world-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .world-card {
+        min-height: 250px;
+      }
+
+      footer {
+        padding: 30px 20px;
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        text-align: center;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <a
+    href="index.html"
+    class="logo"
+    aria-label="IROVA Studio"
+  >
+
+    <span class="logo-main">
+      IROVA
+    </span>
+
+    <span class="logo-studio">
+      Studio
+    </span>
+
+  </a>
+
+
+  <nav>
+
+    <a href="shop.html">
+      Shop
+    </a>
+
+    <a href="business.html">
+      Business
+    </a>
+
+
+    <div class="language">
+
+      <a href="home.html">
+        EN
+      </a>
+
+      <a href="ja.html">
+        日本語
+      </a>
+
+      <a
+        href="zh.html"
+        class="active"
+      >
+        中文
+      </a>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      IROVA Studio
+    </div>
+
+
+    <h1>
+      Color Makes<br>
+      You Special.
+    </h1>
+
+
+    <p class="hero-description">
+      一个从色彩出发的原创角色与生活方式品牌。
+      IROVA Studio让色彩、角色与日常生活相遇，
+      创造属于每一种颜色的独特世界。
+    </p>
+
+
+    <a
+      href="shop.html"
+      class="hero-button"
+    >
+      探索 IROVA →
+    </a>
+
+
+    <div class="hero-image">
+
+      <img
+        src="img/358.png"
+        alt="IROVA Studio 色彩世界与产品系列"
+      >
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       INTRODUCTION
+  ========================= -->
+
+  <section class="intro">
+
+    <div class="intro-inner">
+
+      <div>
+
+        <div class="section-label">
+          CONCEPT
+        </div>
+
+        <h2>
+          从一种颜色，<br>
+          开始一个世界。
+        </h2>
+
+      </div>
+
+
+      <div class="intro-text">
+
+        <p>
+          IROVA Studio从一个简单而熟悉的元素开始：
+          色彩。
+        </p>
+
+        <p>
+          一种颜色，可以成为一个角色，
+          一种情绪，也可以成为一个完整的世界。
+        </p>
+
+        <p>
+          从手机周边、数码配件，到服饰、
+          包袋、毛绒玩偶与各种生活小物，
+          IROVA希望让这些产品拥有共同的色彩语言，
+          自然而然地融入你的日常。
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       COLOR WORLDS
+  ========================= -->
+
+  <section class="worlds">
+
+    <div class="worlds-header">
+
+      <div class="section-label">
+        COLOR WORLDS
+      </div>
+
+      <h2>
+        不同的颜色，<br>
+        不同的世界。
+      </h2>
+
+      <p>
+        每一种颜色，都有自己的角色、
+        氛围与故事。
+      </p>
+
+    </div>
+
+
+    <div class="world-grid">
+
+
+      <article class="world-card olive">
+
+        <div class="world-number">
+          WORLD 01
+        </div>
+
+        <h3>
+          Olive
+        </h3>
+
+        <p>
+          自然、松弛与绿意。
+          一个让人慢下来的世界。
+        </p>
+
+      </article>
+
+
+      <article class="world-card canyon">
+
+        <div class="world-number">
+          WORLD 02
+        </div>
+
+        <h3>
+          Canyon
+        </h3>
+
+        <p>
+          落日、荒野与自由。
+          一个适合出发与探索的世界。
+        </p>
+
+      </article>
+
+
+      <article class="world-card purple">
+
+        <div class="world-number">
+          WORLD 03
+        </div>
+
+        <h3>
+          Purple
+        </h3>
+
+        <p>
+          夜色、城市与数字想象。
+          一个属于夜晚的世界。
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SHOP
+  ========================= -->
+
+  <section class="shop-section">
+
+    <div class="section-label">
+      IROVA SHOP
+    </div>
+
+
+    <h2>
+      找到你的颜色。<br>
+      进入你的世界。
+    </h2>
+
+
+    <p>
+      探索原创角色周边、数码配件、
+      服饰、毛绒玩偶以及更多
+      来自 IROVA 世界的日常物件。
+    </p>
+
+
+    <a
+      href="shop.html"
+      class="shop-button"
+    >
+      进入 IROVA 商店 →
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       BUSINESS
+  ========================= -->
+
+  <section class="business">
+
+    <p>
+      想了解 IROVA Studio？
+    </p>
+
+    <a
+      href="business.html"
+      class="business-link"
+    >
+      商务合作与伙伴 →
+    </a>
+
+  </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div>
+    © 2026 IROVA Studio
+  </div>
+
+
+  <div class="footer-links">
+
+    <a href="#">
+      Instagram
+    </a>
+
+    <a href="#">
+      X
+    </a>
+
+    <a href="business.html">
+      联系我们
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
+

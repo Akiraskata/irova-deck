@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IROVA Studio — Business & Investor</title>
+
+  <meta
+    name="description"
+    content="IROVA Studio — Business, partnership and investment opportunities."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      background: #ffffff;
+      color: #111111;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 24px 40px;
+
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+
+      letter-spacing: -0.05em;
+    }
+
+    .logo-main {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .logo-studio {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    /* =========================
+       NAV
+    ========================= */
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      font-size: 13px;
+      font-weight: 600;
+      color: #555;
+
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    nav a.active {
+      color: #111;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      padding-left: 18px;
+      border-left: 1px solid #ddd;
+    }
+
+    .language a {
+      color: #777;
+    }
+
+    .language a.active {
+      color: #111;
+      font-weight: 700;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 190px 24px 130px;
+
+      text-align: center;
+
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          #f4f4f0 0%,
+          #ffffff 55%
+        );
+    }
+
+    .eyebrow {
+      margin-bottom: 22px;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+
+      color: #888;
+    }
+
+    .hero h1 {
+      max-width: 1000px;
+      margin: 0 auto 28px;
+
+      font-size: clamp(48px, 8vw, 92px);
+
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+
+      font-weight: 800;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      margin: 0 auto;
+
+      font-size: 16px;
+      line-height: 1.8;
+
+      color: #666;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      padding: 120px 24px;
+
+      background: #fff;
+    }
+
+    .intro-inner {
+      max-width: 1100px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      align-items: center;
+    }
+
+    .section-label {
+      margin-bottom: 18px;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+
+      color: #888;
+    }
+
+    .intro h2 {
+      font-size: clamp(36px, 5vw, 60px);
+
+      line-height: 1;
+      letter-spacing: -0.055em;
+
+      margin-bottom: 24px;
+    }
+
+    .intro p {
+      max-width: 520px;
+
+      font-size: 15px;
+      line-height: 1.9;
+
+      color: #666;
+    }
+
+    .intro-image {
+      overflow: hidden;
+
+      border-radius: 26px;
+
+      background: #f5f5f5;
+
+      box-shadow:
+        0 25px 70px rgba(0,0,0,0.08);
+    }
+
+    .intro-image img {
+      display: block;
+
+      width: 100%;
+      height: auto;
+    }
+
+    /* =========================
+       BUSINESS MODEL
+    ========================= */
+
+    .model {
+      padding: 130px 24px;
+
+      background: #f7f7f5;
+    }
+
+    .model-header {
+      max-width: 700px;
+
+      margin: 0 auto 70px;
+
+      text-align: center;
+    }
+
+    .model-header h2 {
+      font-size: clamp(38px, 5vw, 64px);
+
+      line-height: 1;
+
+      letter-spacing: -0.055em;
+
+      margin-bottom: 22px;
+    }
+
+    .model-header p {
+      color: #666;
+
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .model-grid {
+      max-width: 1100px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .model-card {
+      padding: 34px;
+
+      min-height: 250px;
+
+      background: #fff;
+
+      border: 1px solid #e8e8e5;
+
+      border-radius: 22px;
+    }
+
+    .number {
+      font-size: 12px;
+      font-weight: 700;
+
+      color: #aaa;
+
+      letter-spacing: 0.1em;
+    }
+
+    .model-card h3 {
+      margin: 35px 0 14px;
+
+      font-size: 22px;
+
+      letter-spacing: -0.03em;
+    }
+
+    .model-card p {
+      color: #666;
+
+      font-size: 13px;
+
+      line-height: 1.8;
+    }
+
+    /* =========================
+       COLOR WORLDS
+    ========================= */
+
+    .worlds {
+      padding: 140px 24px;
+
+      background: #fff;
+    }
+
+    .worlds-header {
+      max-width: 650px;
+
+      margin: 0 auto 70px;
+
+      text-align: center;
+    }
+
+    .worlds-header h2 {
+      font-size: clamp(38px, 5vw, 64px);
+
+      line-height: 1;
+
+      letter-spacing: -0.055em;
+
+      margin-bottom: 22px;
+    }
+
+    .worlds-header p {
+      color: #666;
+
+      font-size: 15px;
+
+      line-height: 1.8;
+    }
+
+    .worlds-grid {
+      max-width: 1100px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .world-card {
+      overflow: hidden;
+
+      border-radius: 24px;
+
+      background: #f6f6f4;
+
+      border: 1px solid #eee;
+    }
+
+    .world-card img {
+      width: 100%;
+
+      display: block;
+    }
+
+    .world-content {
+      padding: 28px;
+    }
+
+    .world-content h3 {
+      font-size: 23px;
+
+      margin-bottom: 8px;
+    }
+
+    .world-content p {
+      color: #666;
+
+      font-size: 13px;
+
+      line-height: 1.7;
+    }
+
+    /* =========================
+       PRODUCT SYSTEM
+    ========================= */
+
+    .products {
+      padding: 130px 24px;
+
+      background: #f7f7f5;
+    }
+
+    .products-inner {
+      max-width: 1100px;
+
+      margin: auto;
+    }
+
+    .products-header {
+      max-width: 650px;
+
+      margin-bottom: 60px;
+    }
+
+    .products-header h2 {
+      font-size: clamp(38px, 5vw, 64px);
+
+      line-height: 1;
+
+      letter-spacing: -0.055em;
+
+      margin-bottom: 22px;
+    }
+
+    .products-header p {
+      color: #666;
+
+      font-size: 15px;
+
+      line-height: 1.8;
+    }
+
+    .product-levels {
+      display: grid;
+
+      grid-template-columns: repeat(5, 1fr);
+
+      gap: 10px;
+    }
+
+    .product-level {
+      padding: 24px 18px;
+
+      min-height: 210px;
+
+      background: #fff;
+
+      border: 1px solid #e7e7e4;
+
+      border-radius: 18px;
+    }
+
+    .product-level span {
+      font-size: 10px;
+
+      font-weight: 700;
+
+      color: #999;
+
+      letter-spacing: 0.1em;
+    }
+
+    .product-level h3 {
+      margin: 25px 0 12px;
+
+      font-size: 17px;
+    }
+
+    .product-level p {
+      font-size: 11px;
+
+      line-height: 1.7;
+
+      color: #666;
+    }
+
+    /* =========================
+       PARTNERSHIP
+    ========================= */
+
+    .partner {
+      padding: 150px 24px;
+
+      background: #111;
+
+      color: white;
+
+      text-align: center;
+    }
+
+    .partner-inner {
+      max-width: 800px;
+
+      margin: auto;
+    }
+
+    .partner .section-label {
+      color: #888;
+    }
+
+    .partner h2 {
+      font-size: clamp(42px, 6vw, 72px);
+
+      line-height: 1;
+
+      letter-spacing: -0.06em;
+
+      margin-bottom: 26px;
+    }
+
+    .partner p {
+      max-width: 600px;
+
+      margin: 0 auto 45px;
+
+      color: #aaa;
+
+      font-size: 15px;
+
+      line-height: 1.8;
+    }
+
+    .partner-buttons {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .button-primary,
+    .button-secondary {
+      padding: 15px 28px;
+
+      border-radius: 999px;
+
+      font-size: 13px;
+
+      font-weight: 700;
+    }
+
+    .button-primary {
+      background: white;
+
+      color: #111;
+    }
+
+    .button-secondary {
+      border: 1px solid #444;
+
+      color: white;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      padding: 100px 24px;
+
+      text-align: center;
+
+      background: #fff;
+    }
+
+    .contact p {
+      margin-bottom: 18px;
+
+      color: #888;
+
+      font-size: 13px;
+    }
+
+    .email {
+      font-size: clamp(20px, 4vw, 34px);
+
+      font-weight: 700;
+
+      letter-spacing: -0.04em;
+
+      border-bottom: 1px solid #111;
+
+      padding-bottom: 6px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 40px 24px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      border-top: 1px solid #eee;
+
+      font-size: 11px;
+
+      color: #999;
+    }
+
+    .footer-links {
+      display: flex;
+
+      gap: 20px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      header {
+        padding: 20px;
+      }
+
+      .logo-main {
+        font-size: 21px;
+      }
+
+      .logo-studio {
+        font-size: 15px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      nav > a {
+        display: none;
+      }
+
+      .language {
+        padding-left: 0;
+
+        border-left: none;
+      }
+
+      .hero {
+        padding-top: 150px;
+      }
+
+      .intro-inner {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+      }
+
+      .model-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .worlds-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-levels {
+        grid-template-columns: 1fr;
+      }
+
+      .product-level {
+        min-height: auto;
+      }
+
+      footer {
+        flex-direction: column;
+
+        gap: 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <a
+    href="index.html"
+    class="logo"
+    aria-label="IROVA Studio"
+  >
+
+    <span class="logo-main">
+      IROVA
+    </span>
+
+    <span class="logo-studio">
+      Studio
+    </span>
+
+  </a>
+
+
+  <nav>
+
+    <a href="shop.html">
+      Shop
+    </a>
+
+    <a href="business.html" class="active">
+      Business
+    </a>
+
+    <div class="language">
+
+      <a href="index.html">
+        EN
+      </a>
+
+      <a href="ja.html">
+        日本語
+      </a>
+
+      <a href="zh.html">
+        中文
+      </a>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      IROVA Studio — Business
+    </div>
+
+    <h1>
+      Building worlds<br>
+      around color.
+    </h1>
+
+    <p class="hero-description">
+      IROVA Studio is building a new character and lifestyle
+      ecosystem where color connects digital devices,
+      fashion, everyday objects and original characters.
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       INTRO
+  ========================= -->
+
+  <section class="intro">
+
+    <div class="intro-inner">
+
+      <div>
+
+        <div class="section-label">
+          The Concept
+        </div>
+
+        <h2>
+          Color is<br>
+          the starting point.
+        </h2>
+
+        <p>
+          People already choose the colors they live with.
+          IROVA turns those colors into characters,
+          products and worlds that can become part of
+          everyday life.
+        </p>
+
+      </div>
+
+
+      <div class="intro-image">
+
+        <img
+          src="img/355.png"
+          alt="IROVA Studio Color Ecosystem"
+        >
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       BUSINESS MODEL
+  ========================= -->
+
+  <section class="model">
+
+    <div class="model-header">
+
+      <div class="section-label">
+        Business Model
+      </div>
+
+      <h2>
+        From color<br>
+        to ecosystem.
+      </h2>
+
+      <p>
+        IROVA connects original characters with
+        physical products, creating multiple entry
+        points and long-term product relationships.
+      </p>
+
+    </div>
+
+
+    <div class="model-grid">
+
+      <div class="model-card">
+
+        <div class="number">
+          01
+        </div>
+
+        <h3>
+          Color
+        </h3>
+
+        <p>
+          A familiar color becomes the visual anchor
+          for the entire product experience.
+        </p>
+
+      </div>
+
+
+      <div class="model-card">
+
+        <div class="number">
+          02
+        </div>
+
+        <h3>
+          Character
+        </h3>
+
+        <p>
+          Each color world is represented by original
+          characters with their own identity and story.
+        </p>
+
+      </div>
+
+
+      <div class="model-card">
+
+        <div class="number">
+          03
+        </div>
+
+        <h3>
+          Lifestyle
+        </h3>
+
+        <p>
+          Characters and colors extend into accessories,
+          fashion, bags, collectibles and everyday goods.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       COLOR WORLDS
+  ========================= -->
+
+  <section class="worlds">
+
+    <div class="worlds-header">
+
+      <div class="section-label">
+        Color Worlds
+      </div>
+
+      <h2>
+        Three worlds.<br>
+        One ecosystem.
+      </h2>
+
+      <p>
+        IROVA begins with distinct color worlds,
+        each carrying its own atmosphere, character
+        identity and product direction.
+      </p>
+
+    </div>
+
+
+    <div class="worlds-grid">
+
+
+      <div class="world-card">
+
+        <img
+          src="img/355.png"
+          alt="IROVA Olive World"
+        >
+
+        <div class="world-content">
+
+          <h3>
+            Olive
+          </h3>
+
+          <p>
+            Nature, calmness and everyday outdoor life.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="world-card">
+
+        <img
+          src="img/356.png"
+          alt="IROVA Canyon World"
+        >
+
+        <div class="world-content">
+
+          <h3>
+            Canyon
+          </h3>
+
+          <p>
+            Warm landscapes, exploration and movement.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="world-card">
+
+        <img
+          src="img/358.png"
+          alt="IROVA Purple World"
+        >
+
+        <div class="world-content">
+
+          <h3>
+            Purple
+          </h3>
+
+          <p>
+            Night cities, digital culture and imagination.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PRODUCT SYSTEM
+  ========================= -->
+
+  <section class="products">
+
+    <div class="products-inner">
+
+      <div class="products-header">
+
+        <div class="section-label">
+          Product Ecosystem
+        </div>
+
+        <h2>
+          One world.<br>
+          Many ways to enter.
+        </h2>
+
+        <p>
+          The ecosystem is designed to support
+          different price points and levels of
+          customer engagement.
+        </p>
+
+      </div>
+
+
+      <div class="product-levels">
+
+
+        <div class="product-level">
+
+        <span>
+          LEVEL 01
+        </span>
+
+          <h3>
+            Discovery
+          </h3>
+
+          <p>
+            Stickers, badges, keychains
+            and small character goods.
+          </p>
+
+        </div>
+
+
+        <div class="product-level">
+
+        <span>
+          LEVEL 02
+        </span>
+
+          <h3>
+            Digital
+          </h3>
+
+          <p>
+            Phone cases, straps,
+            accessories and device goods.
+          </p>
+
+        </div>
+
+
+        <div class="product-level">
+
+        <span>
+          LEVEL 03
+        </span>
+
+          <h3>
+            Fashion
+          </h3>
+
+          <p>
+            T-shirts, caps, socks,
+            footwear and apparel.
+          </p>
+
+        </div>
+
+
+        <div class="product-level">
+
+        <span>
+          LEVEL 04
+        </span>
+
+          <h3>
+            Mobility
+          </h3>
+
+          <p>
+            Bags, travel goods,
+            bottles and everyday carry.
+          </p>
+
+        </div>
+
+
+        <div class="product-level">
+
+        <span>
+          LEVEL 05
+        </span>
+
+          <h3>
+            Premium
+          </h3>
+
+          <p>
+            Limited collectibles,
+            figures and complete sets.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PARTNERSHIP
+  ========================= -->
+
+  <section class="partner">
+
+    <div class="partner-inner">
+
+      <div class="section-label">
+        Partnership
+      </div>
+
+      <h2>
+        Build the next<br>
+        color world with us.
+      </h2>
+
+      <p>
+        IROVA Studio is open to strategic partnerships,
+        manufacturing collaborations, distribution,
+        international expansion and early-stage investment.
+      </p>
+
+
+      <div class="partner-buttons">
+
+        <a
+          href="mailto:business@irovastudio.com"
+          class="button-primary"
+        >
+          Contact IROVA →
+        </a>
+
+        <a
+          href="mailto:business@irovastudio.com?subject=IROVA%20Studio%20Partnership"
+          class="button-secondary"
+        >
+          Partnership Inquiry
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section class="contact">
+
+    <p>
+      Business & Investor Contact
+    </p>
+
+    <a
+      href="mailto:business@irovastudio.com"
+      class="email"
+    >
+      business@irovastudio.com
+    </a>
+
+  </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div>
+    © 2026 IROVA Studio
+  </div>
+
+  <div class="footer-links">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="shop.html">
+      Shop
+    </a>
+
+    <a href="mailto:business@irovastudio.com">
+      Contact
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
