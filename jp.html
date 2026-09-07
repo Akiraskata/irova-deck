@@ -23,20 +23,39 @@
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
 
   <!-- ナビゲーションバー -->
-  <nav class="fixed top-0 w-full z-50 glass-card border-b border-slate-200/70 transition-all">
-    <div class="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between py-4">
+  <!-- ナビゲーションバー (最適化版) -->
+  <nav class="fixed top-0 w-full z-50 glass-card border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- 左側：ブランドロゴ & サブタイトル -->
       <div class="flex items-center space-x-3">
-        <span class="text-2xl font-black tracking-tight text-slate-900">IROVA<span class="text-rose-500">Studio.</span></span>
-        <span class="text-xs uppercase tracking-widest text-slate-500 font-semibold border-l pl-3 border-slate-300">Investor Preview 2026</span>
+        <a href="#" class="flex items-baseline space-x-1.5">
+          <span class="text-2xl font-black tracking-tight text-slate-900">IROVA</span>
+          <span class="text-base font-bold tracking-wide text-rose-500">Studio</span>
+        </a>
+        <span class="hidden sm:inline-block text-xs uppercase tracking-widest text-slate-400 font-semibold border-l pl-3 border-slate-300">
+          Investor Preview 2026
+        </span>
       </div>
-      <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+
+      <!-- 中央：ナビゲーションリンク -->
+      <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
         <a href="#concept" class="hover:text-slate-950 transition">コンセプト</a>
         <a href="#ecosystem" class="hover:text-slate-950 transition">3つのカラーワールド</a>
         <a href="#hierarchy" class="hover:text-slate-950 transition">プロダクト設計</a>
-        <a href="#business" class="hover:text-slate-950 transition">ビジネスモデル</a>
-        <a href="#partner" class="px-5 py-2.5 rounded-full bg-slate-900 text-white hover:bg-slate-800 transition">パートナー参画 / お問い合わせ</a>
-	 <a href="index.html" class="text-xs font-bold text-slate-500 hover:text-slate-900 border border-slate-300 rounded-full px-3 py-1">中国語</a>
+        <a href="#partner" class="hover:text-slate-950 transition">ビジネスモデル</a>
       </div>
+
+      <!-- 右側：言語切り替え & CTAボタン -->
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="text-xs font-bold text-slate-500 hover:text-slate-900 border border-slate-300 rounded-full px-3.5 py-1.5 transition">
+          中国語
+        </a>
+        <a href="#partner" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-slate-900 text-white text-xs md:text-sm font-bold hover:bg-slate-800 transition shadow-sm">
+          パートナー参画 / お問い合わせ
+        </a>
+      </div>
+
     </div>
   </nav>
 
