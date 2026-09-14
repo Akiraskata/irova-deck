@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="IROVA Studio 公式オンラインショップ。色から生まれたキャラクターと、ぬいぐるみ、グッズ、ファッションアイテムをお届けします。"
+    content="IROVA Studio 公式ショップ。Olive、Canyon、Purple、Wineの4つのColor Worldから、ぬいぐるみ、アクセサリー、ファッション、バッグなどを展開。"
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,375 +44,287 @@
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     img {
+      width: 100%;
       display: block;
-      max-width: 100%;
     }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
 
     /* =========================
        HEADER
     ========================= */
 
     header {
-      position: fixed;
+      position: sticky;
       top: 0;
-      left: 0;
-
-      width: 100%;
       z-index: 100;
+
+      background: rgba(255, 255, 255, 0.94);
+
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid #ececec;
+    }
+
+    .header-inner {
+      min-height: 76px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      padding: 22px 40px;
-
-      background: rgba(255, 255, 255, 0.88);
-
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      gap: 28px;
     }
 
     .logo {
       display: flex;
       align-items: baseline;
+
       gap: 7px;
 
-      letter-spacing: -0.05em;
+      flex-shrink: 0;
     }
 
     .logo-main {
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 800;
+
+      letter-spacing: -0.06em;
     }
 
-    .logo-studio {
-      font-size: 18px;
+    .logo-sub {
+      font-size: 16px;
       font-weight: 500;
+
       letter-spacing: -0.03em;
     }
 
-    /* =========================
-       NAVIGATION
-    ========================= */
-
-    nav {
+    .main-nav {
       display: flex;
       align-items: center;
-      gap: 26px;
+
+      gap: 25px;
+
+      margin-left: auto;
     }
 
-    nav a {
-      font-size: 13px;
-      font-weight: 600;
+    .main-nav a {
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: 0.04em;
 
       color: #555;
-
-      transition: color 0.2s ease;
     }
 
-    nav a:hover {
-      color: #000;
+    .main-nav a:hover,
+    .main-nav a.active {
+      color: #111;
     }
 
     .cart-link {
-      padding-left: 20px;
+      display: inline-flex;
+      align-items: center;
 
-      border-left: 1px solid #ddd;
+      gap: 7px;
 
-      color: #111;
+      padding: 10px 15px;
+
+      border: 1px solid #ddd;
+      border-radius: 999px;
+
+      font-size: 12px;
+      font-weight: 700;
     }
+
 
     /* =========================
        HERO
     ========================= */
 
     .hero {
-      padding: 150px 24px 90px;
+      padding: 48px 0 70px;
+    }
 
-      text-align: center;
+    .hero-grid {
+      display: grid;
 
-      background:
-        linear-gradient(
-          180deg,
-          #fafafa 0%,
-          #ffffff 100%
-        );
+      grid-template-columns: 0.9fr 1.1fr;
+
+      align-items: center;
+
+      gap: 58px;
+    }
+
+    .hero-copy {
+      padding-left: 10px;
     }
 
     .eyebrow {
-      margin-bottom: 20px;
+      margin-bottom: 17px;
 
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
 
       letter-spacing: 0.18em;
-      text-transform: uppercase;
 
-      color: #888;
+      color: #999;
     }
 
     .hero h1 {
-      max-width: 850px;
+      margin-bottom: 22px;
 
-      margin: 0 auto 24px;
+      font-size: clamp(44px, 5vw, 72px);
 
-      font-size: clamp(44px, 7vw, 82px);
+      line-height: 1.02;
 
-      line-height: 1;
-
-      letter-spacing: -0.065em;
-
-      font-weight: 800;
+      letter-spacing: -0.06em;
     }
 
-    .hero-description {
-      max-width: 560px;
+    .hero p {
+      max-width: 520px;
 
-      margin: 0 auto;
+      margin-bottom: 30px;
 
-      font-size: 15px;
+      font-size: 14px;
 
-      line-height: 1.9;
+      line-height: 1.95;
 
       color: #666;
     }
 
-    /* =========================
-       HERO IMAGE
-    ========================= */
+    .hero-actions {
+      display: flex;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 48px;
+
+      padding: 0 22px;
+
+      border-radius: 999px;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .btn-dark {
+      background: #111;
+      color: #fff;
+    }
+
+    .btn-light {
+      border: 1px solid #ddd;
+
+      background: #fff;
+      color: #111;
+    }
 
     .hero-image {
-      width: min(1180px, 100%);
-
-      margin: 70px auto 0;
-
       overflow: hidden;
 
       border-radius: 28px;
 
-      background: #f3f3f3;
-
-      box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.08);
+      background: #f7f7f5;
     }
 
     .hero-image img {
-      width: 100%;
-      height: auto;
+      aspect-ratio: 4 / 5;
+
+      object-fit: cover;
     }
+
 
     /* =========================
        SECTION COMMON
     ========================= */
 
+    section {
+      scroll-margin-top: 100px;
+    }
+
     .section {
-      padding: 120px 24px;
+      padding: 90px 0;
     }
 
-    .section-header {
-      max-width: 700px;
-
-      margin: 0 auto 60px;
-
-      text-align: center;
-    }
-
-    .section-label {
-      margin-bottom: 15px;
-
-      font-size: 11px;
-      font-weight: 700;
-
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-
-      color: #888;
-    }
-
-    .section-title {
-      margin-bottom: 18px;
-
-      font-size: clamp(34px, 5vw, 58px);
-
-      line-height: 1;
-
-      letter-spacing: -0.055em;
-
-      font-weight: 800;
-    }
-
-    .section-description {
-      color: #666;
-
-      font-size: 14px;
-
-      line-height: 1.8;
-    }
-
-    /* =========================
-       WORLD
-    ========================= */
-
-    .world-section {
+    .section-soft {
       background: #f7f7f5;
     }
 
-    .world-grid {
-      max-width: 1180px;
+    .section-header {
+      display: flex;
 
-      margin: 0 auto;
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
+      align-items: end;
+      justify-content: space-between;
 
       gap: 20px;
+
+      margin-bottom: 34px;
     }
 
-    .world-card {
-      position: relative;
+    .section-label {
+      margin-bottom: 10px;
 
-      overflow: hidden;
-
-      min-height: 420px;
-
-      padding: 34px;
-
-      border-radius: 26px;
-
-      background: #ffffff;
-
-      border: 1px solid rgba(0, 0, 0, 0.06);
-
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-    }
-
-    .world-card:hover {
-      transform: translateY(-5px);
-
-      box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.08);
-    }
-
-    .world-number {
       font-size: 10px;
-
       font-weight: 700;
 
-      letter-spacing: 0.16em;
+      letter-spacing: 0.18em;
 
       color: #999;
     }
 
-    .world-name {
-      margin-top: 12px;
+    .section-title {
+      font-size: clamp(32px, 4vw, 50px);
 
-      font-size: 30px;
+      line-height: 1.08;
 
-      font-weight: 800;
-
-      letter-spacing: -0.04em;
+      letter-spacing: -0.05em;
     }
 
-    .world-japanese {
-      margin-top: 6px;
-
-      font-size: 13px;
-
-      font-weight: 600;
-
-      color: #666;
-    }
-
-    .world-text {
-      margin-top: 18px;
-
-      font-size: 13px;
-
-      line-height: 1.8;
-
-      color: #666;
-    }
-
-    .world-link {
-      position: absolute;
-
-      left: 34px;
-      bottom: 30px;
-
+    .section-link {
       font-size: 12px;
-
       font-weight: 700;
-
-      border-bottom: 1px solid #111;
-
-      padding-bottom: 4px;
-    }
-
-    /* =========================
-       PRODUCTS
-    ========================= */
-
-    .products-section {
-      background: #ffffff;
-    }
-
-    .category-nav {
-      display: flex;
-
-      justify-content: center;
-
-      flex-wrap: wrap;
-
-      gap: 10px;
-
-      margin-bottom: 55px;
-    }
-
-    .category-nav a {
-      padding: 10px 18px;
-
-      border-radius: 999px;
-
-      border: 1px solid #ddd;
-
-      font-size: 12px;
-
-      font-weight: 600;
 
       color: #555;
 
-      transition: all 0.2s ease;
+      border-bottom: 1px solid #bbb;
+
+      padding-bottom: 3px;
+
+      white-space: nowrap;
     }
 
-    .category-nav a:hover,
-    .category-nav a.active {
-      background: #111;
 
-      color: #fff;
-
-      border-color: #111;
-    }
+    /* =========================
+       PRODUCT GRID
+    ========================= */
 
     .product-grid {
-      max-width: 1180px;
-
-      margin: 0 auto;
-
       display: grid;
 
-      grid-template-columns:
-        repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
 
       gap: 22px;
     }
@@ -422,334 +334,592 @@
     }
 
     .product-image {
-      aspect-ratio: 1 / 1;
-
       overflow: hidden;
 
-      border-radius: 20px;
+      margin-bottom: 15px;
 
-      background: #f5f5f5;
+      border-radius: 18px;
 
-      margin-bottom: 16px;
+      background: #f3f3f0;
     }
 
     .product-image img {
-      width: 100%;
-      height: 100%;
+      aspect-ratio: 1 / 1.22;
 
       object-fit: cover;
 
-      transition:
-        transform 0.4s ease;
+      transition: transform 0.35s ease;
     }
 
-    .product-card:hover
-    .product-image img {
-      transform: scale(1.035);
+    .product-card:hover .product-image img {
+      transform: scale(1.025);
     }
 
-    .product-category {
-      margin-bottom: 5px;
+    .product-world {
+      margin-bottom: 6px;
 
-      font-size: 10px;
-
+      font-size: 9px;
       font-weight: 700;
 
-      letter-spacing: 0.1em;
+      letter-spacing: 0.14em;
 
-      color: #999;
+      color: #aaa;
     }
 
     .product-name {
-      font-size: 14px;
+      margin-bottom: 6px;
 
-      font-weight: 700;
+      font-size: 14px;
+      font-weight: 600;
 
       line-height: 1.5;
     }
 
-    .product-note {
+    .product-price {
+      font-size: 13px;
+
+      color: #555;
+    }
+
+
+    /* =========================
+       CATEGORIES
+    ========================= */
+
+    .category-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 18px;
+    }
+
+    .category-card {
+      position: relative;
+
+      min-height: 300px;
+
+      overflow: hidden;
+
+      border-radius: 22px;
+
+      background: #eee;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 100%;
+
+      min-height: 300px;
+
+      object-fit: cover;
+
+      transition: transform 0.4s ease;
+    }
+
+    .category-card:hover img {
+      transform: scale(1.035);
+    }
+
+    .category-overlay {
+      position: absolute;
+
+      inset: auto 0 0 0;
+
+      padding: 25px;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(0,0,0,0.50),
+          rgba(0,0,0,0)
+        );
+
+      color: #fff;
+    }
+
+    .category-name {
+      font-size: 22px;
+      font-weight: 700;
+
+      letter-spacing: -0.03em;
+    }
+
+    .category-jp {
       margin-top: 5px;
 
       font-size: 11px;
 
-      color: #888;
+      color: rgba(255,255,255,0.78);
     }
+
 
     /* =========================
-       CHARACTER / PLUSH
+       COLOR WORLD
     ========================= */
 
-    .plush-section {
-      background: #f7f7f5;
-    }
-
-    .plush-content {
-      max-width: 1180px;
-
-      margin: 0 auto;
-
+    .world-grid {
       display: grid;
 
-      grid-template-columns:
-        1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
 
-      gap: 60px;
-
-      align-items: center;
+      gap: 20px;
     }
 
-    .plush-image {
+    .world-card {
       overflow: hidden;
 
-      border-radius: 28px;
+      border-radius: 24px;
 
-      background: #ffffff;
+      background: #fff;
 
-      box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.07);
+      border: 1px solid #e7e7e4;
     }
 
-    .plush-text .section-label {
-      text-align: left;
+    .world-card img {
+      aspect-ratio: 4 / 3;
+
+      object-fit: cover;
     }
 
-    .plush-text h2 {
-      margin-bottom: 22px;
-
-      font-size: clamp(36px, 5vw, 58px);
-
-      line-height: 1;
-
-      letter-spacing: -0.055em;
+    .world-content {
+      padding: 26px;
     }
 
-    .plush-text p {
-      max-width: 480px;
+    .world-number {
+      margin-bottom: 9px;
 
-      margin-bottom: 30px;
+      font-size: 9px;
+      font-weight: 700;
 
-      font-size: 14px;
+      letter-spacing: 0.16em;
 
-      line-height: 1.9;
+      color: #aaa;
+    }
+
+    .world-content h3 {
+      margin-bottom: 10px;
+
+      font-size: 27px;
+
+      letter-spacing: -0.04em;
+    }
+
+    .world-content p {
+      margin-bottom: 18px;
+
+      font-size: 12px;
+
+      line-height: 1.8;
 
       color: #666;
     }
 
-    .text-link {
-      display: inline-flex;
-
-      font-size: 13px;
-
+    .world-link {
+      font-size: 11px;
       font-weight: 700;
 
-      border-bottom: 1px solid #111;
+      border-bottom: 1px solid #bbb;
 
-      padding-bottom: 5px;
+      padding-bottom: 3px;
     }
 
+
     /* =========================
-       BRAND STATEMENT
+       FEATURE
     ========================= */
 
-    .statement-section {
-      padding: 150px 24px;
+    .feature-grid {
+      display: grid;
 
-      text-align: center;
+      grid-template-columns: 1.1fr 0.9fr;
+
+      gap: 24px;
+
+      align-items: stretch;
+    }
+
+    .feature-image {
+      overflow: hidden;
+
+      border-radius: 26px;
+
+      background: #f4f4f2;
+    }
+
+    .feature-image img {
+      height: 100%;
+
+      min-height: 530px;
+
+      object-fit: cover;
+    }
+
+    .feature-copy {
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+      padding: 58px;
+
+      border-radius: 26px;
 
       background: #111;
 
       color: #fff;
     }
 
-    .statement-section .section-label {
-      color: #888;
+    .feature-copy .section-label {
+      color: #777;
     }
 
-    .statement-section h2 {
-      max-width: 850px;
+    .feature-copy h2 {
+      margin-bottom: 22px;
 
-      margin: 0 auto 24px;
+      font-size: clamp(36px, 4vw, 56px);
 
-      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.08;
 
-      line-height: 1;
-
-      letter-spacing: -0.06em;
+      letter-spacing: -0.055em;
     }
 
-    .statement-section p {
-      max-width: 500px;
+    .feature-copy p {
+      margin-bottom: 30px;
 
-      margin: 0 auto;
-
-      font-size: 14px;
+      font-size: 13px;
 
       line-height: 1.9;
 
       color: #aaa;
     }
 
+    .feature-copy .btn {
+      align-self: flex-start;
+
+      background: #fff;
+
+      color: #111;
+    }
+
+
+    /* =========================
+       JOURNAL
+    ========================= */
+
+    .journal-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 22px;
+    }
+
+    .journal-card {
+      overflow: hidden;
+
+      border-radius: 20px;
+
+      background: #fff;
+
+      border: 1px solid #e8e8e5;
+    }
+
+    .journal-card img {
+      aspect-ratio: 16 / 11;
+
+      object-fit: cover;
+    }
+
+    .journal-content {
+      padding: 22px;
+    }
+
+    .journal-category {
+      margin-bottom: 9px;
+
+      font-size: 9px;
+      font-weight: 700;
+
+      letter-spacing: 0.14em;
+
+      color: #aaa;
+    }
+
+    .journal-content h3 {
+      margin-bottom: 10px;
+
+      font-size: 20px;
+
+      line-height: 1.4;
+
+      letter-spacing: -0.03em;
+    }
+
+    .journal-content p {
+      font-size: 12px;
+
+      line-height: 1.8;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       NEWS
+    ========================= */
+
+    .news-list {
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .news-item {
+      display: grid;
+
+      grid-template-columns: 120px 150px 1fr;
+
+      gap: 20px;
+
+      padding: 20px 0;
+
+      border-bottom: 1px solid #e5e5e5;
+
+      font-size: 12px;
+    }
+
+    .news-date {
+      color: #999;
+    }
+
+    .news-tag {
+      font-weight: 700;
+
+      color: #555;
+    }
+
+
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      padding: 45px 40px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
-      border-top: 1px solid #222;
+      padding: 65px 0 35px;
 
       background: #111;
 
-      color: #777;
-
-      font-size: 11px;
-    }
-
-    .footer-links {
-      display: flex;
-
-      gap: 22px;
-    }
-
-    .footer-links a:hover {
       color: #fff;
     }
 
+    .footer-top {
+      display: grid;
+
+      grid-template-columns: 1.5fr repeat(3, 1fr);
+
+      gap: 45px;
+
+      margin-bottom: 60px;
+    }
+
+    .footer-brand h3 {
+      margin-bottom: 16px;
+
+      font-size: 28px;
+
+      letter-spacing: -0.045em;
+    }
+
+    .footer-brand p {
+      max-width: 320px;
+
+      font-size: 12px;
+
+      line-height: 1.8;
+
+      color: #999;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+
+      font-size: 10px;
+
+      letter-spacing: 0.14em;
+
+      color: #777;
+    }
+
+    .footer-column a {
+      display: block;
+
+      margin-bottom: 10px;
+
+      font-size: 12px;
+
+      color: #bbb;
+    }
+
+    .footer-column a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+
+      padding-top: 25px;
+
+      border-top: 1px solid #2a2a2a;
+
+      font-size: 10px;
+
+      color: #777;
+    }
+
+
     /* =========================
-       MOBILE
+       RESPONSIVE
     ========================= */
 
-    @media (max-width: 900px) {
+    @media (max-width: 980px) {
 
-      header {
-        padding: 20px;
-      }
-
-      nav {
-        gap: 14px;
-      }
-
-      nav a:not(.cart-link) {
+      .main-nav a:not(.cart-link) {
         display: none;
       }
 
-      .cart-link {
-        border-left: none;
+      .hero-grid,
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
 
+      .hero-copy {
         padding-left: 0;
       }
 
-      .world-grid {
+      .product-grid,
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .world-grid,
+      .journal-grid {
         grid-template-columns: 1fr;
       }
 
-      .product-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+      .feature-copy {
+        padding: 42px 32px;
       }
 
-      .plush-content {
-        grid-template-columns: 1fr;
-
-        gap: 45px;
+      .footer-top {
+        grid-template-columns: repeat(2, 1fr);
       }
-
-      .plush-text .section-label {
-        text-align: center;
-      }
-
-      .plush-text {
-        text-align: center;
-      }
-
-      .plush-text p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
     }
 
-    @media (max-width: 600px) {
 
-      .logo-main {
-        font-size: 21px;
+    @media (max-width: 640px) {
+
+      .container {
+        width: min(100% - 26px, 1180px);
       }
 
-      .logo-studio {
-        font-size: 15px;
+      .header-inner {
+        min-height: 66px;
+      }
+
+      .logo-main {
+        font-size: 20px;
+      }
+
+      .logo-sub {
+        font-size: 14px;
       }
 
       .hero {
-        padding-top: 130px;
+        padding-top: 28px;
       }
 
-      .hero h1 {
-        font-size: clamp(44px, 14vw, 68px);
-      }
-
-      .hero-description {
-        font-size: 13px;
+      .hero-grid {
+        gap: 30px;
       }
 
       .hero-image {
-        margin-top: 50px;
+        order: -1;
+      }
 
-        border-radius: 18px;
+      .hero h1 {
+        font-size: 44px;
       }
 
       .section {
-        padding: 90px 20px;
+        padding: 68px 0;
       }
 
-      .category-nav {
-        gap: 7px;
+      .section-header {
+        align-items: start;
+
+        flex-direction: column;
       }
 
-      .category-nav a {
-        padding: 9px 13px;
-      }
+      .product-grid,
+      .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
 
-      .product-grid {
         gap: 14px;
-      }
-
-      .product-image {
-        border-radius: 15px;
-
-        margin-bottom: 12px;
       }
 
       .product-name {
         font-size: 12px;
       }
 
-      .statement-section {
-        padding: 110px 20px;
+      .category-card,
+      .category-card img {
+        min-height: 220px;
       }
 
-      footer {
-        padding: 35px 20px;
+      .category-overlay {
+        padding: 16px;
+      }
 
+      .category-name {
+        font-size: 18px;
+      }
+
+      .feature-image img {
+        min-height: 390px;
+      }
+
+      .feature-copy {
+        padding: 34px 24px;
+      }
+
+      .news-item {
+        grid-template-columns: 1fr;
+
+        gap: 6px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
         flex-direction: column;
 
-        gap: 20px;
-
-        text-align: center;
+        align-items: flex-start;
       }
-
     }
 
   </style>
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
@@ -757,54 +927,68 @@
 
 <header>
 
-  <a
-    href="index.html"
-    class="logo"
-    aria-label="IROVA Studio"
-  >
+  <div class="container header-inner">
 
-    <span class="logo-main">
-      IROVA
-    </span>
+    <a href="index.html" class="logo">
 
-    <span class="logo-studio">
-      Studio
-    </span>
+      <span class="logo-main">
+        IROVA
+      </span>
 
-  </a>
+      <span class="logo-sub">
+        Studio
+      </span>
 
-  <nav>
-
-    <a href="index.html">
-      ホーム
     </a>
 
-    <a href="#world">
-      WORLD
-    </a>
 
-    <a href="#products">
-      グッズ
-    </a>
+    <nav class="main-nav">
 
-    <a href="#plush">
-      ぬいぐるみ
-    </a>
+      <a href="shop.html" class="active">
+        SHOP
+      </a>
 
-    <a href="journal.html">
-      JOURNAL
-    </a>
+      <a href="world.html">
+        WORLD
+      </a>
 
-    <a href="#" class="cart-link">
-      カート
-    </a>
+      <a href="#plush">
+        ぬいぐるみ
+      </a>
 
-  </nav>
+      <a href="#goods">
+        GOODS
+      </a>
+
+      <a href="#fashion">
+        FASHION
+      </a>
+
+      <a href="journal.html">
+        JOURNAL
+      </a>
+
+
+      <a href="#" class="cart-link">
+
+        CART
+
+        <span>
+          0
+        </span>
+
+      </a>
+
+    </nav>
+
+  </div>
 
 </header>
 
 
+
 <main>
+
 
   <!-- =========================
        HERO
@@ -812,359 +996,973 @@
 
   <section class="hero">
 
-    <div class="eyebrow">
-      IROVA OFFICIAL SHOP
-    </div>
+    <div class="container hero-grid">
 
-    <h1>
-      好きな色から、<br>
-      世界がはじまる。
-    </h1>
 
-    <p class="hero-description">
-      IROVAは、色から生まれたキャラクターと
-      暮らしのアイテムを届けるブランドです。
-      あなたの好きな色と一緒に、
-      毎日の世界を少しだけ特別に。
-    </p>
+      <div class="hero-copy">
 
-    <div class="hero-image">
+        <div class="eyebrow">
+          IROVA OFFICIAL SHOP
+        </div>
 
-      <img
-        src="img/355.png"
-        alt="IROVA Color World"
-      >
+
+        <h1>
+          好きな色を、<br>
+          暮らしの中へ。
+        </h1>
+
+
+        <p>
+          IROVAは、色から生まれたキャラクターと、
+          日々の暮らしをつなぐライフスタイルブランドです。
+
+          Olive、Canyon、Purple、Wine。
+
+          あなたの好きなColor Worldを見つけてください。
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a href="#new" class="btn btn-dark">
+            SHOP NOW
+          </a>
+
+          <a href="world.html" class="btn btn-light">
+            COLOR WORLDを見る
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+        <img
+          src="img/Olive/olive-backpack-05.jpg"
+          alt="IROVA Olive Collection"
+        >
+
+      </div>
+
 
     </div>
 
   </section>
 
 
+
   <!-- =========================
-       WORLD
+       NEW ARRIVALS
   ========================= -->
 
   <section
-    class="section world-section"
-    id="world"
+    id="new"
+    class="section"
   >
 
-    <div class="section-header">
+    <div class="container">
 
-      <div class="section-label">
-        COLOR WORLD
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-label">
+            NEW ARRIVALS
+          </div>
+
+          <h2 class="section-title">
+            新しく届いたアイテム。
+          </h2>
+
+        </div>
+
+
+        <a
+          href="#"
+          class="section-link"
+        >
+          すべて見る →
+        </a>
+
+
       </div>
 
-      <h2 class="section-title">
-        3つの世界
-      </h2>
 
-      <p class="section-description">
-        色から生まれた、それぞれのキャラクターと
-        世界観。あなたの「好き」を見つけてください。
-      </p>
-
-    </div>
+      <div class="product-grid">
 
 
-    <div class="world-grid">
+        <!-- OLIVE -->
 
-      <a href="olive.html" class="world-card">
+        <a href="#" class="product-card">
 
-        <div class="world-number">
-          WORLD 01
-        </div>
+          <div class="product-image">
 
-        <div class="world-name">
-          OLIVE
-        </div>
+            <img
+              src="img/Olive/olive-charm.jpg"
+              alt="Olive Charm"
+            >
 
-        <div class="world-japanese">
-          自然と、ゆっくり。
-        </div>
-
-        <p class="world-text">
-          森、木々、やわらかな緑。
-          自然を感じながら、ゆっくり過ごす時間。
-        </p>
-
-        <span class="world-link">
-        OLIVE WORLD →
-      </span>
-
-      </a>
+          </div>
 
 
-      <a href="canyon.html" class="world-card">
-
-        <div class="world-number">
-          WORLD 02
-        </div>
-
-        <div class="world-name">
-          CANYON
-        </div>
-
-        <div class="world-japanese">
-          夕暮れと、冒険。
-        </div>
-
-        <p class="world-text">
-          夕焼け、砂の大地、旅の途中。
-          自分らしく歩き続けるための世界。
-        </p>
-
-        <span class="world-link">
-        CANYON WORLD →
-      </span>
-
-      </a>
+          <div class="product-world">
+            OLIVE
+          </div>
 
 
-      <a href="purple.html" class="world-card">
+          <div class="product-name">
+            Olive マスコットチャーム
+          </div>
 
-        <div class="world-number">
-          WORLD 03
-        </div>
 
-        <div class="world-name">
-          PURPLE
-        </div>
+          <div class="product-price">
+            ¥1,980
+          </div>
 
-        <div class="world-japanese">
-          夜と、夢。
-        </div>
+        </a>
 
-        <p class="world-text">
-          夜の街、光、音、そして夢。
-          少しだけ不思議な夜の世界へ。
-        </p>
 
-        <span class="world-link">
-        PURPLE WORLD →
-      </span>
 
-      </a>
+        <!-- CANYON -->
+
+        <a href="#" class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="img/Canyon/canyon-crossbody.jpg"
+              alt="Canyon Crossbody Bag"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            CANYON
+          </div>
+
+
+          <div class="product-name">
+            Canyon ミニショルダーバッグ
+          </div>
+
+
+          <div class="product-price">
+            ¥3,980
+          </div>
+
+        </a>
+
+
+
+        <!-- PURPLE -->
+
+        <a href="#" class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="img/Purple/purple-backpack-02.jpg"
+              alt="Purple Backpack"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            PURPLE
+          </div>
+
+
+          <div class="product-name">
+            Purple デイパック
+          </div>
+
+
+          <div class="product-price">
+            ¥6,980
+          </div>
+
+        </a>
+
+
+
+        <!-- WINE -->
+
+        <a
+          href="wine.html"
+          class="product-card"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="img/Wine/wine-hats-bags.jpg"
+              alt="Wine Hats and Bags Collection"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            WINE
+          </div>
+
+
+          <div class="product-name">
+            Wine Hats & Bags Collection
+          </div>
+
+
+          <div class="product-price">
+            価格未定
+          </div>
+
+        </a>
+
+
+      </div>
 
     </div>
 
   </section>
 
 
+
   <!-- =========================
-       PRODUCTS
+       CATEGORIES
   ========================= -->
 
   <section
-    class="section products-section"
-    id="products"
+    id="goods"
+    class="section section-soft"
   >
 
-    <div class="section-header">
+    <div class="container">
 
-      <div class="section-label">
-        IROVA GOODS
+
+      <div class="section-header">
+
+        <div>
+
+          <div class="section-label">
+            SHOP BY CATEGORY
+          </div>
+
+          <h2 class="section-title">
+            カテゴリーから探す。
+          </h2>
+
+        </div>
+
       </div>
 
-      <h2 class="section-title">
-        お気に入りを見つける。
-      </h2>
-
-      <p class="section-description">
-        キャラクターと色を、毎日の暮らしへ。
-      </p>
-
-    </div>
 
 
-    <div class="category-nav">
-
-      <a href="#products" class="active">
-        すべて
-      </a>
-
-      <a href="#plush">
-        ぬいぐるみ
-      </a>
-
-      <a href="#products">
-        スマホアクセサリー
-      </a>
-
-      <a href="#products">
-        ウェア
-      </a>
-
-      <a href="#products">
-        バッグ・小物
-      </a>
-
-    </div>
+      <div class="category-grid">
 
 
-    <div class="product-grid">
-
-      <!-- PRODUCT 01 -->
-
-      <a href="#" class="product-card">
-
-        <div class="product-image">
+        <a
+          href="#plush"
+          class="category-card"
+        >
 
           <img
-            src="img/352.png"
-            alt="IROVA ウェア"
+            src="img/Olive/olive-charm.jpg"
+            alt="ぬいぐるみ"
+          >
+
+
+          <div class="category-overlay">
+
+            <div class="category-name">
+              MASCOT
+            </div>
+
+            <div class="category-jp">
+              ぬいぐるみ・マスコット
+            </div>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          href="#"
+          class="category-card"
+        >
+
+          <img
+            src="img/Canyon/canyon-keychain.jpg"
+            alt="Goods"
+          >
+
+
+          <div class="category-overlay">
+
+            <div class="category-name">
+              GOODS
+            </div>
+
+            <div class="category-jp">
+              キーホルダー・小物
+            </div>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          href="#fashion"
+          class="category-card"
+        >
+
+          <img
+            src="img/Purple/purple-tshirt.jpg"
+            alt="Fashion"
+          >
+
+
+          <div class="category-overlay">
+
+            <div class="category-name">
+              FASHION
+            </div>
+
+            <div class="category-jp">
+              Tシャツ・キャップ・ソックス
+            </div>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          href="#"
+          class="category-card"
+        >
+
+          <img
+            src="img/Olive/olive-backpack-01.jpg"
+            alt="Bags"
+          >
+
+
+          <div class="category-overlay">
+
+            <div class="category-name">
+              BAGS
+            </div>
+
+            <div class="category-jp">
+              バッグ・ショルダー
+            </div>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       COLOR WORLD
+  ========================= -->
+
+  <section class="section">
+
+    <div class="container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-label">
+            COLOR WORLD
+          </div>
+
+          <h2 class="section-title">
+            好きな色から選ぶ。
+          </h2>
+
+        </div>
+
+
+        <a
+          href="world.html"
+          class="section-link"
+        >
+          WORLDを見る →
+        </a>
+
+
+      </div>
+
+
+
+      <div class="world-grid">
+
+
+        <!-- OLIVE -->
+
+        <a
+          href="olive.html"
+          class="world-card"
+        >
+
+          <img
+            src="img/Olive/olive-tshirt.jpg"
+            alt="Olive World"
+          >
+
+
+          <div class="world-content">
+
+            <div class="world-number">
+              WORLD 01
+            </div>
+
+            <h3>
+              Olive
+            </h3>
+
+            <p>
+              自然、木々、やわらかな緑。
+              ゆっくりとした時間を楽しむ世界。
+            </p>
+
+            <span class="world-link">
+              Oliveを見る →
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- CANYON -->
+
+        <a
+          href="canyon.html"
+          class="world-card"
+        >
+
+          <img
+            src="img/Canyon/canyon-tshirt.jpg"
+            alt="Canyon World"
+          >
+
+
+          <div class="world-content">
+
+            <div class="world-number">
+              WORLD 02
+            </div>
+
+            <h3>
+              Canyon
+            </h3>
+
+            <p>
+              夕暮れ、大地、旅。
+              少し遠くまで出かけたくなる世界。
+            </p>
+
+            <span class="world-link">
+              Canyonを見る →
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- PURPLE -->
+
+        <a
+          href="purple.html"
+          class="world-card"
+        >
+
+          <img
+            src="img/Purple/purple-tshirt.jpg"
+            alt="Purple World"
+          >
+
+
+          <div class="world-content">
+
+            <div class="world-number">
+              WORLD 03
+            </div>
+
+            <h3>
+              Purple
+            </h3>
+
+            <p>
+              夜、都市、ネオン、夢。
+              静かな時間と想像が広がる世界。
+            </p>
+
+            <span class="world-link">
+              Purpleを見る →
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <!-- WINE -->
+
+        <a
+          href="wine.html"
+          class="world-card"
+        >
+
+          <img
+            src="img/Wine/wine-character-outfit.jpg"
+            alt="Wine World"
+          >
+
+
+          <div class="world-content">
+
+            <div class="world-number">
+              WORLD 04
+            </div>
+
+            <h3>
+              Wine
+            </h3>
+
+            <p>
+              深い赤、静かなぬくもり、小さな相棒。
+              色とキャラクターが日常へ広がる世界。
+            </p>
+
+            <span class="world-link">
+              Wineを見る →
+            </span>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       PLUSH / MASCOT PICKUP
+  ========================= -->
+
+  <section
+    id="plush"
+    class="section section-soft"
+  >
+
+    <div class="container">
+
+
+      <div class="feature-grid">
+
+
+        <div class="feature-image">
+
+          <img
+            src="img/Olive/olive-charm.jpg"
+            alt="IROVA Mascot"
           >
 
         </div>
 
-        <div class="product-category">
-          WEAR
+
+
+        <div class="feature-copy">
+
+
+          <div class="section-label">
+            PICK UP
+          </div>
+
+
+          <h2>
+            いつでもそばに、<br>
+            IROVAのなかまたち。
+          </h2>
+
+
+          <p>
+            おでかけにも、お部屋にも。
+            バッグにつけたり、デスクに置いたり。
+
+            好きなColor Worldを、
+            もっと身近に楽しめる
+            マスコットシリーズです。
+          </p>
+
+
+          <a
+            href="#"
+            class="btn"
+          >
+            マスコットを見る →
+          </a>
+
+
         </div>
 
-        <div class="product-name">
-          IROVA キャラクターTシャツ
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       RECOMMENDED
+  ========================= -->
+
+  <section
+    id="fashion"
+    class="section"
+  >
+
+    <div class="container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-label">
+            RECOMMENDED
+          </div>
+
+          <h2 class="section-title">
+            おすすめアイテム。
+          </h2>
+
         </div>
 
-        <div class="product-note">
-          Color World Collection
+
+      </div>
+
+
+
+      <div class="product-grid">
+
+
+        <!-- OLIVE -->
+
+        <a href="#" class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="img/Olive/olive-shoes.jpg"
+              alt="Olive Shoes"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            OLIVE
+          </div>
+
+
+          <div class="product-name">
+            Olive スニーカー
+          </div>
+
+
+          <div class="product-price">
+            ¥8,980
+          </div>
+
+        </a>
+
+
+
+        <!-- CANYON -->
+
+        <a href="#" class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="img/Canyon/canyon-shoes.jpg"
+              alt="Canyon Cap"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            CANYON
+          </div>
+
+
+          <div class="product-name">
+            Canyon スニーカー
+          </div>
+
+
+          <div class="product-price">
+            ¥2,980
+          </div>
+
+        </a>
+
+
+
+        <!-- PURPLE -->
+
+        <a href="#" class="product-card">
+
+          <div class="product-image">
+
+            <img
+              src="img/Purple/purple-shoes.jpg"
+              alt="Purple Shoes"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            PURPLE
+          </div>
+
+
+          <div class="product-name">
+            Purple スニーカー
+          </div>
+
+
+          <div class="product-price">
+            ¥8,980
+          </div>
+
+        </a>
+
+
+
+        <!-- WINE -->
+
+        <a
+          href="wine.html"
+          class="product-card"
+        >
+
+          <div class="product-image">
+
+            <img
+              src="img/Wine/wine-shoes.jpg"
+              alt="Wine Shoes and Accessories"
+            >
+
+          </div>
+
+
+          <div class="product-world">
+            WINE
+          </div>
+
+
+          <div class="product-name">
+            Wine スニーカー
+          </div>
+
+
+          <div class="product-price">
+            ¥3788
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       JOURNAL
+  ========================= -->
+
+  <section class="section section-soft">
+
+    <div class="container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-label">
+            JOURNAL
+          </div>
+
+          <h2 class="section-title">
+            IROVAの世界を、もっと知る。
+          </h2>
+
         </div>
 
-      </a>
+
+        <a
+          href="journal.html"
+          class="section-link"
+        >
+          JOURNALを見る →
+        </a>
 
 
-      <!-- PRODUCT 02 -->
+      </div>
 
-      <a href="#" class="product-card">
 
-        <div class="product-image">
+
+      <div class="journal-grid">
+
+
+        <a
+          href="journal.html"
+          class="journal-card"
+        >
+
+          <img
+            src="img/342.png"
+            alt="Olive Story"
+          >
+
+
+          <div class="journal-content">
+
+            <div class="journal-category">
+              OLIVE / STORY
+            </div>
+
+
+            <h3>
+              Oliveって、どんな子？
+            </h3>
+
+
+            <p>
+              Oliveの性格や好きなもの、
+              世界をつくる小さなモチーフを紹介します。
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          href="journal.html"
+          class="journal-card"
+        >
 
           <img
             src="img/343.png"
-            alt="IROVA キャラクターグッズ"
+            alt="Olive Elements"
           >
 
-        </div>
 
-        <div class="product-category">
-          GOODS
-        </div>
+          <div class="journal-content">
 
-        <div class="product-name">
-          キャラクター ステッカーセット
-        </div>
-
-        <div class="product-note">
-          Daily Character Goods
-        </div>
-
-      </a>
+            <div class="journal-category">
+              COLOR & ELEMENTS
+            </div>
 
 
-      <!-- PRODUCT 03 -->
-
-      <a href="#" class="product-card">
-
-        <div class="product-image">
-
-          <img
-            src="img/353.png"
-            alt="IROVA Canyon Collection"
-          >
-
-        </div>
-
-        <div class="product-category">
-          CANYON
-        </div>
-
-        <div class="product-name">
-          CANYON キャラクターアイテム
-        </div>
-
-        <div class="product-note">
-          Canyon World Collection
-        </div>
-
-      </a>
+            <h3>
+              Oliveをつくるもの。
+            </h3>
 
 
-      <!-- PRODUCT 04 -->
+            <p>
+              Forest、Wood、Acorn。
+              色から世界が生まれるまで。
+            </p>
 
-      <a href="#" class="product-card">
+          </div>
 
-        <div class="product-image">
-
-          <img
-            src="img/358.png"
-            alt="IROVA Purple Collection"
-          >
-
-        </div>
-
-        <div class="product-category">
-          PURPLE
-        </div>
-
-        <div class="product-name">
-          PURPLE キャラクターコレクション
-        </div>
-
-        <div class="product-note">
-          Purple World Collection
-        </div>
-
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PLUSH
-  ========================= -->
-
-  <section
-    class="section plush-section"
-    id="plush"
-  >
-
-    <div class="plush-content">
-
-      <div class="plush-image">
-
-        <img
-          src="img/355.png"
-          alt="IROVA キャラクター"
-        >
-
-      </div>
-
-
-      <div class="plush-text">
-
-        <div class="section-label">
-          CHARACTER
-        </div>
-
-        <h2>
-          そばに置きたい、<br>
-          小さな仲間。
-        </h2>
-
-        <p>
-          IROVAの世界から生まれたキャラクターたち。
-          ぬいぐるみやマスコットとして、
-          いつでもそばに置いて楽しめます。
-        </p>
-
-        <a
-          href="#products"
-          class="text-link"
-        >
-          ぬいぐるみを見る →
         </a>
 
+
+
+        <a
+          href="world.html"
+          class="journal-card"
+        >
+
+          <img
+            src="img/355.png"
+            alt="IROVA Color World"
+          >
+
+
+          <div class="journal-content">
+
+            <div class="journal-category">
+              IROVA WORLD
+            </div>
+
+
+            <h3>
+              色から、世界が生まれる。
+            </h3>
+
+
+            <p>
+              IROVA Studioが考える
+              Color Worldのアイデアについて。
+            </p>
+
+          </div>
+
+        </a>
+
+
       </div>
 
     </div>
@@ -1172,29 +1970,110 @@
   </section>
 
 
+
   <!-- =========================
-       STATEMENT
+       NEWS
   ========================= -->
 
-  <section class="statement-section">
+  <section class="section">
 
-    <div class="section-label">
-      IROVA STUDIO
+    <div class="container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-label">
+            NEWS
+          </div>
+
+          <h2 class="section-title">
+            お知らせ。
+          </h2>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="news-list">
+
+
+        <a
+          href="#"
+          class="news-item"
+        >
+
+          <span class="news-date">
+            2026.09.14
+          </span>
+
+          <span class="news-tag">
+            SHOP
+          </span>
+
+          <span>
+            IROVA Studio Official Shopを公開しました。
+          </span>
+
+        </a>
+
+
+
+        <a
+          href="#"
+          class="news-item"
+        >
+
+          <span class="news-date">
+            2026.09.14
+          </span>
+
+          <span class="news-tag">
+            OLIVE
+          </span>
+
+          <span>
+            Olive Collectionを公開しました。
+          </span>
+
+        </a>
+
+
+
+        <a
+          href="#"
+          class="news-item"
+        >
+
+          <span class="news-date">
+            2026.09.14
+          </span>
+
+          <span class="news-tag">
+            WINE
+          </span>
+
+          <span>
+            Wine Color Worldを公開しました。
+          </span>
+
+        </a>
+
+
+      </div>
+
     </div>
-
-    <h2>
-      Color Makes<br>
-      You Special.
-    </h2>
-
-    <p>
-      あなたの好きな色が、
-      あなたらしい世界をつくる。
-    </p>
 
   </section>
 
+
 </main>
+
 
 
 <!-- =========================
@@ -1203,27 +2082,140 @@
 
 <footer>
 
-  <div>
-    © 2026 IROVA Studio
-  </div>
+  <div class="container">
 
-  <div class="footer-links">
 
-    <a href="#">
-      Instagram
-    </a>
+    <div class="footer-top">
 
-    <a href="#">
-      X
-    </a>
 
-    <a href="mailto:irova.studio@outlook.com">
-      Contact
-    </a>
+      <div class="footer-brand">
+
+        <h3>
+          IROVA Studio
+        </h3>
+
+        <p>
+          Color-driven characters and lifestyle.
+          好きな色から、自分らしい世界へ。
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h4>
+          SHOP
+        </h4>
+
+        <a href="#new">
+          New Arrivals
+        </a>
+
+        <a href="#plush">
+          ぬいぐるみ
+        </a>
+
+        <a href="#goods">
+          Goods
+        </a>
+
+        <a href="#fashion">
+          Fashion
+        </a>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h4>
+          WORLD
+        </h4>
+
+        <a href="olive.html">
+          Olive
+        </a>
+
+        <a href="canyon.html">
+          Canyon
+        </a>
+
+        <a href="purple.html">
+          Purple
+        </a>
+
+        <a href="wine.html">
+          Wine
+        </a>
+
+        <a href="journal.html">
+          Journal
+        </a>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h4>
+          IROVA
+        </h4>
+
+        <a href="ja.html">
+          Brand
+        </a>
+
+        <a href="business-ja.html">
+          Business
+        </a>
+
+        <a
+          href="https://www.instagram.com/IROVAStudio/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://x.com/IROVAStudio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          X
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+
+      <div>
+        © 2026 IROVA Studio
+      </div>
+
+
+      <div>
+        Color Makes You Special.
+      </div>
+
+
+    </div>
+
 
   </div>
 
 </footer>
+
 
 </body>
 </html>

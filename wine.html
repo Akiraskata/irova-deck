@@ -1,0 +1,1952 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wine World — IROVA Studio</title>
+
+  <meta
+    name="description"
+    content="IROVA Studio Wine World。Wineカラーから生まれたRumi、黒猫Kuro、ファッション、バッグ、シューズと日常の物語。"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --wine-dark: #581e2a;
+      --wine: #722d39;
+      --wine-soft: #b76a7a;
+
+      --cream: #f4ece4;
+      --cream-light: #faf7f3;
+
+      --black: #161414;
+      --gray: #77706f;
+      --line: #e9e2dc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        "Plus Jakarta Sans",
+        "Noto Sans JP",
+        sans-serif;
+
+      background: #fff;
+      color: var(--black);
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(255,255,255,.94);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid #eee;
+    }
+
+    .header-inner {
+      min-height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+
+      gap: 7px;
+    }
+
+    .logo-main {
+      font-size: 23px;
+      font-weight: 800;
+
+      letter-spacing: -.06em;
+    }
+
+    .logo-sub {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    nav {
+      margin-left: auto;
+
+      display: flex;
+      align-items: center;
+
+      gap: 25px;
+    }
+
+    nav a {
+      font-size: 12px;
+      font-weight: 700;
+
+      color: #555;
+
+      letter-spacing: .04em;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #111;
+    }
+
+    .cart {
+      padding: 10px 15px;
+
+      border: 1px solid #ddd;
+      border-radius: 999px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 52px 0 110px;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns: 1.12fr .88fr;
+
+      gap: 65px;
+
+      align-items: center;
+    }
+
+    .hero-image {
+      overflow: hidden;
+
+      border-radius: 28px;
+
+      background: var(--cream-light);
+    }
+
+    .hero-image img {
+      aspect-ratio: 4 / 3;
+
+      object-fit: cover;
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+
+      font-size: 10px;
+      font-weight: 700;
+
+      letter-spacing: .2em;
+
+      color: var(--wine);
+    }
+
+    .hero h1 {
+      margin-bottom: 17px;
+
+      font-size: clamp(62px, 8vw, 105px);
+
+      line-height: .92;
+
+      letter-spacing: -.075em;
+
+      color: var(--wine-dark);
+    }
+
+    .hero-sub {
+      margin-bottom: 28px;
+
+      font-size: 22px;
+      font-weight: 600;
+
+      letter-spacing: -.03em;
+    }
+
+    .hero p {
+      max-width: 520px;
+
+      margin-bottom: 33px;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      color: #666;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-bottom: 35px;
+    }
+
+    .hero-tags span {
+      padding: 8px 14px;
+
+      border: 1px solid #d9c5c8;
+      border-radius: 999px;
+
+      background: #fffafa;
+
+      font-size: 10px;
+      font-weight: 700;
+
+      color: var(--wine);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 48px;
+
+      padding: 0 24px;
+
+      border-radius: 999px;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      transition: .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background: var(--wine-dark);
+
+      color: #fff;
+    }
+
+
+    /* =========================
+       COMMON
+    ========================= */
+
+    section {
+      position: relative;
+    }
+
+    .section-label {
+      margin-bottom: 12px;
+
+      font-size: 10px;
+      font-weight: 700;
+
+      letter-spacing: .18em;
+
+      color: #999;
+    }
+
+    .section-title {
+      font-size: clamp(38px, 5vw, 60px);
+
+      line-height: 1.05;
+
+      letter-spacing: -.055em;
+    }
+
+    .section-description {
+      max-width: 620px;
+
+      margin-top: 20px;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       COLOR
+    ========================= */
+
+    .color {
+      padding: 120px 0;
+
+      background: var(--cream-light);
+    }
+
+    .color-layout {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      align-items: end;
+    }
+
+    .palette {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 12px;
+    }
+
+    .swatch {
+      min-height: 170px;
+
+      padding: 18px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      border-radius: 18px;
+    }
+
+    .swatch strong {
+      font-size: 12px;
+    }
+
+    .swatch span {
+      margin-top: 4px;
+
+      font-size: 10px;
+
+      opacity: .65;
+    }
+
+    .deep {
+      background: #581e2a;
+
+      color: #fff;
+    }
+
+    .rose {
+      background: #b76a7a;
+
+      color: #fff;
+    }
+
+    .cream {
+      background: #f4ece4;
+
+      border: 1px solid #ddd4cd;
+    }
+
+
+    /* =========================
+       CHARACTER
+    ========================= */
+
+    .character {
+      padding: 125px 0;
+    }
+
+    .character-grid {
+      display: grid;
+
+      grid-template-columns: .92fr 1.08fr;
+
+      gap: 70px;
+
+      align-items: center;
+    }
+
+    .character-image {
+      overflow: hidden;
+
+      border-radius: 28px;
+
+      background: var(--cream-light);
+    }
+
+    .character-image img {
+      aspect-ratio: 3 / 4;
+
+      object-fit: cover;
+    }
+
+    .character-copy p {
+      max-width: 540px;
+
+      margin-top: 20px;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      color: #666;
+    }
+
+    .character-jp {
+      margin-top: 10px;
+
+      font-size: 15px;
+      font-weight: 600;
+
+      color: var(--wine);
+    }
+
+    .route {
+      margin-top: 38px;
+      padding-top: 28px;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .route-item {
+      display: flex;
+
+      gap: 18px;
+
+      padding: 12px 0;
+    }
+
+    .route-number {
+      width: 27px;
+
+      color: var(--wine);
+
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .route-name {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       COMPANION
+    ========================= */
+
+    .companion {
+      padding: 120px 0;
+
+      background: var(--wine-dark);
+
+      color: #fff;
+    }
+
+    .companion-grid {
+      display: grid;
+
+      grid-template-columns: .85fr 1.15fr;
+
+      gap: 65px;
+
+      align-items: center;
+    }
+
+    .companion-copy p {
+      margin-top: 20px;
+
+      max-width: 490px;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      color: #d9c6ca;
+    }
+
+    .companion-jp {
+      margin-top: 10px;
+      margin-bottom: 22px;
+
+      font-size: 15px;
+      font-weight: 600;
+
+      color: #d8b9bf;
+    }
+
+    .companion-image {
+      overflow: hidden;
+
+      border-radius: 26px;
+    }
+
+
+    /* =========================
+       ELEMENT SYSTEM
+    ========================= */
+
+    .elements {
+      padding: 125px 0;
+
+      background: #fff;
+    }
+
+    .element-grid {
+      margin-top: 50px;
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 18px;
+    }
+
+    .element {
+      padding: 30px;
+
+      min-height: 230px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 20px;
+
+      background: #fff;
+    }
+
+    .element-number {
+      margin-bottom: 55px;
+
+      font-size: 10px;
+
+      color: #aaa;
+    }
+
+    .element h3 {
+      margin-bottom: 10px;
+
+      font-size: 22px;
+    }
+
+    .element p {
+      font-size: 12px;
+
+      line-height: 1.9;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       PRODUCTS
+    ========================= */
+
+    .products {
+      padding: 125px 0;
+
+      background: var(--cream-light);
+    }
+
+    .product-feature {
+      margin-top: 48px;
+
+      display: grid;
+
+      grid-template-columns: 1.1fr .9fr;
+
+      gap: 25px;
+    }
+
+    .product-image {
+      overflow: hidden;
+
+      border-radius: 26px;
+
+      background: #fff;
+    }
+
+    .product-image img {
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    .product-copy {
+      padding: 48px;
+
+      border-radius: 26px;
+
+      background: #fff;
+
+      border: 1px solid var(--line);
+    }
+
+    .product-copy h3 {
+      margin-bottom: 18px;
+
+      font-size: 34px;
+
+      letter-spacing: -.04em;
+    }
+
+    .product-copy p {
+      margin-bottom: 26px;
+
+      font-size: 13px;
+
+      line-height: 2;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       SHOES
+    ========================= */
+
+    .shoes {
+      padding: 125px 0;
+    }
+
+    .shoes-grid {
+      display: grid;
+
+      grid-template-columns: .9fr 1.1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .shoes-image {
+      overflow: hidden;
+
+      border-radius: 26px;
+
+      background: var(--cream-light);
+    }
+
+    .shoes-copy p {
+      max-width: 500px;
+
+      margin-top: 20px;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       STORY
+    ========================= */
+
+    .philosophy {
+      padding: 150px 20px;
+
+      text-align: center;
+
+      background: #111;
+
+      color: #fff;
+    }
+
+    .philosophy-inner {
+      max-width: 780px;
+
+      margin: 0 auto;
+    }
+
+    .philosophy h2 {
+      margin-bottom: 30px;
+
+      font-size: clamp(42px, 6vw, 75px);
+
+      line-height: 1.02;
+
+      letter-spacing: -.06em;
+    }
+
+    .philosophy p {
+      max-width: 560px;
+
+      margin: 0 auto;
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      color: #aaa;
+    }
+
+    .story-slogan {
+      margin-top: 48px;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: .16em;
+
+      color: #777;
+    }
+
+
+    /* =========================
+       WORLD NAV
+    ========================= */
+
+    .world-nav {
+      padding: 110px 0;
+    }
+
+    .world-grid {
+      margin-top: 45px;
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 16px;
+    }
+
+    .world-card {
+      min-height: 190px;
+
+      padding: 28px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      border: 1px solid var(--line);
+
+      border-radius: 20px;
+    }
+
+    .world-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .world-card.active {
+      background: #f5e9eb;
+    }
+
+    .world-card span {
+      font-size: 9px;
+
+      color: #aaa;
+
+      letter-spacing: .12em;
+    }
+
+    .world-card h3 {
+      font-size: 27px;
+    }
+
+    .world-card p {
+      margin-top: 5px;
+
+      font-size: 11px;
+
+      color: #777;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 55px 0 30px;
+
+      background: #111;
+
+      color: #fff;
+    }
+
+    .footer-grid {
+      display: grid;
+
+      grid-template-columns: 2fr 1fr 1fr;
+
+      gap: 60px;
+    }
+
+    .footer-brand h3 {
+      margin-bottom: 12px;
+
+      font-size: 25px;
+    }
+
+    .footer-brand p {
+      max-width: 300px;
+
+      font-size: 12px;
+
+      line-height: 1.8;
+
+      color: #888;
+    }
+
+    .footer-column h4 {
+      margin-bottom: 15px;
+
+      font-size: 10px;
+
+      color: #666;
+    }
+
+    .footer-column a {
+      display: block;
+
+      margin-bottom: 10px;
+
+      font-size: 12px;
+
+      color: #aaa;
+    }
+
+    .footer-column a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      margin-top: 50px;
+      padding-top: 22px;
+
+      display: flex;
+      justify-content: space-between;
+
+      border-top: 1px solid #292929;
+
+      font-size: 10px;
+
+      color: #666;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 980px) {
+
+      nav a:not(.cart) {
+        display: none;
+      }
+
+      .hero-grid,
+      .color-layout,
+      .character-grid,
+      .companion-grid,
+      .product-feature,
+      .shoes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .element-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .world-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+      .container {
+        width: min(calc(100% - 26px), 1180px);
+      }
+
+      .header-inner {
+        min-height: 66px;
+      }
+
+      .hero {
+        padding-top: 24px;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+      }
+
+      .palette {
+        grid-template-columns: 1fr;
+      }
+
+      .element-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .world-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-copy {
+        padding: 30px 24px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+  <div class="container header-inner">
+
+    <a href="index.html" class="logo">
+
+      <span class="logo-main">
+        IROVA
+      </span>
+
+      <span class="logo-sub">
+        Studio
+      </span>
+
+    </a>
+
+
+    <nav>
+
+      <a href="shop.html">
+        SHOP
+      </a>
+
+      <a href="world.html" class="active">
+        WORLD
+      </a>
+
+      <a href="shop.html#goods">
+        GOODS
+      </a>
+
+      <a href="shop.html#fashion">
+        FASHION
+      </a>
+
+      <a href="journal.html">
+        JOURNAL
+      </a>
+
+      <a href="#" class="cart">
+        CART 0
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero">
+
+    <div class="container hero-grid">
+
+
+      <div class="hero-image">
+
+        <img
+          src="img/Wine/wine-collection-board.jpg"
+          alt="IROVA Wine Color World Collection"
+        >
+
+      </div>
+
+
+      <div>
+
+        <div class="eyebrow">
+          COLOR WORLD 04
+        </div>
+
+
+        <h1>
+          Wine
+        </h1>
+
+
+        <div class="hero-sub">
+          静かな熱を、そばに。
+        </div>
+
+
+        <p>
+          深く、やわらかく、
+          少しだけあたたかいWineカラー。
+          <br><br>
+
+          IROVAでは、
+          色からひとりのキャラクターが生まれ、
+          キャラクターから小さな相棒が生まれます。
+          <br><br>
+
+          そしてその世界が、
+          服やバッグ、シューズ、
+          日常の小さなアイテムへ広がっていきます。
+          <br><br>
+
+          Wineは、
+          普通の毎日を少しだけ自分らしくする
+          Color Worldです。
+        </p>
+
+
+        <div class="hero-tags">
+
+          <span>DEEP</span>
+          <span>WARM</span>
+          <span>CALM</span>
+          <span>COZY</span>
+
+        </div>
+
+
+        <a href="#character" class="btn btn-dark">
+          EXPLORE WINE →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       COLOR FIRST
+  ========================= -->
+
+  <section class="color">
+
+    <div class="container color-layout">
+
+
+      <div>
+
+        <div class="section-label">
+          01 / COLOR FIRST
+        </div>
+
+
+        <h2 class="section-title">
+          すべては、<br>
+          色から始まる。
+        </h2>
+
+
+        <p class="section-description">
+          Wine Worldの最初のデザインは、
+          商品でもキャラクターでもありません。
+          <br><br>
+
+          まず、色があります。
+          <br><br>
+
+          深いWineを中心に、
+          やわらかなRoseとCream Whiteを合わせ、
+          世界全体の温度をつくります。
+        </p>
+
+      </div>
+
+
+      <div class="palette">
+
+
+        <div class="swatch deep">
+
+          <strong>
+            DEEP WINE
+          </strong>
+
+          <span>
+          #581E2A
+        </span>
+
+        </div>
+
+
+        <div class="swatch rose">
+
+          <strong>
+            DUSTY ROSE
+          </strong>
+
+          <span>
+          #B76A7A
+        </span>
+
+        </div>
+
+
+        <div class="swatch cream">
+
+          <strong>
+            CREAM WHITE
+          </strong>
+
+          <span>
+          #F4ECE4
+        </span>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       CHARACTER / RUMI
+  ========================= -->
+
+  <section
+    class="character"
+    id="character"
+  >
+
+    <div class="container character-grid">
+
+
+      <div class="character-image">
+
+        <img
+          src="img/Wine/wine-character-outfit.jpg"
+          alt="Rumi — Wine World Character"
+        >
+
+      </div>
+
+
+      <div class="character-copy">
+
+        <div class="section-label">
+          02 / CHARACTER
+        </div>
+
+
+        <h2 class="section-title">
+          Rumi
+        </h2>
+
+
+        <div class="character-jp">
+          ルミ
+        </div>
+
+
+        <p>
+          Wine Worldに暮らす女の子。
+          <br><br>
+
+          静かな時間と、
+          自分だけの小さな楽しみを
+          大切にしています。
+          <br><br>
+
+          少しゆっくりで、
+          自分の好きなものにはとても素直。
+          <br><br>
+
+          カメラを持って歩いたり、
+          音楽を聴いたり、
+          カフェで本を読んだり。
+          <br><br>
+
+          何気ない毎日の中にある
+          小さな瞬間を見つけることが、
+          Rumiの好きなことです。
+        </p>
+
+
+        <div class="route">
+
+
+          <div class="route-item">
+
+            <div class="route-number">
+              01
+            </div>
+
+            <div class="route-name">
+              PHOTOGRAPHY
+            </div>
+
+          </div>
+
+
+          <div class="route-item">
+
+            <div class="route-number">
+              02
+            </div>
+
+            <div class="route-name">
+              MUSIC
+            </div>
+
+          </div>
+
+
+          <div class="route-item">
+
+            <div class="route-number">
+              03
+            </div>
+
+            <div class="route-name">
+              COFFEE & BOOKS
+            </div>
+
+          </div>
+
+
+          <div class="route-item">
+
+            <div class="route-number">
+              04
+            </div>
+
+            <div class="route-name">
+              QUIET NIGHTS
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       COMPANION / KURO
+  ========================= -->
+
+  <section class="companion">
+
+    <div class="container companion-grid">
+
+
+      <div class="companion-copy">
+
+        <div class="section-label">
+          03 / COMPANION
+        </div>
+
+
+        <h2 class="section-title">
+          Kuro
+        </h2>
+
+
+        <div class="companion-jp">
+          クロ
+        </div>
+
+
+        <p>
+          いつもRumiのそばにいる、
+          小さな黒猫。
+          <br><br>
+
+          少し気まぐれで、
+          好きな時に好きな場所へ。
+          <br><br>
+
+          でもRumiがひとりでいる時は、
+          いつの間にか隣に座っています。
+        </p>
+
+
+        <p>
+          Kuroは、
+          Wine Worldの物語と
+          現実の生活をつなぐCompanionです。
+          <br><br>
+
+          マスコット、
+          バッグチャーム、
+          キーホルダー、
+          帽子や服の小さな刺繍へ。
+          <br><br>
+
+          いつでも連れて歩ける、
+          Wine Worldの小さな相棒です。
+        </p>
+
+      </div>
+
+
+      <div class="companion-image">
+
+        <img
+          src="img/Wine/wine-hats-bags.jpg"
+          alt="Kuro — Wine World Companion"
+        >
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       WINE SYSTEM
+  ========================= -->
+
+  <section class="elements">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        04 / WINE SYSTEM
+      </div>
+
+
+      <h2 class="section-title">
+        Color, Character,<br>
+        Companion & Symbol.
+      </h2>
+
+
+      <p class="section-description">
+        Wine Worldは、
+        一つの色だけでつくられているわけではありません。
+        <br><br>
+
+        Color、Character、Companion、
+        そして小さなSymbol。
+        <br><br>
+
+        それぞれの役割を組み合わせることで、
+        一つの世界が生まれます。
+      </p>
+
+
+
+      <div class="element-grid">
+
+
+        <div class="element">
+
+          <div class="element-number">
+            01 / COLOR
+          </div>
+
+          <h3>
+            Wine
+          </h3>
+
+          <p>
+            深く、やわらかく、
+            少しだけあたたかいWineカラー。
+            <br><br>
+
+            この色がすべての始まりです。
+          </p>
+
+        </div>
+
+
+
+        <div class="element">
+
+          <div class="element-number">
+            02 / CHARACTER
+          </div>
+
+          <h3>
+            Rumi
+          </h3>
+
+          <p>
+            Wineという色の空気や感情を
+            一人のキャラクターとして表現します。
+            <br><br>
+
+            RumiがWine Worldの物語を伝えます。
+          </p>
+
+        </div>
+
+
+
+        <div class="element">
+
+          <div class="element-number">
+            03 / COMPANION
+          </div>
+
+          <h3>
+            Kuro
+          </h3>
+
+          <p>
+            Rumiのそばにいる小さな黒猫。
+            <br><br>
+
+            マスコットやチャームとして、
+            Wine Worldを毎日の生活へつなぎます。
+          </p>
+
+        </div>
+
+
+
+        <div class="element">
+
+          <div class="element-number">
+            04 / SYMBOL
+          </div>
+
+          <h3>
+            Cherry
+          </h3>
+
+          <p>
+            Wine Worldを識別するための
+            小さなビジュアルシンボル。
+            <br><br>
+
+            シューズ、ソックス、バッグ、
+            フーディーなどに小さく使用します。
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       HATS & BAGS
+  ========================= -->
+
+  <section class="products">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        05 / PRODUCTS
+      </div>
+
+
+      <h2 class="section-title">
+        世界を、持ち歩く。
+      </h2>
+
+
+      <div class="product-feature">
+
+
+        <div class="product-image">
+
+          <img
+            src="img/Wine/wine-hats-bags.jpg"
+            alt="Wine Hats and Bags"
+          >
+
+        </div>
+
+
+        <div class="product-copy">
+
+          <div class="section-label">
+            HATS & BAGS
+          </div>
+
+
+          <h3>
+            同じ色。<br>
+            違うかたち。
+          </h3>
+
+
+          <p>
+            キャップ、
+            ニット帽、
+            バックパック、
+            トートバッグ、
+            クロスボディバッグ。
+            <br><br>
+
+            商品の種類が変わっても、
+            Wineカラー、
+            Cherry、
+            Kuroという
+            共通した要素を残します。
+            <br><br>
+
+            だから一つの商品ではなく、
+            一つのColor Worldとして
+            つながって見えます。
+          </p>
+
+
+          <a href="shop.html" class="btn btn-dark">
+            SHOP →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       SHOES & ACCESSORIES
+  ========================= -->
+
+  <section class="shoes">
+
+    <div class="container shoes-grid">
+
+
+      <div class="shoes-copy">
+
+        <div class="section-label">
+          06 / DETAILS
+        </div>
+
+
+        <h2 class="section-title">
+          小さなところにも、<br>
+          Wineを。
+        </h2>
+
+
+        <p>
+          スニーカーには小さなCherry。
+          <br><br>
+
+          ソックスには
+          Wine Worldのモチーフ。
+          <br><br>
+
+          キーホルダーには
+          黒猫のKuro。
+          <br><br>
+
+          大きなロゴを使わなくても、
+          色と小さな要素だけで
+          世界観を伝えることができます。
+        </p>
+
+      </div>
+
+
+      <div class="shoes-image">
+
+        <img
+          src="img/Wine/wine-shoes-accessories.jpg"
+          alt="Wine Shoes Socks and Accessories"
+        >
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       STORY
+  ========================= -->
+
+  <section class="philosophy">
+
+    <div class="philosophy-inner">
+
+
+      <div class="section-label">
+        WINE WORLD STORY
+      </div>
+
+
+      <h2>
+        静かな熱を、<br>
+        そばに。
+      </h2>
+
+
+      <p>
+        深いWineカラーに包まれた、
+        静かな街。
+        <br><br>
+
+        Rumiはカメラを持って歩いたり、
+        好きな音楽を聴いたり、
+        カフェでゆっくり本を読んだり。
+        <br><br>
+
+        いつもそばにいるのは、
+        小さな黒猫のKuro。
+        <br><br>
+
+        特別なことがなくても、
+        好きな色と、
+        好きなものがそばにあれば、
+        いつもの一日は
+        少しだけ自分らしくなる。
+        <br><br>
+
+        Wine Worldは、
+        静かな時間の中にある
+        小さな情熱を大切にする世界です。
+      </p>
+
+
+      <div class="story-slogan">
+        COLOR MAKES YOU SPECIAL.
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       COLOR WORLDS
+  ========================= -->
+
+  <section class="world-nav">
+
+    <div class="container">
+
+
+      <div class="section-label">
+        EXPLORE COLOR WORLDS
+      </div>
+
+
+      <h2 class="section-title">
+        今日、どの色へ？
+      </h2>
+
+
+
+      <div class="world-grid">
+
+
+        <a href="olive.html" class="world-card">
+
+        <span>
+          COLOR WORLD 01
+        </span>
+
+          <div>
+
+            <h3>
+              Olive
+            </h3>
+
+            <p>
+              自然と、ゆっくり。
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <a href="canyon.html" class="world-card">
+
+        <span>
+          COLOR WORLD 02
+        </span>
+
+          <div>
+
+            <h3>
+              Canyon
+            </h3>
+
+            <p>
+              夕暮れと、冒険。
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <a href="purple.html" class="world-card">
+
+        <span>
+          COLOR WORLD 03
+        </span>
+
+          <div>
+
+            <h3>
+              Purple
+            </h3>
+
+            <p>
+              夜と、夢。
+            </p>
+
+          </div>
+
+        </a>
+
+
+
+        <a href="wine.html" class="world-card active">
+
+        <span>
+          COLOR WORLD 04
+        </span>
+
+          <div>
+
+            <h3>
+              Wine
+            </h3>
+
+            <p>
+              静かな熱を、そばに。
+            </p>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container">
+
+
+    <div class="footer-grid">
+
+
+      <div class="footer-brand">
+
+        <h3>
+          IROVA Studio
+        </h3>
+
+        <p>
+          Color-driven characters and lifestyle.
+          好きな色から、自分らしい世界へ。
+        </p>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h4>
+          WORLD
+        </h4>
+
+        <a href="world.html">
+          Color World
+        </a>
+
+        <a href="olive.html">
+          Olive
+        </a>
+
+        <a href="canyon.html">
+          Canyon
+        </a>
+
+        <a href="purple.html">
+          Purple
+        </a>
+
+        <a href="wine.html">
+          Wine
+        </a>
+
+      </div>
+
+
+
+      <div class="footer-column">
+
+        <h4>
+          IROVA
+        </h4>
+
+        <a href="shop.html">
+          Shop
+        </a>
+
+        <a href="journal.html">
+          Journal
+        </a>
+
+        <a href="business-ja.html">
+          Business
+        </a>
+
+        <a
+          href="https://www.instagram.com/IROVAStudio/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://x.com/IROVAStudio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          X
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 IROVA Studio
+      </span>
+
+      <span>
+        Color Makes You Special.
+      </span>
+
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
