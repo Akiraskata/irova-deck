@@ -1,25 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>IROVA Studio — Business & Investor</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <!-- =========================
+       SEO
+  ========================= -->
+
+  <title>About IROVA | IROVA Studio</title>
 
   <meta
     name="description"
-    content="IROVA Studio — Business, partnership and investment opportunities."
+    content="Discover IROVA Studio — a color-driven character and lifestyle brand creating original Color Worlds through characters, companions, stories and everyday products."
   >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.irovastudio.com/business.html"
+  >
+
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================= -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:site_name"
+    content="IROVA Studio"
+  >
+
+  <meta
+    property="og:title"
+    content="About IROVA | IROVA Studio"
+  >
+
+  <meta
+    property="og:description"
+    content="A color can become a character, a story, a product — and eventually, a world."
+  >
+
+  <meta
+    property="og:url"
+    content="https://www.irovastudio.com/business.html"
+  >
+
+
+  <!-- =========================
+       X
+  ========================= -->
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="About IROVA | IROVA Studio"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Building worlds through color."
+  >
+
+
+  <!-- =========================
+       FONT
+  ========================= -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
 
+
   <style>
+
+    /* =========================
+       RESET
+    ========================= */
 
     * {
       margin: 0;
@@ -32,679 +120,1756 @@
     }
 
     body {
-      font-family: "Plus Jakarta Sans", sans-serif;
+
+      font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
       background: #ffffff;
       color: #111111;
+
       -webkit-font-smoothing: antialiased;
+
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    ::selection {
+      background: #111;
+      color: #fff;
+    }
+
+
+    /* =========================
+       VARIABLES
+    ========================= */
+
+    :root {
+
+      --black: #111111;
+
+      --text: #252525;
+
+      --muted: #747474;
+
+      --line: #e8e8e5;
+
+      --soft: #f7f7f5;
+
+      --olive: #78835d;
+
+      --canyon: #c87346;
+
+      --purple: #77679a;
+
+      --wine: #722d39;
+
+      --max: 1240px;
+
+    }
+
+
+    /* =========================
+       COMMON
+    ========================= */
+
+    .container {
+
+      width:
+        min(calc(100% - 48px), var(--max));
+
+      margin:
+        0 auto;
+
+    }
+
+    .section {
+
+      padding:
+        140px 0;
+
+    }
+
+    .section-soft {
+
+      background:
+        var(--soft);
+
+    }
+
+    .label {
+
+      display:
+        inline-block;
+
+      margin-bottom:
+        24px;
+
+      font-size:
+        11px;
+
+      font-weight:
+        700;
+
+      letter-spacing:
+        0.18em;
+
+      text-transform:
+        uppercase;
+
+      color:
+        #8a8a8a;
+
+    }
+
+    .section-title {
+
+      max-width:
+        900px;
+
+      font-size:
+        clamp(42px, 6vw, 76px);
+
+      line-height:
+        1.02;
+
+      letter-spacing:
+        -0.06em;
+
+      font-weight:
+        700;
+
+    }
+
+    .section-copy {
+
+      max-width:
+        680px;
+
+      margin-top:
+        30px;
+
+      font-size:
+        16px;
+
+      line-height:
+        1.9;
+
+      color:
+        #666;
+
+    }
+
 
     /* =========================
        HEADER
     ========================= */
 
     header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      position:
+        fixed;
 
-      padding: 24px 40px;
+      top:
+        0;
 
-      background: rgba(255, 255, 255, 0.82);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
+      left:
+        0;
 
-      border-bottom: 1px solid rgba(0,0,0,0.06);
+      width:
+        100%;
+
+      z-index:
+        100;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        space-between;
+
+      padding:
+        24px 40px;
+
+      background:
+        rgba(255, 255, 255, 0.88);
+
+      backdrop-filter:
+        blur(18px);
+
+      -webkit-backdrop-filter:
+        blur(18px);
+
+      border-bottom:
+        1px solid rgba(0,0,0,0.06);
+
     }
 
-    .logo {
-      display: flex;
-      align-items: baseline;
-      gap: 7px;
 
-      letter-spacing: -0.05em;
+    /* =========================
+       LOGO
+    ========================= */
+
+    .logo {
+
+      display:
+        flex;
+
+      align-items:
+        baseline;
+
+      gap:
+        7px;
+
+      letter-spacing:
+        -0.05em;
+
     }
 
     .logo-main {
-      font-size: 24px;
-      font-weight: 800;
+
+      font-size:
+        24px;
+
+      font-weight:
+        800;
+
     }
 
     .logo-studio {
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: -0.03em;
+
+      font-size:
+        18px;
+
+      font-weight:
+        500;
+
+      letter-spacing:
+        -0.03em;
+
     }
+
 
     /* =========================
        NAV
     ========================= */
 
     nav {
-      display: flex;
-      align-items: center;
-      gap: 28px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        28px;
+
     }
 
-    nav a {
-      font-size: 13px;
-      font-weight: 600;
-      color: #555;
+    nav > a,
+    .language a {
 
-      transition: color 0.2s ease;
+      font-size:
+        13px;
+
+      font-weight:
+        600;
+
+      color:
+        #555;
+
+      transition:
+        color 0.2s ease;
+
     }
 
-    nav a:hover {
-      color: #000;
+    nav > a:hover,
+    .language a:hover {
+
+      color:
+        #000;
+
     }
 
-    nav a.active {
-      color: #111;
+    nav > a.active {
+
+      color:
+        #111;
+
     }
 
     .language {
-      display: flex;
-      align-items: center;
-      gap: 10px;
 
-      padding-left: 18px;
-      border-left: 1px solid #ddd;
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        10px;
+
+      padding-left:
+        18px;
+
+      border-left:
+        1px solid #ddd;
+
     }
 
     .language a {
-      color: #777;
+
+      color:
+        #888;
+
     }
 
     .language a.active {
-      color: #111;
-      font-weight: 700;
+
+      color:
+        #111;
+
+      font-weight:
+        700;
+
     }
+
 
     /* =========================
        HERO
     ========================= */
 
     .hero {
-      padding: 190px 24px 130px;
 
-      text-align: center;
+      min-height:
+        100vh;
+
+      display:
+        flex;
+
+      align-items:
+        flex-end;
+
+      padding:
+        180px 0 110px;
+
+      overflow:
+        hidden;
 
       background:
+
         radial-gradient(
-          circle at 50% 0%,
-          #f4f4f0 0%,
-          #ffffff 55%
-        );
+          circle at 85% 20%,
+          rgba(114,45,57,0.08),
+          transparent 27%
+        ),
+
+        radial-gradient(
+          circle at 12% 80%,
+          rgba(120,131,93,0.10),
+          transparent 30%
+        ),
+
+        #fff;
+
     }
 
-    .eyebrow {
-      margin-bottom: 22px;
+    .hero-grid {
 
-      font-size: 11px;
-      font-weight: 700;
+      display:
+        grid;
 
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+      grid-template-columns:
+        1.4fr 0.6fr;
 
-      color: #888;
+      gap:
+        90px;
+
+      align-items:
+        end;
+
     }
 
     .hero h1 {
-      max-width: 1000px;
-      margin: 0 auto 28px;
 
-      font-size: clamp(48px, 8vw, 92px);
+      max-width:
+        1000px;
 
-      line-height: 0.98;
-      letter-spacing: -0.065em;
+      font-size:
+        clamp(64px, 9vw, 132px);
 
-      font-weight: 800;
+      line-height:
+        0.88;
+
+      letter-spacing:
+        -0.075em;
+
+      font-weight:
+        700;
+
     }
 
-    .hero-description {
-      max-width: 650px;
-      margin: 0 auto;
+    .hero h1 span {
 
-      font-size: 16px;
-      line-height: 1.8;
+      display:
+        block;
 
-      color: #666;
+      color:
+        #909090;
+
+      font-weight:
+        500;
+
     }
+
+    .hero-side {
+
+      padding-bottom:
+        8px;
+
+    }
+
+    .hero-side p {
+
+      margin-bottom:
+        34px;
+
+      font-size:
+        16px;
+
+      line-height:
+        1.9;
+
+      color:
+        #5f5f5f;
+
+    }
+
+    .text-link {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        12px;
+
+      padding-bottom:
+        5px;
+
+      border-bottom:
+        1px solid #111;
+
+      font-size:
+        13px;
+
+      font-weight:
+        600;
+
+    }
+
 
     /* =========================
-       INTRO
+       MANIFESTO
     ========================= */
 
-    .intro {
-      padding: 120px 24px;
+    .manifesto-grid {
 
-      background: #fff;
+      display:
+        grid;
+
+      grid-template-columns:
+        0.6fr 1.4fr;
+
+      gap:
+        100px;
+
     }
 
-    .intro-inner {
-      max-width: 1100px;
-      margin: auto;
+    .manifesto-number {
 
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      font-size:
+        12px;
 
-      gap: 80px;
+      color:
+        #aaa;
 
-      align-items: center;
+      letter-spacing:
+        0.14em;
+
     }
 
-    .section-label {
-      margin-bottom: 18px;
+    .manifesto-content h2 {
 
-      font-size: 11px;
-      font-weight: 700;
+      max-width:
+        900px;
 
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+      margin-bottom:
+        42px;
 
-      color: #888;
+      font-size:
+        clamp(44px, 6vw, 80px);
+
+      line-height:
+        1.03;
+
+      letter-spacing:
+        -0.06em;
+
     }
 
-    .intro h2 {
-      font-size: clamp(36px, 5vw, 60px);
+    .manifesto-content p {
 
-      line-height: 1;
-      letter-spacing: -0.055em;
+      max-width:
+        740px;
 
-      margin-bottom: 24px;
+      margin-bottom:
+        22px;
+
+      font-size:
+        17px;
+
+      line-height:
+        1.95;
+
+      color:
+        #626262;
+
     }
 
-    .intro p {
-      max-width: 520px;
-
-      font-size: 15px;
-      line-height: 1.9;
-
-      color: #666;
-    }
-
-    .intro-image {
-      overflow: hidden;
-
-      border-radius: 26px;
-
-      background: #f5f5f5;
-
-      box-shadow:
-        0 25px 70px rgba(0,0,0,0.08);
-    }
-
-    .intro-image img {
-      display: block;
-
-      width: 100%;
-      height: auto;
-    }
 
     /* =========================
-       BUSINESS MODEL
+       WHY COLOR
     ========================= */
 
-    .model {
-      padding: 130px 24px;
+    .why-grid {
 
-      background: #f7f7f5;
+      margin-top:
+        80px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      border-top:
+        1px solid #dcdcd8;
+
+      border-left:
+        1px solid #dcdcd8;
+
     }
 
-    .model-header {
-      max-width: 700px;
+    .why-card {
 
-      margin: 0 auto 70px;
+      min-height:
+        330px;
 
-      text-align: center;
+      padding:
+        38px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      background:
+        #fff;
+
+      border-right:
+        1px solid #dcdcd8;
+
+      border-bottom:
+        1px solid #dcdcd8;
+
     }
 
-    .model-header h2 {
-      font-size: clamp(38px, 5vw, 64px);
+    .why-index {
 
-      line-height: 1;
+      font-size:
+        11px;
 
-      letter-spacing: -0.055em;
+      color:
+        #aaa;
 
-      margin-bottom: 22px;
+      letter-spacing:
+        0.12em;
+
     }
 
-    .model-header p {
-      color: #666;
+    .why-card h3 {
 
-      font-size: 15px;
-      line-height: 1.8;
+      margin-bottom:
+        12px;
+
+      font-size:
+        25px;
+
+      letter-spacing:
+        -0.035em;
+
     }
 
-    .model-grid {
-      max-width: 1100px;
+    .why-card p {
 
-      margin: auto;
+      font-size:
+        13px;
 
-      display: grid;
+      line-height:
+        1.8;
 
-      grid-template-columns: repeat(3, 1fr);
+      color:
+        #777;
 
-      gap: 18px;
     }
 
-    .model-card {
-      padding: 34px;
 
-      min-height: 250px;
+    /* =========================
+       SYSTEM
+    ========================= */
 
-      background: #fff;
+    .system-flow {
 
-      border: 1px solid #e8e8e5;
+      margin-top:
+        80px;
 
-      border-radius: 22px;
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(6, 1fr);
+
+      border-top:
+        1px solid #d9d9d6;
+
+      border-bottom:
+        1px solid #d9d9d6;
+
     }
 
-    .number {
-      font-size: 12px;
-      font-weight: 700;
+    .system-item {
 
-      color: #aaa;
+      position:
+        relative;
 
-      letter-spacing: 0.1em;
+      padding:
+        40px 14px;
+
+      text-align:
+        center;
+
+      border-right:
+        1px solid #dededb;
+
     }
 
-    .model-card h3 {
-      margin: 35px 0 14px;
+    .system-item:last-child {
 
-      font-size: 22px;
+      border-right:
+        none;
 
-      letter-spacing: -0.03em;
     }
 
-    .model-card p {
-      color: #666;
+    .system-item::after {
 
-      font-size: 13px;
+      content:
+        "→";
 
-      line-height: 1.8;
+      position:
+        absolute;
+
+      right:
+        -10px;
+
+      top:
+        50%;
+
+      width:
+        20px;
+
+      transform:
+        translateY(-50%);
+
+      background:
+        var(--soft);
+
+      color:
+        #999;
+
     }
+
+    .system-item:last-child::after {
+
+      display:
+        none;
+
+    }
+
+    .system-item strong {
+
+      display:
+        block;
+
+      margin-bottom:
+        8px;
+
+      font-size:
+        14px;
+
+    }
+
+    .system-item span {
+
+      font-size:
+        10px;
+
+      color:
+        #999;
+
+      text-transform:
+        uppercase;
+
+      letter-spacing:
+        0.08em;
+
+    }
+
 
     /* =========================
        COLOR WORLDS
     ========================= */
 
-    .worlds {
-      padding: 140px 24px;
+    .world-intro {
 
-      background: #fff;
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 0.65fr;
+
+      gap:
+        100px;
+
+      align-items:
+        end;
+
+      margin-bottom:
+        70px;
+
     }
 
-    .worlds-header {
-      max-width: 650px;
+    .world-intro p {
 
-      margin: 0 auto 70px;
+      font-size:
+        15px;
 
-      text-align: center;
+      line-height:
+        1.9;
+
+      color:
+        #666;
+
     }
 
-    .worlds-header h2 {
-      font-size: clamp(38px, 5vw, 64px);
+    .world-grid {
 
-      line-height: 1;
+      display:
+        grid;
 
-      letter-spacing: -0.055em;
+      grid-template-columns:
+        repeat(4, 1fr);
 
-      margin-bottom: 22px;
-    }
+      gap:
+        16px;
 
-    .worlds-header p {
-      color: #666;
-
-      font-size: 15px;
-
-      line-height: 1.8;
-    }
-
-    .worlds-grid {
-      max-width: 1100px;
-
-      margin: auto;
-
-      display: grid;
-
-      grid-template-columns: repeat(3, 1fr);
-
-      gap: 20px;
     }
 
     .world-card {
-      overflow: hidden;
 
-      border-radius: 24px;
+      min-height:
+        440px;
 
-      background: #f6f6f4;
+      padding:
+        32px;
 
-      border: 1px solid #eee;
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      color:
+        #fff;
+
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
     }
 
-    .world-card img {
-      width: 100%;
+    .world-card:hover {
 
-      display: block;
+      transform:
+        translateY(-5px);
+
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.12);
+
     }
 
-    .world-content {
-      padding: 28px;
+    .world-card.olive {
+
+      background:
+        var(--olive);
+
     }
 
-    .world-content h3 {
-      font-size: 23px;
+    .world-card.canyon {
 
-      margin-bottom: 8px;
+      background:
+        var(--canyon);
+
     }
 
-    .world-content p {
-      color: #666;
+    .world-card.purple {
 
-      font-size: 13px;
+      background:
+        var(--purple);
 
-      line-height: 1.7;
     }
+
+    .world-card.wine {
+
+      background:
+        var(--wine);
+
+    }
+
+    .world-number {
+
+      font-size:
+        11px;
+
+      letter-spacing:
+        0.12em;
+
+      opacity:
+        0.7;
+
+    }
+
+    .world-card h3 {
+
+      margin-bottom:
+        12px;
+
+      font-size:
+        34px;
+
+      letter-spacing:
+        -0.05em;
+
+    }
+
+    .world-card p {
+
+      font-size:
+        13px;
+
+      line-height:
+        1.8;
+
+      opacity:
+        0.82;
+
+    }
+
 
     /* =========================
-       PRODUCT SYSTEM
+       WINE EXAMPLE
     ========================= */
 
-    .products {
-      padding: 130px 24px;
+    .example {
 
-      background: #f7f7f5;
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        70px;
+
+      align-items:
+        center;
+
     }
 
-    .products-inner {
-      max-width: 1100px;
+    .example-image {
 
-      margin: auto;
+      overflow:
+        hidden;
+
+      background:
+        #ece7e4;
+
     }
 
-    .products-header {
-      max-width: 650px;
+    .example-image img {
 
-      margin-bottom: 60px;
+      aspect-ratio:
+        4 / 5;
+
+      object-fit:
+        cover;
+
     }
 
-    .products-header h2 {
-      font-size: clamp(38px, 5vw, 64px);
+    .example-copy h2 {
 
-      line-height: 1;
+      margin-bottom:
+        28px;
 
-      letter-spacing: -0.055em;
+      font-size:
+        clamp(44px, 6vw, 76px);
 
-      margin-bottom: 22px;
+      line-height:
+        1;
+
+      letter-spacing:
+        -0.06em;
+
     }
 
-    .products-header p {
-      color: #666;
+    .example-copy > p {
 
-      font-size: 15px;
+      max-width:
+        560px;
 
-      line-height: 1.8;
+      margin-bottom:
+        35px;
+
+      font-size:
+        15px;
+
+      line-height:
+        1.9;
+
+      color:
+        #666;
+
     }
 
-    .product-levels {
-      display: grid;
+    .example-list {
 
-      grid-template-columns: repeat(5, 1fr);
+      border-top:
+        1px solid #ddd;
 
-      gap: 10px;
     }
 
-    .product-level {
-      padding: 24px 18px;
+    .example-row {
 
-      min-height: 210px;
+      display:
+        grid;
 
-      background: #fff;
+      grid-template-columns:
+        130px 1fr;
 
-      border: 1px solid #e7e7e4;
+      gap:
+        25px;
 
-      border-radius: 18px;
+      padding:
+        18px 0;
+
+      border-bottom:
+        1px solid #ddd;
+
+      font-size:
+        13px;
+
     }
 
-    .product-level span {
-      font-size: 10px;
+    .example-row span {
 
-      font-weight: 700;
+      color:
+        #999;
 
-      color: #999;
-
-      letter-spacing: 0.1em;
     }
 
-    .product-level h3 {
-      margin: 25px 0 12px;
+    .example-row strong {
 
-      font-size: 17px;
+      font-weight:
+        600;
+
     }
 
-    .product-level p {
-      font-size: 11px;
 
-      line-height: 1.7;
+    /* =========================
+       WHAT WE CREATE
+    ========================= */
 
-      color: #666;
+    .create-grid {
+
+      margin-top:
+        80px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      border-top:
+        1px solid #ddd;
+
+      border-left:
+        1px solid #ddd;
+
     }
+
+    .create-card {
+
+      min-height:
+        280px;
+
+      padding:
+        34px;
+
+      background:
+        #fff;
+
+      border-right:
+        1px solid #ddd;
+
+      border-bottom:
+        1px solid #ddd;
+
+    }
+
+    .create-index {
+
+      display:
+        block;
+
+      margin-bottom:
+        55px;
+
+      font-size:
+        10px;
+
+      color:
+        #aaa;
+
+      letter-spacing:
+        0.12em;
+
+    }
+
+    .create-card h3 {
+
+      margin-bottom:
+        13px;
+
+      font-size:
+        20px;
+
+      letter-spacing:
+        -0.03em;
+
+    }
+
+    .create-card p {
+
+      font-size:
+        12px;
+
+      line-height:
+        1.8;
+
+      color:
+        #777;
+
+    }
+
+
+    /* =========================
+       VISION
+    ========================= */
+
+    .vision {
+
+      padding:
+        170px 0;
+
+      background:
+        #111;
+
+      color:
+        #fff;
+
+    }
+
+    .vision-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        0.65fr 1.35fr;
+
+      gap:
+        100px;
+
+    }
+
+    .vision .label {
+
+      color:
+        #777;
+
+    }
+
+    .vision h2 {
+
+      max-width:
+        920px;
+
+      margin-bottom:
+        38px;
+
+      font-size:
+        clamp(52px, 7vw, 96px);
+
+      line-height:
+        0.98;
+
+      letter-spacing:
+        -0.065em;
+
+    }
+
+    .vision p {
+
+      max-width:
+        680px;
+
+      font-size:
+        16px;
+
+      line-height:
+        1.9;
+
+      color:
+        #aaa;
+
+    }
+
 
     /* =========================
        PARTNERSHIP
     ========================= */
 
-    .partner {
-      padding: 150px 24px;
+    .partner-heading {
 
-      background: #111;
+      display:
+        grid;
 
-      color: white;
+      grid-template-columns:
+        1fr 0.7fr;
 
-      text-align: center;
+      gap:
+        100px;
+
+      align-items:
+        end;
+
+      margin-bottom:
+        70px;
+
     }
 
-    .partner-inner {
-      max-width: 800px;
+    .partner-heading p {
 
-      margin: auto;
+      font-size:
+        15px;
+
+      line-height:
+        1.9;
+
+      color:
+        #666;
+
     }
 
-    .partner .section-label {
-      color: #888;
+    .partner-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        16px;
+
     }
 
-    .partner h2 {
-      font-size: clamp(42px, 6vw, 72px);
+    .partner-card {
 
-      line-height: 1;
+      min-height:
+        270px;
 
-      letter-spacing: -0.06em;
+      padding:
+        34px;
 
-      margin-bottom: 26px;
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      border:
+        1px solid #ddd;
+
     }
 
-    .partner p {
-      max-width: 600px;
+    .partner-card span {
 
-      margin: 0 auto 45px;
+      font-size:
+        10px;
 
-      color: #aaa;
+      color:
+        #aaa;
 
-      font-size: 15px;
+      letter-spacing:
+        0.12em;
 
-      line-height: 1.8;
     }
 
-    .partner-buttons {
-      display: flex;
+    .partner-card h3 {
 
-      justify-content: center;
+      margin-bottom:
+        10px;
 
-      gap: 12px;
+      font-size:
+        20px;
 
-      flex-wrap: wrap;
     }
 
-    .button-primary,
-    .button-secondary {
-      padding: 15px 28px;
+    .partner-card p {
 
-      border-radius: 999px;
+      font-size:
+        12px;
 
-      font-size: 13px;
+      line-height:
+        1.8;
 
-      font-weight: 700;
+      color:
+        #777;
+
     }
 
-    .button-primary {
-      background: white;
-
-      color: #111;
-    }
-
-    .button-secondary {
-      border: 1px solid #444;
-
-      color: white;
-    }
 
     /* =========================
-       CONTACT
+       CONTACT CTA
     ========================= */
 
     .contact {
-      padding: 100px 24px;
 
-      text-align: center;
+      padding:
+        150px 0;
 
-      background: #fff;
+      background:
+        #f2f1ed;
+
     }
 
-    .contact p {
-      margin-bottom: 18px;
+    .contact-grid {
 
-      color: #888;
+      display:
+        grid;
 
-      font-size: 13px;
+      grid-template-columns:
+        1.3fr 0.7fr;
+
+      gap:
+        100px;
+
+      align-items:
+        end;
+
     }
 
-    .email {
-      font-size: clamp(20px, 4vw, 34px);
+    .contact h2 {
 
-      font-weight: 700;
+      max-width:
+        850px;
 
-      letter-spacing: -0.04em;
+      font-size:
+        clamp(52px, 7vw, 100px);
 
-      border-bottom: 1px solid #111;
+      line-height:
+        0.95;
 
-      padding-bottom: 6px;
+      letter-spacing:
+        -0.065em;
+
     }
+
+    .contact h2 span {
+
+      display:
+        block;
+
+      color:
+        #929292;
+
+    }
+
+    .contact-side p {
+
+      margin-bottom:
+        30px;
+
+      font-size:
+        14px;
+
+      line-height:
+        1.8;
+
+      color:
+        #666;
+
+    }
+
+    .contact-button {
+
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      gap:
+        12px;
+
+      padding:
+        15px 23px;
+
+      background:
+        #111;
+
+      color:
+        #fff;
+
+      font-size:
+        12px;
+
+      font-weight:
+        700;
+
+      transition:
+        transform 0.2s ease;
+
+    }
+
+    .contact-button:hover {
+
+      transform:
+        translateY(-2px);
+
+    }
+
 
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      padding: 40px 24px;
 
-      display: flex;
+      padding:
+        40px;
 
-      justify-content: space-between;
+      display:
+        flex;
 
-      align-items: center;
+      align-items:
+        center;
 
-      border-top: 1px solid #eee;
+      justify-content:
+        space-between;
 
-      font-size: 11px;
+      gap:
+        30px;
 
-      color: #999;
+      border-top:
+        1px solid #e8e8e8;
+
+      font-size:
+        11px;
+
+      color:
+        #999;
+
     }
 
     .footer-links {
-      display: flex;
 
-      gap: 20px;
+      display:
+        flex;
+
+      gap:
+        22px;
+
+      align-items:
+        center;
+
     }
+
+    .footer-links a:hover {
+
+      color:
+        #111;
+
+    }
+
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 1000px) {
+
+      .hero-grid,
+      .manifesto-grid,
+      .world-intro,
+      .example,
+      .vision-grid,
+      .partner-heading,
+      .contact-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+      .world-grid,
+      .create-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+      .system-flow {
+
+        grid-template-columns:
+          repeat(3, 1fr);
+
+      }
+
+      .system-item:nth-child(3) {
+
+        border-right:
+          none;
+
+      }
+
+      .system-item:nth-child(3)::after {
+
+        display:
+          none;
+
+      }
+
+      .partner-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+      nav > a {
+
+        display:
+          none;
+
+      }
+
+    }
+
 
     /* =========================
        MOBILE
     ========================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 640px) {
+
+      .container {
+
+        width:
+          min(calc(100% - 32px), var(--max));
+
+      }
+
+      .section {
+
+        padding:
+          90px 0;
+
+      }
 
       header {
-        padding: 20px;
+
+        padding:
+          19px 18px;
+
       }
 
       .logo-main {
-        font-size: 21px;
+
+        font-size:
+          20px;
+
       }
 
       .logo-studio {
-        font-size: 15px;
+
+        font-size:
+          15px;
+
       }
 
       nav {
-        gap: 14px;
-      }
 
-      nav > a {
-        display: none;
+        gap:
+          12px;
+
       }
 
       .language {
-        padding-left: 0;
 
-        border-left: none;
+        gap:
+          7px;
+
+        padding-left:
+          0;
+
+        border-left:
+          none;
+
+      }
+
+      .language a {
+
+        font-size:
+          11px;
+
       }
 
       .hero {
-        padding-top: 150px;
+
+        min-height:
+          auto;
+
+        padding:
+          150px 0 90px;
+
       }
 
-      .intro-inner {
-        grid-template-columns: 1fr;
+      .hero-grid {
 
-        gap: 50px;
+        gap:
+          50px;
+
       }
 
-      .model-grid {
-        grid-template-columns: 1fr;
+      .hero h1 {
+
+        font-size:
+          clamp(60px, 18vw, 86px);
+
       }
 
-      .worlds-grid {
-        grid-template-columns: 1fr;
+      .manifesto-grid {
+
+        gap:
+          35px;
+
       }
 
-      .product-levels {
-        grid-template-columns: 1fr;
+      .manifesto-content p {
+
+        font-size:
+          15px;
+
       }
 
-      .product-level {
-        min-height: auto;
+      .why-grid,
+      .world-grid,
+      .create-grid,
+      .partner-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+      .why-card {
+
+        min-height:
+          250px;
+
+      }
+
+      .world-card {
+
+        min-height:
+          330px;
+
+      }
+
+      .system-flow {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+      .system-item {
+
+        border-right:
+          none;
+
+        border-bottom:
+          1px solid #ddd;
+
+      }
+
+      .system-item:last-child {
+
+        border-bottom:
+          none;
+
+      }
+
+      .system-item::after {
+
+        content:
+          "↓";
+
+        right:
+          50%;
+
+        top:
+          auto;
+
+        bottom:
+          -11px;
+
+        transform:
+          translateX(50%);
+
+      }
+
+      .system-item:nth-child(3)::after {
+
+        display:
+          block;
+
+      }
+
+      .example {
+
+        gap:
+          45px;
+
+      }
+
+      .example-row {
+
+        grid-template-columns:
+          100px 1fr;
+
+      }
+
+      .vision {
+
+        padding:
+          110px 0;
+
+      }
+
+      .vision-grid {
+
+        gap:
+          35px;
+
+      }
+
+      .contact {
+
+        padding:
+          100px 0;
+
+      }
+
+      .contact-grid {
+
+        gap:
+          50px;
+
       }
 
       footer {
-        flex-direction: column;
 
-        gap: 20px;
+        padding:
+          32px 20px;
+
+        flex-direction:
+          column;
+
+        align-items:
+          flex-start;
+
+      }
+
+      .footer-links {
+
+        flex-wrap:
+          wrap;
+
       }
 
     }
 
   </style>
+
 </head>
 
 
@@ -720,7 +1885,7 @@
   <a
     href="index.html"
     class="logo"
-    aria-label="IROVA Studio"
+    aria-label="IROVA Studio Home"
   >
 
     <span class="logo-main">
@@ -740,21 +1905,36 @@
       Shop
     </a>
 
-    <a href="business.html" class="active">
-      Business
+    <a href="world.html">
+      Worlds
     </a>
+
+    <a href="journal.html">
+      Journal
+    </a>
+
+    <a
+      href="business.html"
+      class="active"
+    >
+      About
+    </a>
+
 
     <div class="language">
 
-      <a href="index.html">
+      <a
+        href="business.html"
+        class="active"
+      >
         EN
       </a>
 
-      <a href="ja.html">
+      <a href="business-ja.html">
         日本語
       </a>
 
-      <a href="zh.html">
+      <a href="business-zh.html">
         中文
       </a>
 
@@ -765,432 +1945,1003 @@
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
 
 <main>
 
-  <section class="hero">
-
-    <div class="eyebrow">
-      IROVA Studio — Business
-    </div>
-
-    <h1>
-      Building worlds<br>
-      around color.
-    </h1>
-
-    <p class="hero-description">
-      IROVA Studio is building a new character and lifestyle
-      ecosystem where color connects digital devices,
-      fashion, everyday objects and original characters.
-    </p>
-
-  </section>
-
 
   <!-- =========================
-       INTRO
+       HERO
   ========================= -->
 
-  <section class="intro">
+  <section class="hero">
 
-    <div class="intro-inner">
+    <div class="container hero-grid">
+
 
       <div>
 
-        <div class="section-label">
-          The Concept
+        <div class="label">
+          ABOUT IROVA
         </div>
 
-        <h2>
-          Color is<br>
-          the starting point.
-        </h2>
+        <h1>
+          A color can
+          <span>become a world.</span>
+        </h1>
+
+      </div>
+
+
+      <div class="hero-side">
 
         <p>
-          People already choose the colors they live with.
-          IROVA turns those colors into characters,
-          products and worlds that can become part of
-          everyday life.
+          IROVA Studio is a color-driven character and
+          lifestyle brand. We turn everyday color preferences
+          into original characters, companions, stories and
+          products — building a world around every color.
         </p>
 
-      </div>
-
-
-      <div class="intro-image">
-
-        <img
-          src="img/355.png"
-          alt="IROVA Studio Color Ecosystem"
+        <a
+          href="#what-we-do"
+          class="text-link"
         >
+          Discover IROVA
+          <span>↓</span>
+        </a>
 
       </div>
+
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
-       BUSINESS MODEL
+       WHO WE ARE
   ========================= -->
 
-  <section class="model">
+  <section
+    class="section"
+    id="what-we-do"
+  >
 
-    <div class="model-header">
+    <div class="container manifesto-grid">
 
-      <div class="section-label">
-        Business Model
+
+      <div class="manifesto-number">
+        01 / WHO WE ARE
       </div>
 
-      <h2>
-        From color<br>
-        to ecosystem.
-      </h2>
 
-      <p>
-        IROVA connects original characters with
-        physical products, creating multiple entry
-        points and long-term product relationships.
-      </p>
+      <div class="manifesto-content">
+
+        <h2>
+          We don't begin
+          with a product.
+          We begin with a color.
+        </h2>
+
+        <p>
+          Color is already part of the way people choose
+          what they wear, carry and use every day.
+        </p>
+
+        <p>
+          IROVA takes that familiar choice and gives it
+          a world of its own — with an original character,
+          a companion, a visual language, a story and
+          products designed to live together.
+        </p>
+
+        <p>
+          The result is more than a collection of
+          color-matched objects. It is a lifestyle built
+          around a color people already feel connected to.
+        </p>
+
+      </div>
+
 
     </div>
 
+  </section>
 
-    <div class="model-grid">
 
-      <div class="model-card">
 
-        <div class="number">
-          01
-        </div>
+  <!-- =========================
+       WHY COLOR
+  ========================= -->
 
-        <h3>
-          Color
-        </h3>
+  <section class="section section-soft">
 
-        <p>
-          A familiar color becomes the visual anchor
-          for the entire product experience.
-        </p>
+    <div class="container">
 
+      <div class="label">
+        02 / WHY COLOR
       </div>
 
+      <h2 class="section-title">
+        Color is personal
+        before it becomes a product.
+      </h2>
 
-      <div class="model-card">
-
-        <div class="number">
-          02
-        </div>
-
-        <h3>
-          Character
-        </h3>
-
-        <p>
-          Each color world is represented by original
-          characters with their own identity and story.
-        </p>
-
-      </div>
+      <p class="section-copy">
+        People already express preference through color.
+        IROVA connects those individual choices into something
+        larger: identity, emotion, character and everyday life.
+      </p>
 
 
-      <div class="model-card">
+      <div class="why-grid">
 
-        <div class="number">
-          03
-        </div>
 
-        <h3>
-          Lifestyle
-        </h3>
+        <article class="why-card">
 
-        <p>
-          Characters and colors extend into accessories,
-          fashion, bags, collectibles and everyday goods.
-        </p>
+          <span class="why-index">
+            01
+          </span>
+
+          <div>
+
+            <h3>
+              Familiar
+            </h3>
+
+            <p>
+              Color is one of the most immediate choices
+              people make across devices, fashion,
+              accessories and personal spaces.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="why-card">
+
+          <span class="why-index">
+            02
+          </span>
+
+          <div>
+
+            <h3>
+              Emotional
+            </h3>
+
+            <p>
+              A color can carry a mood, a memory,
+              a personality or a way of seeing the world.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="why-card">
+
+          <span class="why-index">
+            03
+          </span>
+
+          <div>
+
+            <h3>
+              Expandable
+            </h3>
+
+            <p>
+              One color can move naturally from a small
+              accessory into fashion, characters,
+              stories and an entire lifestyle system.
+            </p>
+
+          </div>
+
+        </article>
+
 
       </div>
 
     </div>
 
   </section>
+
+
+
+  <!-- =========================
+       HOW IROVA WORKS
+  ========================= -->
+
+  <section class="section">
+
+    <div class="container">
+
+      <div class="label">
+        03 / HOW IROVA WORKS
+      </div>
+
+      <h2 class="section-title">
+        From color
+        to everyday life.
+      </h2>
+
+      <p class="section-copy">
+        Every IROVA Color World follows a shared creative
+        framework while keeping its own personality,
+        atmosphere and visual identity.
+      </p>
+
+
+      <div class="system-flow">
+
+
+        <div class="system-item">
+
+          <strong>
+            Color
+          </strong>
+
+          <span>
+            Starting Point
+          </span>
+
+        </div>
+
+
+        <div class="system-item">
+
+          <strong>
+            Character
+          </strong>
+
+          <span>
+            Identity
+          </span>
+
+        </div>
+
+
+        <div class="system-item">
+
+          <strong>
+            Companion
+          </strong>
+
+          <span>
+            Connection
+          </span>
+
+        </div>
+
+
+        <div class="system-item">
+
+          <strong>
+            Daily Life
+          </strong>
+
+          <span>
+            Moments
+          </span>
+
+        </div>
+
+
+        <div class="system-item">
+
+          <strong>
+            Products
+          </strong>
+
+          <span>
+            Experience
+          </span>
+
+        </div>
+
+
+        <div class="system-item">
+
+          <strong>
+            Color World
+          </strong>
+
+          <span>
+            Lifestyle
+          </span>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
 
 
   <!-- =========================
        COLOR WORLDS
   ========================= -->
 
-  <section class="worlds">
+  <section class="section section-soft">
 
-    <div class="worlds-header">
-
-      <div class="section-label">
-        Color Worlds
-      </div>
-
-      <h2>
-        Three worlds.<br>
-        One ecosystem.
-      </h2>
-
-      <p>
-        IROVA begins with distinct color worlds,
-        each carrying its own atmosphere, character
-        identity and product direction.
-      </p>
-
-    </div>
+    <div class="container">
 
 
-    <div class="worlds-grid">
+      <div class="world-intro">
 
 
-      <div class="world-card">
+        <div>
 
-        <img
-          src="img/355.png"
-          alt="IROVA Olive World"
-        >
+          <div class="label">
+            04 / COLOR WORLDS
+          </div>
 
-        <div class="world-content">
-
-          <h3>
-            Olive
-          </h3>
-
-          <p>
-            Nature, calmness and everyday outdoor life.
-          </p>
+          <h2 class="section-title">
+            Different colors.
+            Different ways to live.
+          </h2>
 
         </div>
 
+
+        <p>
+          Each world begins with a distinct color and grows
+          into its own character, atmosphere, companion,
+          story and product language.
+        </p>
+
+
       </div>
 
 
-      <div class="world-card">
+      <div class="world-grid">
 
-        <img
-          src="img/356.png"
-          alt="IROVA Canyon World"
+
+        <a
+          href="olive.html"
+          class="world-card olive"
         >
 
-        <div class="world-content">
+          <span class="world-number">
+            WORLD 01
+          </span>
 
-          <h3>
-            Canyon
-          </h3>
+          <div>
 
-          <p>
-            Warm landscapes, exploration and movement.
-          </p>
+            <h3>
+              Olive
+            </h3>
 
-        </div>
+            <p>
+              Nature, quiet moments and a slower rhythm
+              inspired by forests, plants and everyday calm.
+            </p>
 
-      </div>
+          </div>
+
+        </a>
 
 
-      <div class="world-card">
-
-        <img
-          src="img/358.png"
-          alt="IROVA Purple World"
+        <a
+          href="canyon.html"
+          class="world-card canyon"
         >
 
-        <div class="world-content">
+          <span class="world-number">
+            WORLD 02
+          </span>
 
-          <h3>
-            Purple
-          </h3>
+          <div>
 
-          <p>
-            Night cities, digital culture and imagination.
-          </p>
+            <h3>
+              Canyon
+            </h3>
 
-        </div>
+            <p>
+              Warm sunsets, open roads and a sense of
+              movement shaped by curiosity and exploration.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          href="purple.html"
+          class="world-card purple"
+        >
+
+          <span class="world-number">
+            WORLD 03
+          </span>
+
+          <div>
+
+            <h3>
+              Purple
+            </h3>
+
+            <p>
+              Night cities, neon light and digital imagination
+              shaped by dreams and creativity.
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          href="wine.html"
+          class="world-card wine"
+        >
+
+          <span class="world-number">
+            WORLD 04
+          </span>
+
+          <div>
+
+            <h3>
+              Wine
+            </h3>
+
+            <p>
+              Quiet nights, small rituals and a deeper warmth
+              shared by Rumi and her black cat, Kuro.
+            </p>
+
+          </div>
+
+        </a>
+
 
       </div>
+
 
     </div>
 
   </section>
 
 
+
   <!-- =========================
-       PRODUCT SYSTEM
+       WINE EXAMPLE
   ========================= -->
 
-  <section class="products">
+  <section class="section">
 
-    <div class="products-inner">
+    <div class="container example">
 
-      <div class="products-header">
 
-        <div class="section-label">
-          Product Ecosystem
-        </div>
+      <div class="example-image">
 
-        <h2>
-          One world.<br>
-          Many ways to enter.
-        </h2>
-
-        <p>
-          The ecosystem is designed to support
-          different price points and levels of
-          customer engagement.
-        </p>
+        <img
+          src="img/Wine/wine-collection-board.jpg"
+          alt="IROVA Wine Color World collection"
+        >
 
       </div>
 
 
-      <div class="product-levels">
+      <div class="example-copy">
+
+        <div class="label">
+          A COLOR WORLD IN PRACTICE
+        </div>
+
+        <h2>
+          Wine World.
+        </h2>
+
+        <p>
+          Wine shows how the IROVA system grows beyond
+          a color palette. A color becomes a character,
+          a companion and a set of recognizable symbols
+          that can move naturally into everyday products.
+        </p>
 
 
-        <div class="product-level">
+        <div class="example-list">
 
-        <span>
-          LEVEL 01
-        </span>
 
-          <h3>
-            Discovery
-          </h3>
+          <div class="example-row">
 
-          <p>
-            Stickers, badges, keychains
-            and small character goods.
-          </p>
+            <span>
+              Color
+            </span>
+
+            <strong>
+              Wine
+            </strong>
+
+          </div>
+
+
+          <div class="example-row">
+
+            <span>
+              Character
+            </span>
+
+            <strong>
+              Rumi
+            </strong>
+
+          </div>
+
+
+          <div class="example-row">
+
+            <span>
+              Companion
+            </span>
+
+            <strong>
+              Kuro
+            </strong>
+
+          </div>
+
+
+          <div class="example-row">
+
+            <span>
+              Symbol
+            </span>
+
+            <strong>
+              Cherry
+            </strong>
+
+          </div>
+
+
+          <div class="example-row">
+
+            <span>
+              World Idea
+            </span>
+
+            <strong>
+              Quiet warmth in everyday life.
+            </strong>
+
+          </div>
+
 
         </div>
 
 
-        <div class="product-level">
+      </div>
 
-        <span>
-          LEVEL 02
-        </span>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       WHAT WE CREATE
+  ========================= -->
+
+  <section class="section section-soft">
+
+    <div class="container">
+
+
+      <div class="label">
+        05 / WHAT WE CREATE
+      </div>
+
+
+      <h2 class="section-title">
+        One world.
+        Many ways to make it part of your life.
+      </h2>
+
+
+      <p class="section-copy">
+        IROVA is designed to grow across different parts
+        of everyday life — from small objects and character
+        goods to fashion, bags, home goods and collectibles.
+      </p>
+
+
+      <div class="create-grid">
+
+
+        <article class="create-card">
+
+          <span class="create-index">
+            01 / CORE IP
+          </span>
 
           <h3>
-            Digital
+            Characters & Worlds
           </h3>
 
           <p>
-            Phone cases, straps,
-            accessories and device goods.
+            Original characters, companions,
+            symbols, stories and visual identities.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="product-level">
+        <article class="create-card">
 
-        <span>
-          LEVEL 03
-        </span>
+          <span class="create-index">
+            02 / ENTRY GOODS
+          </span>
+
+          <h3>
+            Small Goods
+          </h3>
+
+          <p>
+            Stickers, badges, keychains and charms
+            that offer an easy first step into a world.
+          </p>
+
+        </article>
+
+
+        <article class="create-card">
+
+          <span class="create-index">
+            03 / DIGITAL
+          </span>
+
+          <h3>
+            Digital & Mobile
+          </h3>
+
+          <p>
+            Cases, straps, pouches and accessories
+            for objects people use every day.
+          </p>
+
+        </article>
+
+
+        <article class="create-card">
+
+          <span class="create-index">
+            04 / FASHION
+          </span>
 
           <h3>
             Fashion
           </h3>
 
           <p>
-            T-shirts, caps, socks,
-            footwear and apparel.
+            T-shirts, hoodies, jackets, caps,
+            socks, footwear and complete looks.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="product-level">
+        <article class="create-card">
 
-        <span>
-          LEVEL 04
-        </span>
+          <span class="create-index">
+            05 / CARRY
+          </span>
 
           <h3>
-            Mobility
+            Bags & Carry
           </h3>
 
           <p>
-            Bags, travel goods,
-            bottles and everyday carry.
+            Backpacks, crossbody bags, totes and pouches
+            designed around each Color World.
           </p>
 
-        </div>
+        </article>
 
 
-        <div class="product-level">
+        <article class="create-card">
 
-        <span>
-          LEVEL 05
-        </span>
+          <span class="create-index">
+            06 / LIFESTYLE
+          </span>
 
           <h3>
-            Premium
+            Home & Lifestyle
           </h3>
 
           <p>
-            Limited collectibles,
-            figures and complete sets.
+            Bottles, mugs, desk goods, blankets
+            and objects for personal spaces.
           </p>
 
-        </div>
+        </article>
+
+
+        <article class="create-card">
+
+          <span class="create-index">
+            07 / COLLECTIBLES
+          </span>
+
+          <h3>
+            Plush & Collectibles
+          </h3>
+
+          <p>
+            Mascots, plush characters and figures
+            that bring companions into physical form.
+          </p>
+
+        </article>
+
+
+        <article class="create-card">
+
+          <span class="create-index">
+            08 / LIMITED
+          </span>
+
+          <h3>
+            Sets & Limited
+          </h3>
+
+          <p>
+            Seasonal collections, gift sets,
+            complete looks and collaborations.
+          </p>
+
+        </article>
+
 
       </div>
+
 
     </div>
 
   </section>
+
+
+
+  <!-- =========================
+       VISION
+  ========================= -->
+
+  <section class="vision">
+
+    <div class="container vision-grid">
+
+
+      <div>
+
+        <div class="label">
+          06 / OUR VISION
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h2>
+          Make color
+          something you can live with.
+        </h2>
+
+        <p>
+          Our goal is to build IROVA into a lifestyle brand
+          where people can discover a color they connect with
+          and carry that feeling across characters, products,
+          stories and everyday experiences.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
 
 
   <!-- =========================
        PARTNERSHIP
   ========================= -->
 
-  <section class="partner">
+  <section
+    class="section"
+    id="partnership"
+  >
 
-    <div class="partner-inner">
-
-      <div class="section-label">
-        Partnership
-      </div>
-
-      <h2>
-        Build the next<br>
-        color world with us.
-      </h2>
-
-      <p>
-        IROVA Studio is open to strategic partnerships,
-        manufacturing collaborations, distribution,
-        international expansion and early-stage investment.
-      </p>
+    <div class="container">
 
 
-      <div class="partner-buttons">
+      <div class="partner-heading">
 
-        <a
-          href="mailto:business@irovastudio.com"
-          class="button-primary"
-        >
-          Contact IROVA →
-        </a>
 
-        <a
-          href="mailto:business@irovastudio.com?subject=IROVA%20Studio%20Partnership"
-          class="button-secondary"
-        >
-          Partnership Inquiry
-        </a>
+        <div>
+
+          <div class="label">
+            07 / BUSINESS & PARTNERSHIP
+          </div>
+
+          <h2 class="section-title">
+            Let's turn
+            Color Worlds
+            into something real.
+          </h2>
+
+        </div>
+
+
+        <p>
+          IROVA Studio welcomes conversations with
+          manufacturers, creative partners, retailers,
+          technology partners and organizations interested
+          in long-term brand and IP collaboration.
+        </p>
+
 
       </div>
+
+
+      <div class="partner-grid">
+
+
+        <article class="partner-card">
+
+          <span>
+            01
+          </span>
+
+          <div>
+
+            <h3>
+              Manufacturing
+            </h3>
+
+            <p>
+              Product development, prototyping
+              and manufacturing across apparel,
+              bags, accessories, plush and lifestyle goods.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            02
+          </span>
+
+          <div>
+
+            <h3>
+              Brand & IP
+            </h3>
+
+            <p>
+              Creative collaborations built around
+              Color Worlds, characters and limited collections.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            03
+          </span>
+
+          <div>
+
+            <h3>
+              Retail
+            </h3>
+
+            <p>
+              Online retail, physical stores,
+              pop-ups and distribution opportunities.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            04
+          </span>
+
+          <div>
+
+            <h3>
+              Creative
+            </h3>
+
+            <p>
+              Character design, product design,
+              photography, visual storytelling
+              and spatial experiences.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            05
+          </span>
+
+          <div>
+
+            <h3>
+              Technology
+            </h3>
+
+            <p>
+              Commerce, digital experiences
+              and new ways to connect physical products
+              with Color Worlds.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            06
+          </span>
+
+          <div>
+
+            <h3>
+              Strategic
+            </h3>
+
+            <p>
+              Long-term partnerships around
+              brand development, market expansion
+              and the growth of the IROVA ecosystem.
+            </p>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1199,20 +2950,48 @@
 
   <section class="contact">
 
-    <p>
-      Business & Investor Contact
-    </p>
+    <div class="container contact-grid">
 
-    <a
-      href="mailto:business@irovastudio.com"
-      class="email"
-    >
-      business@irovastudio.com
-    </a>
+
+      <div>
+
+        <div class="label">
+          IROVA STUDIO
+        </div>
+
+        <h2>
+          Build the world
+          <span>through color.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="contact-side">
+
+        <p>
+          Interested in IROVA Studio,
+          our Color Worlds or a potential collaboration?
+          Start a conversation with us.
+        </p>
+
+        <a
+          href="mailto:business@irovastudio.com"
+          class="contact-button"
+        >
+          business@irovastudio.com
+          <span>↗</span>
+        </a>
+      </div>
+
+
+    </div>
 
   </section>
 
+
 </main>
+
 
 
 <!-- =========================
@@ -1221,9 +3000,11 @@
 
 <footer>
 
+
   <div>
     © 2026 IROVA Studio
   </div>
+
 
   <div class="footer-links">
 
@@ -1235,13 +3016,31 @@
       Shop
     </a>
 
-    <a href="mailto:business@irovastudio.com">
-      Contact
+    <a href="world.html">
+      Worlds
+    </a>
+
+    <a href="journal.html">
+      Journal
+    </a>
+
+    <a href="business.html">
+      About
+    </a>
+
+    <a
+      href="https://x.com/IROVAStudio"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      X
     </a>
 
   </div>
 
+
 </footer>
+
 
 </body>
 </html>

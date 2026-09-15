@@ -1,25 +1,118 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Business — IROVA Studio</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <!-- =========================
+       SEO
+  ========================= -->
+
+  <title>IROVAについて | IROVA Studio</title>
 
   <meta
     name="description"
-    content="IROVA Studioの事業紹介。色を起点に、オリジナルキャラクターIP、ライフスタイルプロダクト、ファッション、デジタルアクセサリーへ展開するブランドエコシステムを構築しています。"
+    content="IROVA Studioは、色をきっかけにキャラクター、相棒、物語、ファッション、雑貨、ぬいぐるみなどへ広がるColor Worldをつくるライフスタイルブランドです。"
   >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.irovastudio.com/business-ja.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="https://www.irovastudio.com/business.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="ja"
+    href="https://www.irovastudio.com/business-ja.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="zh-CN"
+    href="https://www.irovastudio.com/business-zh.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://www.irovastudio.com/business.html"
+  >
+
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================= -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:site_name"
+    content="IROVA Studio"
+  >
+
+  <meta
+    property="og:title"
+    content="IROVAについて | IROVA Studio"
+  >
+
+  <meta
+    property="og:description"
+    content="好きな色から、自分らしい世界へ。色を起点にキャラクターと日常をつなぐIROVA Studio。"
+  >
+
+  <meta
+    property="og:url"
+    content="https://www.irovastudio.com/business-ja.html"
+  >
+
+
+  <!-- =========================
+       FONT
+  ========================= -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
 
+
   <style>
+
+    /* =========================
+       RESET
+    ========================= */
+
     * {
       margin: 0;
       padding: 0;
@@ -31,15 +124,17 @@
     }
 
     body {
+
       font-family:
         "Plus Jakarta Sans",
         "Noto Sans JP",
         sans-serif;
 
       background: #fff;
-      color: #111;
+      color: #171717;
 
       -webkit-font-smoothing: antialiased;
+
     }
 
     a {
@@ -52,99 +147,297 @@
       width: 100%;
     }
 
-    .container {
-      width: min(1180px, calc(100% - 40px));
-      margin: 0 auto;
+    ::selection {
+      background: #222;
+      color: #fff;
     }
+
+
+    /* =========================
+       VARIABLES
+    ========================= */
+
+    :root {
+
+      --black: #171717;
+
+      --text: #333;
+
+      --muted: #777;
+
+      --line: #e7e7e3;
+
+      --soft: #f7f7f4;
+
+      --warm: #f2f0eb;
+
+      --olive: #78835d;
+
+      --canyon: #c87346;
+
+      --purple: #77679a;
+
+      --wine: #722d39;
+
+      --max: 1180px;
+
+    }
+
+
+    /* =========================
+       COMMON
+    ========================= */
+
+    .container {
+
+      width:
+        min(calc(100% - 48px), var(--max));
+
+      margin:
+        0 auto;
+
+    }
+
+    .section {
+
+      padding:
+        120px 0;
+
+    }
+
+    .section-soft {
+
+      background:
+        var(--soft);
+
+    }
+
+    .label {
+
+      margin-bottom:
+        20px;
+
+      font-size:
+        10px;
+
+      font-weight:
+        700;
+
+      letter-spacing:
+        0.18em;
+
+      color:
+        #999;
+
+    }
+
+    .section-title {
+
+      font-size:
+        clamp(38px, 5vw, 64px);
+
+      line-height:
+        1.12;
+
+      letter-spacing:
+        -0.055em;
+
+      font-weight:
+        700;
+
+    }
+
+    .section-lead {
+
+      max-width:
+        660px;
+
+      margin-top:
+        25px;
+
+      font-size:
+        14px;
+
+      line-height:
+        2;
+
+      color:
+        #666;
+
+    }
+
 
     /* =========================
        HEADER
     ========================= */
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
 
-      background: rgba(255,255,255,0.94);
+      position:
+        sticky;
 
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      top:
+        0;
 
-      border-bottom: 1px solid #ececec;
+      z-index:
+        100;
+
+      background:
+        rgba(255,255,255,0.94);
+
+      backdrop-filter:
+        blur(18px);
+
+      -webkit-backdrop-filter:
+        blur(18px);
+
+      border-bottom:
+        1px solid rgba(0,0,0,0.06);
+
     }
 
     .header-inner {
-      min-height: 76px;
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      min-height:
+        74px;
 
-      gap: 28px;
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        28px;
+
     }
 
+
+    /* =========================
+       LOGO
+    ========================= */
+
     .logo {
-      display: flex;
-      align-items: baseline;
-      gap: 7px;
+
+      display:
+        flex;
+
+      align-items:
+        baseline;
+
+      gap:
+        7px;
+
     }
 
     .logo-main {
-      font-size: 23px;
-      font-weight: 800;
-      letter-spacing: -0.06em;
+
+      font-size:
+        23px;
+
+      font-weight:
+        800;
+
+      letter-spacing:
+        -0.06em;
+
     }
 
     .logo-sub {
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: -0.03em;
+
+      font-size:
+        16px;
+
+      font-weight:
+        500;
+
+      letter-spacing:
+        -0.03em;
+
     }
 
+
+    /* =========================
+       NAV
+    ========================= */
+
     .nav {
-      margin-left: auto;
 
-      display: flex;
-      align-items: center;
+      margin-left:
+        auto;
 
-      gap: 24px;
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      gap:
+        25px;
+
     }
 
     .nav a {
-      font-size: 12px;
-      font-weight: 700;
 
-      letter-spacing: 0.04em;
+      font-size:
+        12px;
 
-      color: #555;
+      font-weight:
+        600;
+
+      color:
+        #666;
+
     }
 
     .nav a:hover,
     .nav a.active {
-      color: #111;
+
+      color:
+        #111;
+
     }
 
     .language {
-      display: flex;
-      align-items: center;
 
-      gap: 10px;
+      display:
+        flex;
 
-      margin-left: 8px;
+      align-items:
+        center;
 
-      padding-left: 18px;
+      gap:
+        10px;
 
-      border-left: 1px solid #ddd;
+      margin-left:
+        8px;
+
+      padding-left:
+        18px;
+
+      border-left:
+        1px solid #ddd;
+
     }
 
     .language a {
-      font-size: 10px;
-      color: #aaa;
+
+      font-size:
+        10px;
+
+      color:
+        #aaa;
+
     }
 
     .language a.active {
-      color: #111;
+
+      color:
+        #111;
+
+      font-weight:
+        700;
+
     }
 
 
@@ -153,403 +446,780 @@
     ========================= */
 
     .hero {
-      padding: 145px 0 120px;
+
+      padding:
+        150px 0 130px;
 
       background:
         linear-gradient(
           180deg,
-          #f8f8f6 0%,
+          #f6f5f1 0%,
           #fff 100%
         );
+
     }
 
-    .hero-inner {
-      max-width: 900px;
-    }
+    .hero-grid {
 
-    .eyebrow {
-      margin-bottom: 22px;
+      display:
+        grid;
 
-      font-size: 10px;
-      font-weight: 700;
+      grid-template-columns:
+        1.2fr 0.8fr;
 
-      letter-spacing: 0.2em;
+      gap:
+        100px;
 
-      color: #999;
+      align-items:
+        end;
+
     }
 
     .hero h1 {
-      margin-bottom: 30px;
 
-      font-size: clamp(54px, 7.5vw, 94px);
+      margin-bottom:
+        34px;
 
-      line-height: 0.98;
+      font-size:
+        clamp(52px, 7vw, 92px);
 
-      letter-spacing: -0.067em;
+      line-height:
+        1.05;
+
+      letter-spacing:
+        -0.065em;
+
+      font-weight:
+        700;
+
+    }
+
+    .hero h1 span {
+
+      color:
+        #888;
+
     }
 
     .hero-lead {
-      max-width: 720px;
 
-      margin-bottom: 35px;
+      max-width:
+        700px;
 
-      font-size: 17px;
-      font-weight: 500;
+      font-size:
+        17px;
 
-      line-height: 1.9;
+      font-weight:
+        500;
 
-      color: #333;
+      line-height:
+        2;
+
+      color:
+        #333;
+
     }
 
-    .hero-sub {
-      max-width: 660px;
+    .hero-side {
 
-      font-size: 13px;
+      padding-bottom:
+        8px;
 
-      line-height: 2;
-
-      color: #777;
     }
 
+    .hero-side p {
 
-    /* =========================
-       INTRO
-    ========================= */
+      margin-bottom:
+        30px;
 
-    .intro {
-      padding: 110px 0;
+      font-size:
+        13px;
+
+      line-height:
+        2;
+
+      color:
+        #777;
+
     }
 
-    .intro-grid {
-      display: grid;
+    .simple-link {
 
-      grid-template-columns: 0.9fr 1.1fr;
+      display:
+        inline-flex;
 
-      gap: 70px;
+      gap:
+        10px;
 
-      align-items: start;
-    }
+      align-items:
+        center;
 
-    .section-label {
-      margin-bottom: 12px;
+      padding-bottom:
+        5px;
 
-      font-size: 10px;
-      font-weight: 700;
+      border-bottom:
+        1px solid #222;
 
-      letter-spacing: 0.18em;
+      font-size:
+        12px;
 
-      color: #999;
-    }
+      font-weight:
+        700;
 
-    .intro h2 {
-      font-size: clamp(38px, 5vw, 62px);
-
-      line-height: 1.06;
-
-      letter-spacing: -0.055em;
-    }
-
-    .intro-copy p {
-      margin-bottom: 18px;
-
-      font-size: 14px;
-
-      line-height: 2;
-
-      color: #666;
     }
 
 
     /* =========================
-       BUSINESS MODEL
+       ABOUT
     ========================= */
 
-    .business-model {
-      padding: 110px 0;
+    .about-grid {
 
-      background: #111;
+      display:
+        grid;
 
-      color: #fff;
+      grid-template-columns:
+        0.6fr 1.4fr;
+
+      gap:
+        100px;
+
     }
 
-    .section-title {
-      font-size: clamp(38px, 5vw, 58px);
+    .section-number {
 
-      line-height: 1.06;
+      font-size:
+        10px;
 
-      letter-spacing: -0.055em;
+      letter-spacing:
+        0.14em;
+
+      color:
+        #aaa;
+
     }
 
-    .business-model .section-label {
-      color: #666;
+    .about-copy h2 {
+
+      max-width:
+        850px;
+
+      margin-bottom:
+        38px;
+
+      font-size:
+        clamp(40px, 5.5vw, 68px);
+
+      line-height:
+        1.12;
+
+      letter-spacing:
+        -0.055em;
+
     }
 
-    .model-grid {
-      display: grid;
+    .about-copy p {
 
-      grid-template-columns: repeat(3, 1fr);
+      max-width:
+        720px;
 
-      gap: 18px;
+      margin-bottom:
+        20px;
 
-      margin-top: 48px;
-    }
+      font-size:
+        15px;
 
-    .model-card {
-      min-height: 360px;
+      line-height:
+        2.1;
 
-      padding: 34px;
+      color:
+        #666;
 
-      display: flex;
-      flex-direction: column;
-
-      justify-content: space-between;
-
-      border: 1px solid #2c2c2c;
-
-      border-radius: 24px;
-
-      background: #161616;
-    }
-
-    .model-number {
-      font-size: 10px;
-
-      font-weight: 700;
-
-      letter-spacing: 0.15em;
-
-      color: #666;
-    }
-
-    .model-card h3 {
-      margin-bottom: 13px;
-
-      font-size: 34px;
-
-      letter-spacing: -0.045em;
-    }
-
-    .model-card p {
-      font-size: 12px;
-
-      line-height: 1.9;
-
-      color: #999;
     }
 
 
     /* =========================
-       COLOR WORLDS
+       IDEA
     ========================= */
 
-    .worlds {
-      padding: 110px 0;
+    .idea-grid {
+
+      margin-top:
+        65px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      border-top:
+        1px solid #ddd;
+
+      border-left:
+        1px solid #ddd;
+
     }
+
+    .idea-card {
+
+      min-height:
+        300px;
+
+      padding:
+        34px;
+
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      background:
+        #fff;
+
+      border-right:
+        1px solid #ddd;
+
+      border-bottom:
+        1px solid #ddd;
+
+    }
+
+    .idea-card span {
+
+      font-size:
+        10px;
+
+      color:
+        #aaa;
+
+      letter-spacing:
+        0.12em;
+
+    }
+
+    .idea-card h3 {
+
+      margin-bottom:
+        12px;
+
+      font-size:
+        23px;
+
+      letter-spacing:
+        -0.035em;
+
+    }
+
+    .idea-card p {
+
+      font-size:
+        12px;
+
+      line-height:
+        1.9;
+
+      color:
+        #777;
+
+    }
+
+
+    /* =========================
+       CREATIVE FLOW
+    ========================= */
+
+    .flow {
+
+      margin-top:
+        65px;
+
+      border-top:
+        1px solid #ddd;
+
+    }
+
+    .flow-row {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        80px 210px 1fr;
+
+      gap:
+        30px;
+
+      align-items:
+        center;
+
+      padding:
+        28px 0;
+
+      border-bottom:
+        1px solid #ddd;
+
+    }
+
+    .flow-number {
+
+      font-size:
+        10px;
+
+      color:
+        #aaa;
+
+      letter-spacing:
+        0.12em;
+
+    }
+
+    .flow-name {
+
+      font-size:
+        20px;
+
+      font-weight:
+        700;
+
+      letter-spacing:
+        -0.03em;
+
+    }
+
+    .flow-description {
+
+      font-size:
+        13px;
+
+      line-height:
+        1.9;
+
+      color:
+        #666;
+
+    }
+
+
+    /* =========================
+       WORLDS
+    ========================= */
 
     .world-header {
-      display: grid;
 
-      grid-template-columns: 1fr 1fr;
+      display:
+        grid;
 
-      gap: 50px;
+      grid-template-columns:
+        1fr 0.7fr;
 
-      align-items: end;
+      gap:
+        80px;
 
-      margin-bottom: 44px;
+      align-items:
+        end;
+
+      margin-bottom:
+        55px;
+
     }
 
     .world-header p {
-      font-size: 13px;
 
-      line-height: 1.9;
+      font-size:
+        13px;
 
-      color: #666;
+      line-height:
+        2;
+
+      color:
+        #666;
+
     }
 
     .world-grid {
-      display: grid;
 
-      grid-template-columns: repeat(3, 1fr);
+      display:
+        grid;
 
-      gap: 20px;
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap:
+        14px;
+
     }
 
     .world-card {
-      overflow: hidden;
 
-      border-radius: 24px;
+      min-height:
+        390px;
 
-      border: 1px solid #e6e6e3;
+      padding:
+        28px;
 
-      background: #fff;
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      color:
+        #fff;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
     }
 
-    .world-image {
-      overflow: hidden;
+    .world-card:hover {
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,0.12);
+
     }
 
-    .world-image img {
-      aspect-ratio: 4 / 5;
-
-      object-fit: cover;
+    .world-card.olive {
+      background: var(--olive);
     }
 
-    .world-copy {
-      padding: 26px;
+    .world-card.canyon {
+      background: var(--canyon);
     }
 
-    .world-copy span {
-      display: block;
-
-      margin-bottom: 8px;
-
-      font-size: 9px;
-
-      font-weight: 700;
-
-      letter-spacing: 0.14em;
-
-      color: #aaa;
+    .world-card.purple {
+      background: var(--purple);
     }
 
-    .world-copy h3 {
-      margin-bottom: 8px;
-
-      font-size: 27px;
-
-      letter-spacing: -0.04em;
+    .world-card.wine {
+      background: var(--wine);
     }
 
-    .world-copy p {
-      font-size: 12px;
+    .world-number {
 
-      line-height: 1.8;
+      font-size:
+        9px;
 
-      color: #666;
+      letter-spacing:
+        0.14em;
+
+      opacity:
+        0.72;
+
     }
 
+    .world-card h3 {
 
-    /* =========================
-       PRODUCT ECOSYSTEM
-    ========================= */
+      margin-bottom:
+        10px;
 
-    .ecosystem {
-      padding: 110px 0;
+      font-size:
+        31px;
 
-      background: #f7f7f5;
+      letter-spacing:
+        -0.05em;
+
     }
 
-    .ecosystem-head {
-      max-width: 720px;
+    .world-card p {
 
-      margin-bottom: 48px;
-    }
+      font-size:
+        12px;
 
-    .ecosystem-head p {
-      margin-top: 18px;
+      line-height:
+        1.9;
 
-      font-size: 13px;
+      opacity:
+        0.86;
 
-      line-height: 1.9;
-
-      color: #666;
-    }
-
-    .ecosystem-list {
-      border-top: 1px solid #ddd;
-    }
-
-    .eco-row {
-      display: grid;
-
-      grid-template-columns: 90px 220px 1fr;
-
-      gap: 28px;
-
-      align-items: start;
-
-      padding: 30px 0;
-
-      border-bottom: 1px solid #ddd;
-    }
-
-    .eco-number {
-      font-size: 10px;
-
-      font-weight: 700;
-
-      letter-spacing: 0.14em;
-
-      color: #aaa;
-    }
-
-    .eco-name {
-      font-size: 20px;
-
-      font-weight: 700;
-
-      letter-spacing: -0.03em;
-    }
-
-    .eco-desc {
-      font-size: 13px;
-
-      line-height: 1.9;
-
-      color: #666;
     }
 
 
     /* =========================
-       VALUE
+       CHARACTER
     ========================= */
 
-    .value {
-      padding: 110px 0;
+    .character-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap:
+        70px;
+
+      align-items:
+        center;
+
     }
 
-    .value-grid {
-      display: grid;
+    .character-image {
 
-      grid-template-columns: 0.9fr 1.1fr;
+      overflow:
+        hidden;
 
-      gap: 75px;
+      background:
+        #eeeae6;
 
-      align-items: center;
     }
 
-    .value-image {
-      overflow: hidden;
+    .character-image img {
 
-      border-radius: 28px;
+      aspect-ratio:
+        4 / 5;
 
-      background: #f3f3ef;
+      object-fit:
+        cover;
+
     }
 
-    .value-image img {
-      aspect-ratio: 4 / 3;
+    .character-copy h2 {
 
-      object-fit: cover;
+      margin-bottom:
+        28px;
+
+      font-size:
+        clamp(40px, 5vw, 64px);
+
+      line-height:
+        1.1;
+
+      letter-spacing:
+        -0.055em;
+
     }
 
-    .value-copy h2 {
-      margin-bottom: 22px;
+    .character-copy > p {
 
-      font-size: clamp(38px, 5vw, 60px);
+      margin-bottom:
+        30px;
 
-      line-height: 1.06;
+      font-size:
+        14px;
 
-      letter-spacing: -0.055em;
+      line-height:
+        2;
+
+      color:
+        #666;
+
     }
 
-    .value-copy p {
-      margin-bottom: 18px;
+    .character-list {
 
-      font-size: 14px;
+      border-top:
+        1px solid #ddd;
 
-      line-height: 2;
+    }
 
-      color: #666;
+    .character-row {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        110px 1fr;
+
+      gap:
+        25px;
+
+      padding:
+        17px 0;
+
+      border-bottom:
+        1px solid #ddd;
+
+      font-size:
+        12px;
+
+    }
+
+    .character-row span {
+
+      color:
+        #999;
+
+    }
+
+    .character-row strong {
+
+      font-weight:
+        600;
+
+    }
+
+
+    /* =========================
+       PRODUCTS
+    ========================= */
+
+    .product-grid {
+
+      margin-top:
+        60px;
+
+      display:
+        grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      border-top:
+        1px solid #ddd;
+
+      border-left:
+        1px solid #ddd;
+
+    }
+
+    .product-card {
+
+      min-height:
+        260px;
+
+      padding:
+        30px;
+
+      border-right:
+        1px solid #ddd;
+
+      border-bottom:
+        1px solid #ddd;
+
+      background:
+        #fff;
+
+    }
+
+    .product-card span {
+
+      display:
+        block;
+
+      margin-bottom:
+        48px;
+
+      font-size:
+        9px;
+
+      letter-spacing:
+        0.13em;
+
+      color:
+        #aaa;
+
+    }
+
+    .product-card h3 {
+
+      margin-bottom:
+        12px;
+
+      font-size:
+        19px;
+
+    }
+
+    .product-card p {
+
+      font-size:
+        12px;
+
+      line-height:
+        1.9;
+
+      color:
+        #777;
+
+    }
+
+
+    /* =========================
+       JAPAN
+    ========================= */
+
+    .japan {
+
+      padding:
+        140px 0;
+
+      background:
+        #171717;
+
+      color:
+        #fff;
+
+    }
+
+    .japan-grid {
+
+      display:
+        grid;
+
+      grid-template-columns:
+        0.65fr 1.35fr;
+
+      gap:
+        100px;
+
+    }
+
+    .japan .label {
+
+      color:
+        #777;
+
+    }
+
+    .japan h2 {
+
+      max-width:
+        800px;
+
+      margin-bottom:
+        35px;
+
+      font-size:
+        clamp(44px, 6vw, 76px);
+
+      line-height:
+        1.1;
+
+      letter-spacing:
+        -0.06em;
+
+    }
+
+    .japan p {
+
+      max-width:
+        680px;
+
+      margin-bottom:
+        18px;
+
+      font-size:
+        14px;
+
+      line-height:
+        2;
+
+      color:
+        #aaa;
+
     }
 
 
@@ -557,78 +1227,107 @@
        PARTNERSHIP
     ========================= */
 
-    .partnership {
-      padding: 110px 0;
+    .partner-header {
 
-      background: #111;
+      display:
+        grid;
 
-      color: #fff;
+      grid-template-columns:
+        1fr 0.7fr;
+
+      gap:
+        80px;
+
+      align-items:
+        end;
+
+      margin-bottom:
+        55px;
+
     }
 
-    .partnership-head {
-      max-width: 720px;
+    .partner-header p {
 
-      margin-bottom: 48px;
-    }
+      font-size:
+        13px;
 
-    .partnership-head p {
-      margin-top: 18px;
+      line-height:
+        2;
 
-      font-size: 13px;
+      color:
+        #666;
 
-      line-height: 1.9;
-
-      color: #999;
     }
 
     .partner-grid {
-      display: grid;
 
-      grid-template-columns: repeat(2, 1fr);
+      display:
+        grid;
 
-      gap: 16px;
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap:
+        14px;
+
     }
 
     .partner-card {
-      min-height: 220px;
 
-      padding: 30px;
+      min-height:
+        245px;
 
-      border: 1px solid #2c2c2c;
+      padding:
+        30px;
 
-      border-radius: 22px;
+      display:
+        flex;
 
-      background: #161616;
+      flex-direction:
+        column;
+
+      justify-content:
+        space-between;
+
+      border:
+        1px solid #ddd;
+
     }
 
     .partner-card span {
-      display: block;
 
-      margin-bottom: 22px;
+      font-size:
+        9px;
 
-      font-size: 9px;
+      color:
+        #aaa;
 
-      font-weight: 700;
+      letter-spacing:
+        0.12em;
 
-      letter-spacing: 0.14em;
-
-      color: #666;
     }
 
     .partner-card h3 {
-      margin-bottom: 12px;
 
-      font-size: 23px;
+      margin-bottom:
+        10px;
 
-      letter-spacing: -0.035em;
+      font-size:
+        19px;
+
     }
 
     .partner-card p {
-      font-size: 12px;
 
-      line-height: 1.9;
+      font-size:
+        12px;
 
-      color: #999;
+      line-height:
+        1.9;
+
+      color:
+        #777;
+
     }
 
 
@@ -637,58 +1336,86 @@
     ========================= */
 
     .contact {
-      padding: 130px 0;
 
-      text-align: center;
+      padding:
+        130px 0;
+
+      background:
+        var(--warm);
+
     }
 
-    .contact-inner {
-      max-width: 760px;
+    .contact-grid {
 
-      margin: 0 auto;
+      display:
+        grid;
+
+      grid-template-columns:
+        1.2fr 0.8fr;
+
+      gap:
+        90px;
+
+      align-items:
+        end;
+
     }
 
     .contact h2 {
-      margin-bottom: 23px;
 
-      font-size: clamp(42px, 6vw, 72px);
+      font-size:
+        clamp(44px, 6vw, 76px);
 
-      line-height: 1;
+      line-height:
+        1.08;
 
-      letter-spacing: -0.06em;
+      letter-spacing:
+        -0.06em;
+
     }
 
-    .contact p {
-      max-width: 600px;
+    .contact-side p {
 
-      margin: 0 auto 32px;
+      margin-bottom:
+        28px;
 
-      font-size: 13px;
+      font-size:
+        13px;
 
-      line-height: 1.9;
+      line-height:
+        2;
 
-      color: #666;
+      color:
+        #666;
+
     }
 
     .contact-button {
-      display: inline-flex;
 
-      align-items: center;
-      justify-content: center;
+      display:
+        inline-flex;
 
-      min-height: 50px;
+      align-items:
+        center;
 
-      padding: 0 24px;
+      gap:
+        10px;
 
-      border-radius: 999px;
+      padding:
+        15px 23px;
 
-      background: #111;
+      background:
+        #171717;
 
-      color: #fff;
+      color:
+        #fff;
 
-      font-size: 11px;
+      font-size:
+        11px;
 
-      font-weight: 700;
+      font-weight:
+        700;
+
     }
 
 
@@ -697,80 +1424,130 @@
     ========================= */
 
     footer {
-      padding: 60px 0 32px;
 
-      background: #111;
+      padding:
+        55px 0 30px;
 
-      color: #fff;
+      background:
+        #171717;
+
+      color:
+        #fff;
+
     }
 
     .footer-top {
-      display: grid;
 
-      grid-template-columns: 1.6fr repeat(3, 1fr);
+      display:
+        grid;
 
-      gap: 45px;
+      grid-template-columns:
+        1.5fr repeat(3, 1fr);
 
-      margin-bottom: 55px;
+      gap:
+        45px;
+
+      margin-bottom:
+        50px;
+
     }
 
     .footer-brand h3 {
-      margin-bottom: 14px;
 
-      font-size: 27px;
+      margin-bottom:
+        13px;
 
-      letter-spacing: -0.04em;
+      font-size:
+        25px;
+
+      letter-spacing:
+        -0.04em;
+
     }
 
     .footer-brand p {
-      max-width: 320px;
 
-      font-size: 12px;
+      max-width:
+        310px;
 
-      line-height: 1.8;
+      font-size:
+        11px;
 
-      color: #999;
+      line-height:
+        1.9;
+
+      color:
+        #999;
+
     }
 
     .footer-column h4 {
-      margin-bottom: 15px;
 
-      font-size: 10px;
+      margin-bottom:
+        15px;
 
-      letter-spacing: 0.14em;
+      font-size:
+        9px;
 
-      color: #777;
+      letter-spacing:
+        0.14em;
+
+      color:
+        #777;
+
     }
 
     .footer-column a {
-      display: block;
 
-      margin-bottom: 10px;
+      display:
+        block;
 
-      font-size: 12px;
+      margin-bottom:
+        10px;
 
-      color: #bbb;
+      font-size:
+        11px;
+
+      color:
+        #bbb;
+
+    }
+
+    .footer-column a:hover {
+
+      color:
+        #fff;
+
     }
 
     .footer-bottom {
-      padding-top: 24px;
 
-      display: flex;
+      padding-top:
+        22px;
 
-      justify-content: space-between;
+      display:
+        flex;
 
-      gap: 20px;
+      justify-content:
+        space-between;
 
-      border-top: 1px solid #292929;
+      gap:
+        20px;
 
-      font-size: 10px;
+      border-top:
+        1px solid #2d2d2d;
 
-      color: #777;
+      font-size:
+        9px;
+
+      color:
+        #777;
+
     }
 
 
     /* =========================
-       RESPONSIVE
+       TABLET
     ========================= */
 
     @media (max-width: 980px) {
@@ -784,78 +1561,222 @@
         padding-left: 0;
       }
 
-      .intro-grid,
+      .hero-grid,
+      .about-grid,
       .world-header,
-      .value-grid {
-        grid-template-columns: 1fr;
+      .character-grid,
+      .japan-grid,
+      .partner-header,
+      .contact-grid {
+
+        grid-template-columns:
+          1fr;
+
       }
 
-      .model-grid,
-      .world-grid {
-        grid-template-columns: 1fr;
+      .idea-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+      .world-grid,
+      .product-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
       }
 
       .partner-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
       }
 
-      .footer-top {
-        grid-template-columns: repeat(2, 1fr);
-      }
     }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 640px) {
 
       .container {
-        width: min(100% - 26px, 1180px);
+
+        width:
+          min(calc(100% - 28px), var(--max));
+
+      }
+
+      .section {
+
+        padding:
+          80px 0;
+
       }
 
       .header-inner {
-        min-height: 66px;
+
+        min-height:
+          66px;
+
       }
 
       .logo-main {
-        font-size: 20px;
+
+        font-size:
+          20px;
+
       }
 
       .logo-sub {
-        font-size: 14px;
+
+        font-size:
+          14px;
+
+      }
+
+      .language {
+
+        gap:
+          7px;
+
+      }
+
+      .language a {
+
+        font-size:
+          9px;
+
       }
 
       .hero {
-        padding: 95px 0 80px;
+
+        padding:
+          95px 0 80px;
+
+      }
+
+      .hero-grid {
+
+        gap:
+          45px;
+
       }
 
       .hero h1 {
-        font-size: 52px;
+
+        font-size:
+          clamp(48px, 15vw, 66px);
+
       }
 
-      .intro,
-      .business-model,
-      .worlds,
-      .ecosystem,
-      .value,
-      .partnership,
+      .hero-lead {
+
+        font-size:
+          15px;
+
+      }
+
+      .about-grid {
+
+        gap:
+          30px;
+
+      }
+
+      .flow-row {
+
+        grid-template-columns:
+          1fr;
+
+        gap:
+          7px;
+
+      }
+
+      .world-grid,
+      .product-grid,
+      .partner-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+      .world-card {
+
+        min-height:
+          300px;
+
+      }
+
+      .character-grid {
+
+        gap:
+          45px;
+
+      }
+
+      .character-row {
+
+        grid-template-columns:
+          90px 1fr;
+
+      }
+
+      .japan {
+
+        padding:
+          95px 0;
+
+      }
+
+      .japan-grid {
+
+        gap:
+          30px;
+
+      }
+
       .contact {
-        padding: 75px 0;
+
+        padding:
+          90px 0;
+
       }
 
-      .eco-row {
-        grid-template-columns: 1fr;
+      .contact-grid {
 
-        gap: 8px;
+        gap:
+          40px;
+
       }
 
       .footer-top {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
 
       .footer-bottom {
-        flex-direction: column;
+
+        flex-direction:
+          column;
+
       }
+
     }
+
   </style>
+
 </head>
+
 
 
 <body>
@@ -869,15 +1790,27 @@
 
   <div class="container header-inner">
 
-    <a href="index.html" class="logo">
-      <span class="logo-main">IROVA</span>
-      <span class="logo-sub">Studio</span>
+
+    <a
+      href="ja.html"
+      class="logo"
+      aria-label="IROVA Studio 日本語ホーム"
+    >
+
+      <span class="logo-main">
+        IROVA
+      </span>
+
+      <span class="logo-sub">
+        Studio
+      </span>
+
     </a>
 
 
     <nav class="nav">
 
-      <a href="index.html">
+      <a href="ja.html">
         BRAND
       </a>
 
@@ -893,8 +1826,11 @@
         JOURNAL
       </a>
 
-      <a href="business-ja.html" class="active">
-        BUSINESS
+      <a
+        href="business-ja.html"
+        class="active"
+      >
+        IROVAについて
       </a>
 
     </nav>
@@ -906,15 +1842,24 @@
         EN
       </a>
 
-      <a href="business-ja.html" class="active">
+      <a
+        href="business-ja.html"
+        class="active"
+      >
         日本語
+      </a>
+
+      <a href="business-zh.html">
+        中文
       </a>
 
     </div>
 
+
   </div>
 
 </header>
+
 
 
 <main>
@@ -926,227 +1871,390 @@
 
   <section class="hero">
 
-    <div class="container">
-
-      <div class="hero-inner">
-
-        <div class="eyebrow">
-          IROVA STUDIO / BUSINESS
-        </div>
-
-        <h1>
-          色を起点に、<br>
-          世界をつくる。
-        </h1>
-
-        <p class="hero-lead">
-          IROVA Studioは、
-          色を起点にオリジナルキャラクターIPと
-          ライフスタイルプロダクトを展開するブランドです。
-        </p>
-
-        <p class="hero-sub">
-          キャラクター、デジタルアクセサリー、
-          ファッション、バッグ、マスコット、
-          コレクタブルアイテムまで。
-          ひとつの色から、ひとつの世界を構築し、
-          その世界を日常のさまざまな接点へ広げていきます。
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       INTRO
-  ========================= -->
-
-  <section class="intro">
-
-    <div class="container intro-grid">
+    <div class="container hero-grid">
 
 
       <div>
 
-        <div class="section-label">
-          OUR APPROACH
+        <div class="label">
+          IROVAについて
         </div>
 
-        <h2>
-          Color is the<br>
-          starting point.
-        </h2>
+        <h1>
+          好きな色から、<br>
+          <span>自分らしい世界へ。</span>
+        </h1>
 
-      </div>
-
-
-      <div class="intro-copy">
-
-        <p>
-          消費者にとって「色」は、
-          日常の中で最も直感的な選択のひとつです。
-        </p>
-
-        <p>
-          スマートフォン、ファッション、
-          バッグ、インテリアなど、
-          人は多くの場面で自分の好きな色を選んでいます。
-        </p>
-
-        <p>
-          IROVAは、その色の選択を
-          単体の商品で終わらせるのではなく、
-          オリジナルキャラクター、
-          ストーリー、ファッション、
-          ライフスタイルプロダクトへ展開します。
-        </p>
-
-        <p>
-          「好きな色」から、
-          「好きな世界」へ。
-          それがIROVAの事業コンセプトです。
+        <p class="hero-lead">
+          IROVA Studioは、色をきっかけに、
+          キャラクター、相棒、物語、そして日常のプロダクトへと
+          広がっていくライフスタイルブランドです。
         </p>
 
       </div>
+
+
+      <div class="hero-side">
+
+        <p>
+          服を選ぶとき。バッグを選ぶとき。
+          毎日使うものを選ぶとき。
+          私たちは、思っている以上に
+          「好きな色」を選んでいます。
+        </p>
+
+        <a
+          href="#about"
+          class="simple-link"
+        >
+          IROVAを知る
+          <span>↓</span>
+        </a>
+
+      </div>
+
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
-       BUSINESS MODEL
+       ABOUT
   ========================= -->
 
-  <section class="business-model">
+  <section
+    class="section"
+    id="about"
+  >
 
-    <div class="container">
+    <div class="container about-grid">
 
-      <div class="section-label">
-        BUSINESS MODEL
+
+      <div class="section-number">
+        01 / ABOUT
       </div>
 
-      <h2 class="section-title">
-        色 × キャラクター ×<br>
-        ライフスタイル。
-      </h2>
 
+      <div class="about-copy">
 
-      <div class="model-grid">
+        <h2>
+          IROVAは、<br>
+          商品ではなく<br>
+          「色」から始まります。
+        </h2>
 
+        <p>
+          色には、その人らしさがあります。
+          落ち着く色、元気になれる色、
+          ずっとそばに置いておきたい色。
+        </p>
 
-        <div class="model-card">
+        <p>
+          IROVAは、そんな「好きな色」に
+          キャラクターや相棒、物語を与え、
+          ひとつのColor Worldとして育てていきます。
+        </p>
 
-          <div class="model-number">
-            01 / COLOR
-          </div>
-
-          <div>
-
-            <h3>
-              Color
-            </h3>
-
-            <p>
-              消費者がすでに持っている
-              「好きな色」という感覚を
-              ブランド体験の入口として設計します。
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="model-card">
-
-          <div class="model-number">
-            02 / CHARACTER
-          </div>
-
-          <div>
-
-            <h3>
-              Character
-            </h3>
-
-            <p>
-              色ごとにオリジナルキャラクター、
-              性格、物語、モチーフを設計し、
-              独自のColor Worldを構築します。
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="model-card">
-
-          <div class="model-number">
-            03 / LIFESTYLE
-          </div>
-
-          <div>
-
-            <h3>
-              Lifestyle
-            </h3>
-
-            <p>
-              キャラクターIPを、
-              ファッション、バッグ、
-              デジタルアクセサリー、
-              マスコットなどへ展開します。
-            </p>
-
-          </div>
-
-        </div>
-
+        <p>
+          そして、その世界をステッカーやチャーム、
+          ファッション、バッグ、ぬいぐるみ、
+          日用品などへ広げることで、
+          好きな色をもっと身近に楽しめる体験をつくります。
+        </p>
 
       </div>
+
 
     </div>
 
   </section>
+
+
+
+  <!-- =========================
+       WHY COLOR
+  ========================= -->
+
+  <section class="section section-soft">
+
+    <div class="container">
+
+
+      <div class="label">
+        02 / WHY COLOR
+      </div>
+
+      <h2 class="section-title">
+        「好きな色」は、<br>
+        小さな自己表現。
+      </h2>
+
+      <p class="section-lead">
+        色は、言葉にしなくても自分らしさを表せるもの。
+        IROVAは、その感覚をキャラクターやプロダクト、
+        日常の体験へつなげていきます。
+      </p>
+
+
+      <div class="idea-grid">
+
+
+        <article class="idea-card">
+
+          <span>
+            01 / COLOR
+          </span>
+
+          <div>
+
+            <h3>
+              好きな色
+            </h3>
+
+            <p>
+              まずは、自分が自然と惹かれる色から。
+              難しい知識や設定を知らなくても、
+              Color Worldへの入口になります。
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="idea-card">
+
+          <span>
+            02 / FEELING
+          </span>
+
+          <div>
+
+            <h3>
+              好きな気分
+            </h3>
+
+            <p>
+              自然の落ち着き、旅の高揚感、
+              夜の静けさなど、色から生まれる感情を
+              それぞれの世界観として表現します。
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="idea-card">
+
+          <span>
+            03 / LIFE
+          </span>
+
+          <div>
+
+            <h3>
+              好きな暮らし
+            </h3>
+
+            <p>
+              小さなチャームから服やバッグ、
+              ぬいぐるみまで。
+              好きな世界を日常の中へ広げていきます。
+            </p>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       HOW WE CREATE
+  ========================= -->
+
+  <section class="section">
+
+    <div class="container">
+
+
+      <div class="label">
+        03 / HOW WE CREATE
+      </div>
+
+      <h2 class="section-title">
+        色から、キャラクターへ。<br>
+        キャラクターから、日常へ。
+      </h2>
+
+      <p class="section-lead">
+        IROVAでは、ひとつのColor Worldを
+        少しずつ育てていきます。
+      </p>
+
+
+      <div class="flow">
+
+
+        <div class="flow-row">
+
+          <div class="flow-number">
+            01
+          </div>
+
+          <div class="flow-name">
+            Color
+          </div>
+
+          <div class="flow-description">
+            世界の出発点となる色を決めます。
+          </div>
+
+        </div>
+
+
+        <div class="flow-row">
+
+          <div class="flow-number">
+            02
+          </div>
+
+          <div class="flow-name">
+            Character
+          </div>
+
+          <div class="flow-description">
+            その色の雰囲気や感情を表現する
+            オリジナルキャラクターをつくります。
+          </div>
+
+        </div>
+
+
+        <div class="flow-row">
+
+          <div class="flow-number">
+            03
+          </div>
+
+          <div class="flow-name">
+            Companion
+          </div>
+
+          <div class="flow-description">
+            キャラクターのそばにいる相棒をつくり、
+            マスコットやチャームへつながる存在にします。
+          </div>
+
+        </div>
+
+
+        <div class="flow-row">
+
+          <div class="flow-number">
+            04
+          </div>
+
+          <div class="flow-name">
+            Daily Life
+          </div>
+
+          <div class="flow-description">
+            カフェ、音楽、写真、散歩など、
+            キャラクターの日常を描きます。
+          </div>
+
+        </div>
+
+
+        <div class="flow-row">
+
+          <div class="flow-number">
+            05
+          </div>
+
+          <div class="flow-name">
+            Products
+          </div>
+
+          <div class="flow-description">
+            ステッカー、雑貨、ファッション、
+            バッグ、ぬいぐるみなどへ世界を広げます。
+          </div>
+
+        </div>
+
+
+        <div class="flow-row">
+
+          <div class="flow-number">
+            06
+          </div>
+
+          <div class="flow-name">
+            Color World
+          </div>
+
+          <div class="flow-description">
+            色、キャラクター、相棒、物語、商品がつながり、
+            ひとつの世界になります。
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
 
 
   <!-- =========================
        COLOR WORLDS
   ========================= -->
 
-  <section class="worlds">
+  <section class="section section-soft">
 
     <div class="container">
 
 
       <div class="world-header">
 
+
         <div>
 
-          <div class="section-label">
-            COLOR WORLDS
+          <div class="label">
+            04 / COLOR WORLDS
           </div>
 
           <h2 class="section-title">
-            ひとつの色から、<br>
-            ひとつの世界へ。
+            色が変われば、<br>
+            世界も変わる。
           </h2>
 
         </div>
 
 
         <p>
-          IROVAでは、色ごとに独立した世界観を構築します。
-          キャラクターだけではなく、
-          感情、風景、ファッション、
-          ライフスタイルまでを一貫して設計することで、
-          色そのものにブランド価値を持たせます。
+          それぞれのColor Worldには、
+          独自のキャラクター、相棒、風景、
+          感情、物語があります。
+          好きな色から、自分に合う世界を見つけてください。
         </p>
+
 
       </div>
 
@@ -1154,28 +2262,25 @@
       <div class="world-grid">
 
 
-        <a href="olive.html" class="world-card">
+        <a
+          href="olive.html"
+          class="world-card olive"
+        >
 
-          <div class="world-image">
-            <img
-              src="img/355.png"
-              alt="Olive World"
-            >
-          </div>
-
-          <div class="world-copy">
-
-          <span>
+          <span class="world-number">
             WORLD 01
           </span>
+
+          <div>
 
             <h3>
               Olive
             </h3>
 
             <p>
-              自然、森、木々、落ち着き。
-              日常に静かな時間を届ける世界。
+              自然と、ゆっくり。<br>
+              森や植物に囲まれた、
+              穏やかな時間の世界。
             </p>
 
           </div>
@@ -1183,28 +2288,25 @@
         </a>
 
 
-        <a href="canyon.html" class="world-card">
+        <a
+          href="canyon.html"
+          class="world-card canyon"
+        >
 
-          <div class="world-image">
-            <img
-              src="img/356.png"
-              alt="Canyon World"
-            >
-          </div>
-
-          <div class="world-copy">
-
-          <span>
+          <span class="world-number">
             WORLD 02
           </span>
+
+          <div>
 
             <h3>
               Canyon
             </h3>
 
             <p>
-              夕暮れ、荒野、旅、自由。
-              新しい景色へ向かう世界。
+              夕暮れと、冒険。<br>
+              まだ知らない景色へ向かう、
+              好奇心と自由の世界。
             </p>
 
           </div>
@@ -1212,28 +2314,51 @@
         </a>
 
 
-        <a href="purple.html" class="world-card">
+        <a
+          href="purple.html"
+          class="world-card purple"
+        >
 
-          <div class="world-image">
-            <img
-              src="img/359.png"
-              alt="Purple World"
-            >
-          </div>
-
-          <div class="world-copy">
-
-          <span>
+          <span class="world-number">
             WORLD 03
           </span>
+
+          <div>
 
             <h3>
               Purple
             </h3>
 
             <p>
-              夜、都市、ネオン、夢。
-              創造とデジタル文化を表現する世界。
+              夜と、夢。<br>
+              ネオンや都市の光に包まれた、
+              想像力の世界。
+            </p>
+
+          </div>
+
+        </a>
+
+
+        <a
+          href="wine.html"
+          class="world-card wine"
+        >
+
+          <span class="world-number">
+            WORLD 04
+          </span>
+
+          <div>
+
+            <h3>
+              Wine
+            </h3>
+
+            <p>
+              静かな熱を、そばに。<br>
+              Rumiと黒猫Kuroが暮らす、
+              小さな情熱を大切にする世界。
             </p>
 
           </div>
@@ -1243,194 +2368,358 @@
 
       </div>
 
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PRODUCT ECOSYSTEM
-  ========================= -->
-
-  <section class="ecosystem">
-
-    <div class="container">
-
-      <div class="ecosystem-head">
-
-        <div class="section-label">
-          PRODUCT ECOSYSTEM
-        </div>
-
-        <h2 class="section-title">
-          低価格の入口から、<br>
-          プレミアム商品まで。
-        </h2>
-
-        <p>
-          IROVAでは、
-          消費者が気軽にColor Worldへ入れる商品から、
-          長期的なブランドファン向けの
-          コレクタブル商品まで、
-          段階的な商品構成を設計します。
-        </p>
-
-      </div>
-
-
-      <div class="ecosystem-list">
-
-
-        <div class="eco-row">
-
-          <div class="eco-number">
-            01
-          </div>
-
-          <div class="eco-name">
-            Discovery
-          </div>
-
-          <div class="eco-desc">
-            ステッカー、缶バッジ、
-            アクリルキーホルダーなど、
-            Color Worldへの最初の入口となる商品。
-          </div>
-
-        </div>
-
-
-        <div class="eco-row">
-
-          <div class="eco-number">
-            02
-          </div>
-
-          <div class="eco-name">
-            Digital
-          </div>
-
-          <div class="eco-desc">
-            スマートフォンケース、
-            ストラップ、チャームなど、
-            毎日使用するデジタルデバイス周辺の商品。
-          </div>
-
-        </div>
-
-
-        <div class="eco-row">
-
-          <div class="eco-number">
-            03
-          </div>
-
-          <div class="eco-name">
-            Fashion
-          </div>
-
-          <div class="eco-desc">
-            Tシャツ、キャップ、ソックス、
-            スニーカーなど、
-            Color Worldを身につけるファッション商品。
-          </div>
-
-        </div>
-
-
-        <div class="eco-row">
-
-          <div class="eco-number">
-            04
-          </div>
-
-          <div class="eco-name">
-            Mobility
-          </div>
-
-          <div class="eco-desc">
-            バックパック、ショルダーバッグ、
-            ボトルなど、
-            外出や移動の中で使用するライフスタイル商品。
-          </div>
-
-        </div>
-
-
-        <div class="eco-row">
-
-          <div class="eco-number">
-            05
-          </div>
-
-          <div class="eco-name">
-            Premium
-          </div>
-
-          <div class="eco-desc">
-            限定フィギュア、
-            コレクタブルアイテム、
-            Color Worldをまとめた
-            プレミアムギフトセットなど。
-          </div>
-
-        </div>
-
-
-      </div>
 
     </div>
 
   </section>
 
 
+
   <!-- =========================
-       VALUE
+       CHARACTER & COMPANION
   ========================= -->
 
-  <section class="value">
+  <section class="section">
 
-    <div class="container value-grid">
+    <div class="container character-grid">
 
 
-      <div class="value-image">
+      <div class="character-image">
 
         <img
-          src="img/355.png"
-          alt="IROVA Product Ecosystem"
+          src="img/Wine/wine-character-outfit.jpg"
+          alt="Wine Worldのキャラクター Rumi"
         >
 
       </div>
 
 
-      <div class="value-copy">
+      <div class="character-copy">
 
-        <div class="section-label">
-          BRAND VALUE
+        <div class="label">
+          CHARACTER & COMPANION
         </div>
 
         <h2>
-          単一商品ではなく、<br>
-          世界全体を設計する。
+          キャラクターと一緒に、<br>
+          世界をもっと身近に。
         </h2>
 
         <p>
-          IROVAの特徴は、
-          キャラクター単体や
-          ファッション単体を販売することではありません。
+          IROVAのキャラクターは、
+          商品にプリントするためだけの存在ではありません。
+          それぞれの世界で暮らし、
+          好きなことや日常を持つ存在として描いていきます。
+        </p>
+
+
+        <div class="character-list">
+
+
+          <div class="character-row">
+
+            <span>
+              World
+            </span>
+
+            <strong>
+              Wine
+            </strong>
+
+          </div>
+
+
+          <div class="character-row">
+
+            <span>
+              Character
+            </span>
+
+            <strong>
+              Rumi / ルミ
+            </strong>
+
+          </div>
+
+
+          <div class="character-row">
+
+            <span>
+              Companion
+            </span>
+
+            <strong>
+              Kuro / クロ
+            </strong>
+
+          </div>
+
+
+          <div class="character-row">
+
+            <span>
+              Symbol
+            </span>
+
+            <strong>
+              Cherry
+            </strong>
+
+          </div>
+
+
+          <div class="character-row">
+
+            <span>
+              Everyday
+            </span>
+
+            <strong>
+              写真・音楽・カフェ・読書
+            </strong>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       PRODUCTS
+  ========================= -->
+
+  <section class="section section-soft">
+
+    <div class="container">
+
+
+      <div class="label">
+        05 / PRODUCTS
+      </div>
+
+      <h2 class="section-title">
+        「見る」だけではなく、<br>
+        「持てる」世界へ。
+      </h2>
+
+      <p class="section-lead">
+        キャラクターやColor Worldを、
+        毎日の中で自然に楽しめる商品へ。
+        小さな雑貨からファッション、
+        ぬいぐるみまで幅広く展開していきます。
+      </p>
+
+
+      <div class="product-grid">
+
+
+        <article class="product-card">
+
+          <span>
+            01 / SMALL GOODS
+          </span>
+
+          <h3>
+            ステッカー・雑貨
+          </h3>
+
+          <p>
+            ステッカー、缶バッジ、
+            キーホルダーなど、
+            気軽に世界を楽しめるアイテム。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            02 / CHARM
+          </span>
+
+          <h3>
+            チャーム・マスコット
+          </h3>
+
+          <p>
+            バッグや持ち物につけて、
+            キャラクターや相棒を
+            日常へ連れていけるアイテム。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            03 / DIGITAL
+          </span>
+
+          <h3>
+            デジタルアクセサリー
+          </h3>
+
+          <p>
+            ケース、ストラップ、
+            ポーチなど、毎日使うものと
+            Color Worldをつなぐ商品。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            04 / FASHION
+          </span>
+
+          <h3>
+            ファッション
+          </h3>
+
+          <p>
+            Tシャツ、パーカー、キャップ、
+            ソックス、スニーカーなど。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            05 / BAGS
+          </span>
+
+          <h3>
+            バッグ
+          </h3>
+
+          <p>
+            バックパック、ショルダーバッグ、
+            トート、ポーチなど。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            06 / LIFESTYLE
+          </span>
+
+          <h3>
+            ライフスタイル
+          </h3>
+
+          <p>
+            ボトル、マグ、
+            デスクアイテムなど、
+            暮らしの中で使えるもの。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            07 / PLUSH
+          </span>
+
+          <h3>
+            ぬいぐるみ
+          </h3>
+
+          <p>
+            キャラクターや相棒を
+            そばに置いて楽しめる、
+            IROVAの大切な商品カテゴリー。
+          </p>
+
+        </article>
+
+
+        <article class="product-card">
+
+          <span>
+            08 / COLLECTION
+          </span>
+
+          <h3>
+            限定コレクション
+          </h3>
+
+          <p>
+            季節、テーマ、コラボレーションから生まれる
+            限定アイテムやセット。
+          </p>
+
+        </article>
+
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       JAPAN
+  ========================= -->
+
+  <section class="japan">
+
+    <div class="container japan-grid">
+
+
+      <div>
+
+        <div class="label">
+          IROVA IN JAPAN
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h2>
+          日本から、<br>
+          Color Worldを育てる。
+        </h2>
+
+        <p>
+          IROVAは、日本を大切な最初の市場のひとつとして、
+          キャラクターと日常をつなぐ商品づくりを進めていきます。
         </p>
 
         <p>
-          色を共通言語として、
-          キャラクターIP、商品、
-          ストーリー、ビジュアルを
-          ひとつの世界観として統合します。
+          ステッカー、キーホルダー、チャーム、
+          マスコット、ぬいぐるみといった
+          キャラクターを身近に感じられる商品から、
+          ファッションやバッグ、ライフスタイル商品へ。
         </p>
 
         <p>
-          これにより、
-          ひとつの商品購入から始まった顧客体験を、
-          複数カテゴリーへ自然に拡張することができます。
+          小さな「好き」から始まり、
+          その人の日常へ少しずつ広がっていくブランドを目指します。
         </p>
 
       </div>
@@ -1439,33 +2728,45 @@
     </div>
 
   </section>
+
 
 
   <!-- =========================
        PARTNERSHIP
   ========================= -->
 
-  <section class="partnership">
+  <section
+    class="section"
+    id="partnership"
+  >
 
     <div class="container">
 
 
-      <div class="partnership-head">
+      <div class="partner-header">
 
-        <div class="section-label">
-          PARTNERSHIP
+
+        <div>
+
+          <div class="label">
+            06 / BUSINESS & PARTNERSHIP
+          </div>
+
+          <h2 class="section-title">
+            Color Worldを、<br>
+            一緒に形にする。
+          </h2>
+
         </div>
 
-        <h2 class="section-title">
-          共に、Color Worldを<br>
-          広げるパートナーへ。
-        </h2>
 
         <p>
           IROVA Studioでは、
-          ブランドの成長とColor Worldの展開に向けて、
+          ブランドとColor Worldを長く育てていくため、
+          商品開発、製造、販売、クリエイティブなど
           さまざまな領域でのパートナーシップを検討しています。
         </p>
+
 
       </div>
 
@@ -1473,130 +2774,151 @@
       <div class="partner-grid">
 
 
-        <div class="partner-card">
+        <article class="partner-card">
 
-        <span>
-          STRATEGIC PARTNERSHIP
-        </span>
+          <span>
+            MANUFACTURING
+          </span>
 
-          <h3>
-            戦略的パートナーシップ
-          </h3>
+          <div>
 
-          <p>
-            キャラクターIP、
-            ライフスタイルブランド、
-            デジタル領域などとの
-            中長期的な共同プロジェクト。
-          </p>
+            <h3>
+              商品開発・製造
+            </h3>
 
-        </div>
+            <p>
+              アパレル、バッグ、雑貨、
+              マスコット、ぬいぐるみなどの
+              商品開発・試作・製造。
+            </p>
 
+          </div>
 
-        <div class="partner-card">
-
-        <span>
-          MANUFACTURING
-        </span>
-
-          <h3>
-            製造・生産パートナー
-          </h3>
-
-          <p>
-            アパレル、バッグ、
-            ぬいぐるみ、雑貨、
-            アクセサリーなどの商品開発・生産。
-          </p>
-
-        </div>
+        </article>
 
 
-        <div class="partner-card">
+        <article class="partner-card">
 
-        <span>
-          DISTRIBUTION
-        </span>
+          <span>
+            RETAIL
+          </span>
 
-          <h3>
-            流通・販売パートナー
-          </h3>
+          <div>
 
-          <p>
-            小売、EC、
-            ポップアップストア、
-            キャラクターショップなどを通じた
-            販売チャネルの構築。
-          </p>
+            <h3>
+              小売・販売
+            </h3>
 
-        </div>
+            <p>
+              EC、店舗、ポップアップ、
+              キャラクターショップなどを通じた
+              販売・展開。
+            </p>
 
+          </div>
 
-        <div class="partner-card">
-
-        <span>
-          INTERNATIONAL
-        </span>
-
-          <h3>
-            海外展開
-          </h3>
-
-          <p>
-            日本を起点に、
-            アジアを含む海外市場への
-            ブランド・IP展開。
-          </p>
-
-        </div>
+        </article>
 
 
-        <div class="partner-card">
+        <article class="partner-card">
 
-        <span>
-          INVESTMENT
-        </span>
+          <span>
+            CREATIVE
+          </span>
 
-          <h3>
-            アーリーステージ投資
-          </h3>
+          <div>
 
-          <p>
-            商品開発、
-            IP開発、
-            ブランド構築、
-            市場展開を加速するための
-            初期投資および事業提携。
-          </p>
+            <h3>
+              クリエイティブ
+            </h3>
 
-        </div>
+            <p>
+              キャラクター、商品、
+              ビジュアル、写真、映像などの
+              クリエイティブパートナー。
+            </p>
+
+          </div>
+
+        </article>
 
 
-        <div class="partner-card">
+        <article class="partner-card">
 
-        <span>
-          COLLABORATION
-        </span>
+          <span>
+            BRAND / IP
+          </span>
 
-          <h3>
-            コラボレーション
-          </h3>
+          <div>
 
-          <p>
-            ブランド、
-            クリエイター、
-            キャラクターIPとの
-            限定商品や共同企画。
-          </p>
+            <h3>
+              ブランド・IP
+            </h3>
 
-        </div>
+            <p>
+              ブランドやキャラクターIPとの
+              限定コレクション、
+              コラボレーション企画。
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            TECHNOLOGY
+          </span>
+
+          <div>
+
+            <h3>
+              テクノロジー
+            </h3>
+
+            <p>
+              ECやデジタル体験を通じて、
+              Color Worldと商品をつなぐ
+              新しい仕組みづくり。
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="partner-card">
+
+          <span>
+            STRATEGIC
+          </span>
+
+          <div>
+
+            <h3>
+              事業パートナー
+            </h3>
+
+            <p>
+              ブランド開発、市場展開など、
+              IROVAを中長期的に育てるための
+              パートナーシップ。
+            </p>
+
+          </div>
+
+        </article>
 
 
       </div>
 
+
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1605,33 +2927,41 @@
 
   <section class="contact">
 
-    <div class="container contact-inner">
+    <div class="container contact-grid">
 
 
-      <div class="section-label">
-        CONTACT
+      <div>
+
+        <div class="label">
+          CONTACT
+        </div>
+
+        <h2>
+          IROVAと、<br>
+          新しい世界を。
+        </h2>
+
       </div>
 
-      <h2>
-        Let’s Build<br>
-        Something Together.
-      </h2>
 
-      <p>
-        製造、販売、ライセンス、
-        コラボレーション、
-        投資、その他の事業提携について、
-        IROVA Studioとの連携をご検討いただける
-        企業・パートナーの皆さまからの
-        お問い合わせをお待ちしています。
-      </p>
+      <div class="contact-side">
 
-      <a
-        href="mailto:business@irovastudio.com"
-        class="contact-button"
-      >
-        BUSINESS CONTACT →
-      </a>
+        <p>
+          IROVA Studio、商品開発、
+          Color World、コラボレーションなどに
+          ご関心をお持ちの方は、
+          お気軽にお問い合わせください。
+        </p>
+
+        <a
+          href="mailto:business@irovastudio.com"
+          class="contact-button"
+        >
+          business@irovastudio.com
+          <span>↗</span>
+        </a>
+
+      </div>
 
 
     </div>
@@ -1640,6 +2970,7 @@
 
 
 </main>
+
 
 
 <!-- =========================
@@ -1661,7 +2992,7 @@
         </h3>
 
         <p>
-          Color-driven characters and lifestyle.
+          Color Makes You Special.<br>
           好きな色から、自分らしい世界へ。
         </p>
 
@@ -1671,11 +3002,11 @@
       <div class="footer-column">
 
         <h4>
-          BRAND
+          IROVA
         </h4>
 
-        <a href="index.html">
-          Home
+        <a href="ja.html">
+          ホーム
         </a>
 
         <a href="world.html">
@@ -1686,25 +3017,37 @@
           Journal
         </a>
 
+        <a href="business-ja.html">
+          IROVAについて
+        </a>
+
       </div>
 
 
       <div class="footer-column">
 
         <h4>
-          BUSINESS
+          SHOP
         </h4>
 
-        <a href="business-ja.html">
-          事業紹介
+        <a href="shop.html">
+          IROVA Shop
         </a>
 
-        <a href="#partnership">
-          Partnership
+        <a href="olive.html">
+          Olive
         </a>
 
-        <a href="mailto:business@irovastudio.com">
-          Contact
+        <a href="canyon.html">
+          Canyon
+        </a>
+
+        <a href="purple.html">
+          Purple
+        </a>
+
+        <a href="wine.html">
+          Wine
         </a>
 
       </div>
@@ -1722,6 +3065,10 @@
 
         <a href="business-ja.html">
           日本語
+        </a>
+
+        <a href="business-zh.html">
+          中文
         </a>
 
       </div>

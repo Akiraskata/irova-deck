@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <!-- =========================
+       SEO
+  ========================= -->
 
   <title>IROVA Studio — Color Makes You Special.</title>
 
   <meta
     name="description"
-    content="IROVA Studio 是一个以色彩为核心的原创角色与生活方式品牌，让色彩、角色与日常生活连接起来。"
+    content="IROVA Studio 是一个以色彩为核心的原创角色与生活方式品牌。探索 Olive、Canyon、Purple 与 Wine Color World，以及原创角色、服饰、配件与生活方式产品。"
   >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://www.irovastudio.com/zh.html"
+  >
+
+  <!-- =========================
+       LANGUAGE
+  ========================= -->
+
+  <link
+    rel="alternate"
+    hreflang="en"
+    href="https://www.irovastudio.com/"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="ja"
+    href="https://www.irovastudio.com/ja.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="zh-CN"
+    href="https://www.irovastudio.com/zh.html"
+  >
+
+  <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://www.irovastudio.com/"
+  >
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================= -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:site_name"
+    content="IROVA Studio"
+  >
+
+  <meta
+    property="og:title"
+    content="IROVA Studio — Color Makes You Special."
+  >
+
+  <meta
+    property="og:description"
+    content="从一种颜色开始一个世界。探索 IROVA Studio 的原创角色、Color World 与生活方式产品。"
+  >
+
+  <meta
+    property="og:url"
+    content="https://www.irovastudio.com/zh.html"
+  >
+
+  <!-- =========================
+       X
+  ========================= -->
+
+  <meta
+    name="twitter:card"
+    content="summary"
+  >
+
+  <meta
+    name="twitter:title"
+    content="IROVA Studio — Color Makes You Special."
+  >
+
+  <meta
+    name="twitter:description"
+    content="从一种颜色开始一个世界。探索 IROVA Studio 的原创 Color World。"
+  >
+
+  <!-- =========================
+       FONT
+  ========================= -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
@@ -32,6 +140,7 @@
     }
 
     body {
+
       font-family:
         "Plus Jakarta Sans",
         "Noto Sans SC",
@@ -41,6 +150,7 @@
       color: #111111;
 
       -webkit-font-smoothing: antialiased;
+
     }
 
     a {
@@ -48,11 +158,13 @@
       color: inherit;
     }
 
+
     /* =========================
        HEADER
     ========================= */
 
     header {
+
       position: fixed;
 
       top: 0;
@@ -73,115 +185,159 @@
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      border-bottom:
+        1px solid rgba(0, 0, 0, 0.06);
+
     }
+
 
     /* =========================
        LOGO
     ========================= */
 
     .logo {
+
       display: flex;
       align-items: baseline;
+
       gap: 7px;
 
       letter-spacing: -0.05em;
+
     }
 
     .logo-main {
+
       font-size: 24px;
       font-weight: 800;
+
     }
 
     .logo-studio {
+
       font-size: 18px;
       font-weight: 500;
+
       letter-spacing: -0.03em;
+
     }
+
 
     /* =========================
        NAV
     ========================= */
 
     nav {
+
       display: flex;
       align-items: center;
+
       gap: 28px;
+
     }
 
     nav > a,
     .language a {
+
       font-size: 13px;
       font-weight: 600;
+
       color: #555;
 
-      transition: color 0.2s ease;
+      transition:
+        color 0.2s ease;
+
     }
 
     nav > a:hover,
     .language a:hover {
+
       color: #000;
+
     }
 
+
+    /* =========================
+       LANGUAGE
+    ========================= */
+
     .language {
+
       display: flex;
       align-items: center;
+
       gap: 10px;
 
       padding-left: 18px;
 
-      border-left: 1px solid #ddd;
+      border-left:
+        1px solid #ddd;
+
     }
 
     .language a.active {
+
       color: #111;
       font-weight: 700;
+
     }
+
 
     /* =========================
        HERO
     ========================= */
 
     .hero {
+
       min-height: 100vh;
 
       display: flex;
       flex-direction: column;
+
       align-items: center;
       justify-content: center;
 
-      padding: 150px 24px 100px;
+      padding:
+        150px 24px 100px;
 
       text-align: center;
+
     }
 
     .eyebrow {
+
       margin-bottom: 24px;
 
       font-size: 11px;
       font-weight: 700;
 
       letter-spacing: 0.2em;
+
       text-transform: uppercase;
 
       color: #888;
+
     }
 
     .hero h1 {
+
       max-width: 900px;
 
       margin-bottom: 30px;
 
-      font-size: clamp(48px, 7vw, 88px);
+      font-size:
+        clamp(48px, 7vw, 88px);
 
       line-height: 1.02;
 
       letter-spacing: -0.07em;
 
       font-weight: 800;
+
     }
 
     .hero-description {
+
       max-width: 600px;
 
       margin-bottom: 40px;
@@ -191,10 +347,13 @@
       line-height: 1.9;
 
       color: #666;
+
     }
 
     .hero-button {
+
       display: inline-flex;
+
       align-items: center;
       justify-content: center;
 
@@ -211,19 +370,27 @@
       transition:
         transform 0.2s ease,
         background 0.2s ease;
+
     }
 
     .hero-button:hover {
-      transform: translateY(-2px);
+
+      transform:
+        translateY(-2px);
+
       background: #333;
+
     }
+
 
     /* =========================
        HERO IMAGE
     ========================= */
 
     .hero-image {
-      width: min(1100px, 100%);
+
+      width:
+        min(1100px, 100%);
 
       margin-top: 90px;
 
@@ -234,62 +401,82 @@
       background: #f5f5f5;
 
       box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.08);
+        0 30px 80px
+        rgba(0, 0, 0, 0.08);
+
     }
 
     .hero-image img {
+
       display: block;
+
       width: 100%;
       height: auto;
+
     }
+
 
     /* =========================
        INTRO
     ========================= */
 
     .intro {
-      padding: 140px 24px;
+
+      padding:
+        140px 24px;
 
       background: #f7f7f5;
+
     }
 
     .intro-inner {
-      width: min(1000px, 100%);
+
+      width:
+        min(1000px, 100%);
 
       margin: 0 auto;
 
       display: grid;
 
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns:
+        0.8fr 1.2fr;
 
       gap: 80px;
 
       align-items: start;
+
     }
 
     .section-label {
+
       font-size: 11px;
       font-weight: 700;
 
       letter-spacing: 0.18em;
+
       text-transform: uppercase;
 
       color: #888;
+
     }
 
     .intro h2 {
+
       margin-top: 18px;
 
-      font-size: clamp(38px, 5vw, 64px);
+      font-size:
+        clamp(38px, 5vw, 64px);
 
       line-height: 1.08;
 
       letter-spacing: -0.06em;
 
       font-weight: 800;
+
     }
 
     .intro-text p {
+
       margin-bottom: 22px;
 
       font-size: 16px;
@@ -297,66 +484,91 @@
       line-height: 2;
 
       color: #555;
+
     }
+
 
     /* =========================
        WORLDS
     ========================= */
 
     .worlds {
-      padding: 140px 24px;
+
+      padding:
+        140px 24px;
 
       background: #fff;
+
     }
 
     .worlds-header {
-      width: min(700px, 100%);
 
-      margin: 0 auto 70px;
+      width:
+        min(700px, 100%);
+
+      margin:
+        0 auto 70px;
 
       text-align: center;
+
     }
 
     .worlds-header h2 {
+
       margin-top: 18px;
       margin-bottom: 20px;
 
-      font-size: clamp(40px, 5vw, 64px);
+      font-size:
+        clamp(40px, 5vw, 64px);
 
       line-height: 1.08;
 
       letter-spacing: -0.06em;
 
       font-weight: 800;
+
     }
 
     .worlds-header p {
+
       font-size: 15px;
 
       line-height: 1.9;
 
       color: #666;
+
     }
 
+
+    /* =========================
+       WORLD GRID
+    ========================= */
+
     .world-grid {
-      width: min(1100px, 100%);
+
+      width:
+        min(1200px, 100%);
 
       margin: 0 auto;
 
       display: grid;
 
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns:
+        repeat(4, 1fr);
 
       gap: 18px;
+
     }
 
     .world-card {
-      min-height: 300px;
+
+      min-height: 320px;
 
       padding: 30px;
 
       display: flex;
       flex-direction: column;
+
       justify-content: flex-end;
 
       border-radius: 24px;
@@ -366,16 +578,22 @@
       transition:
         transform 0.25s ease,
         box-shadow 0.25s ease;
+
     }
 
     .world-card:hover {
-      transform: translateY(-4px);
+
+      transform:
+        translateY(-5px);
 
       box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.08);
+        0 20px 50px
+        rgba(0, 0, 0, 0.08);
+
     }
 
     .world-number {
+
       margin-bottom: auto;
 
       font-size: 11px;
@@ -384,221 +602,384 @@
       letter-spacing: 0.15em;
 
       color: #888;
+
     }
 
     .world-card h3 {
+
       margin-bottom: 8px;
 
       font-size: 25px;
 
       letter-spacing: -0.04em;
+
     }
 
     .world-card p {
+
       font-size: 13px;
 
       line-height: 1.8;
 
       color: #666;
+
     }
 
+
+    /* =========================
+       WORLD COLORS
+    ========================= */
+
     .olive {
-      background: #eef2e9;
+
+      background:
+        #eef2e9;
+
     }
 
     .canyon {
-      background: #f5ebe3;
+
+      background:
+        #f5ebe3;
+
     }
 
     .purple {
-      background: #eeeaf5;
+
+      background:
+        #eeeaf5;
+
     }
+
+    .wine {
+
+      background:
+        #f4e9eb;
+
+    }
+
 
     /* =========================
        SHOP
     ========================= */
 
     .shop-section {
-      padding: 150px 24px;
+
+      padding:
+        150px 24px;
 
       text-align: center;
 
-      background: #f7f7f5;
+      background:
+        #f7f7f5;
+
     }
 
     .shop-section h2 {
+
       margin-top: 18px;
       margin-bottom: 20px;
 
-      font-size: clamp(40px, 5vw, 64px);
+      font-size:
+        clamp(40px, 5vw, 64px);
 
       line-height: 1.08;
 
       letter-spacing: -0.06em;
 
       font-weight: 800;
+
     }
 
     .shop-section p {
+
       max-width: 500px;
 
-      margin: 0 auto 36px;
+      margin:
+        0 auto 36px;
 
       font-size: 15px;
 
       line-height: 1.9;
 
       color: #666;
+
     }
 
     .shop-button {
+
       display: inline-flex;
 
-      padding: 15px 30px;
+      padding:
+        15px 30px;
 
-      border-radius: 999px;
+      border-radius:
+        999px;
 
-      background: #111;
-      color: #fff;
+      background:
+        #111;
 
-      font-size: 13px;
-      font-weight: 700;
+      color:
+        #fff;
 
-      transition: transform 0.2s ease;
+      font-size:
+        13px;
+
+      font-weight:
+        700;
+
+      transition:
+        transform 0.2s ease;
+
     }
 
     .shop-button:hover {
-      transform: translateY(-2px);
+
+      transform:
+        translateY(-2px);
+
     }
+
 
     /* =========================
        BUSINESS
     ========================= */
 
     .business {
-      padding: 100px 24px;
 
-      text-align: center;
+      padding:
+        100px 24px;
 
-      background: #fff;
+      text-align:
+        center;
+
+      background:
+        #fff;
+
     }
 
     .business p {
-      margin-bottom: 18px;
 
-      font-size: 13px;
+      margin-bottom:
+        18px;
 
-      color: #888;
+      font-size:
+        13px;
+
+      color:
+        #888;
+
     }
 
     .business-link {
-      font-size: 15px;
 
-      font-weight: 700;
+      font-size:
+        15px;
 
-      border-bottom: 1px solid #111;
+      font-weight:
+        700;
 
-      padding-bottom: 4px;
+      border-bottom:
+        1px solid #111;
+
+      padding-bottom:
+        4px;
+
     }
+
 
     /* =========================
        FOOTER
     ========================= */
 
     footer {
-      padding: 38px 40px;
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding:
+        38px 40px;
 
-      border-top: 1px solid #eee;
+      display:
+        flex;
 
-      font-size: 11px;
+      align-items:
+        center;
 
-      color: #999;
+      justify-content:
+        space-between;
+
+      border-top:
+        1px solid #eee;
+
+      font-size:
+        11px;
+
+      color:
+        #999;
+
     }
 
     .footer-links {
-      display: flex;
-      gap: 20px;
+
+      display:
+        flex;
+
+      gap:
+        20px;
+
     }
 
     .footer-links a:hover {
-      color: #111;
+
+      color:
+        #111;
+
     }
+
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media
+    (max-width: 1000px) {
+
+      .world-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+    }
+
 
     /* =========================
        MOBILE
     ========================= */
 
-    @media (max-width: 800px) {
+    @media
+    (max-width: 800px) {
 
       header {
-        padding: 20px;
+
+        padding:
+          20px;
+
       }
 
       nav {
-        gap: 14px;
+
+        gap:
+          14px;
+
       }
 
       nav > a {
-        display: none;
+
+        display:
+          none;
+
       }
 
       .language {
-        padding-left: 0;
-        border-left: none;
+
+        padding-left:
+          0;
+
+        border-left:
+          none;
+
       }
 
       .hero {
-        padding-top: 130px;
+
+        padding-top:
+          130px;
+
       }
 
       .hero h1 {
-        font-size: clamp(48px, 14vw, 72px);
+
+        font-size:
+          clamp(48px, 14vw, 72px);
+
       }
 
       .hero-description {
-        font-size: 14px;
+
+        font-size:
+          14px;
+
       }
 
       .hero-image {
-        margin-top: 65px;
 
-        border-radius: 18px;
+        margin-top:
+          65px;
+
+        border-radius:
+          18px;
+
       }
 
       .intro-inner {
-        grid-template-columns: 1fr;
 
-        gap: 40px;
+        grid-template-columns:
+          1fr;
+
+        gap:
+          40px;
+
       }
 
       .world-grid {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
+
       }
 
       .world-card {
-        min-height: 250px;
+
+        min-height:
+          250px;
+
       }
 
       footer {
-        padding: 30px 20px;
 
-        flex-direction: column;
+        padding:
+          30px 20px;
 
-        gap: 18px;
+        flex-direction:
+          column;
 
-        text-align: center;
+        gap:
+          18px;
+
+        text-align:
+          center;
+
+      }
+
+      .footer-links {
+
+        flex-wrap:
+          wrap;
+
+        justify-content:
+          center;
+
       }
 
     }
 
   </style>
+
 </head>
 
+
 <body>
+
 
 <!-- =========================
      HEADER
@@ -607,9 +988,9 @@
 <header>
 
   <a
-    href="index.html"
+    href="zh.html"
     class="logo"
-    aria-label="IROVA Studio"
+    aria-label="IROVA Studio 中文首页"
   >
 
     <span class="logo-main">
@@ -629,7 +1010,15 @@
       Shop
     </a>
 
-    <a href="business.html">
+    <a href="world.html">
+      World
+    </a>
+
+    <a href="journal.html">
+      Journal
+    </a>
+
+    <a href="business-zh.html">
       Business
     </a>
 
@@ -664,6 +1053,7 @@
 
 <main>
 
+
   <!-- =========================
        HERO
   ========================= -->
@@ -682,9 +1072,12 @@
 
 
     <p class="hero-description">
+
       一个从色彩出发的原创角色与生活方式品牌。
-      IROVA Studio让色彩、角色与日常生活相遇，
+
+      IROVA Studio 让色彩、角色与日常生活相遇，
       创造属于每一种颜色的独特世界。
+
     </p>
 
 
@@ -700,12 +1093,13 @@
 
       <img
         src="img/358.png"
-        alt="IROVA Studio 色彩世界与产品系列"
+        alt="IROVA Studio Color World 与产品系列"
       >
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -715,6 +1109,7 @@
   <section class="intro">
 
     <div class="intro-inner">
+
 
       <div>
 
@@ -733,7 +1128,7 @@
       <div class="intro-text">
 
         <p>
-          IROVA Studio从一个简单而熟悉的元素开始：
+          IROVA Studio 从一个简单而熟悉的元素开始：
           色彩。
         </p>
 
@@ -743,17 +1138,18 @@
         </p>
 
         <p>
-          从手机周边、数码配件，到服饰、
-          包袋、毛绒玩偶与各种生活小物，
-          IROVA希望让这些产品拥有共同的色彩语言，
+          从数码配件，到服饰、包袋、毛绒玩偶与各种生活小物，
+          IROVA 希望让这些产品拥有共同的色彩语言，
           自然而然地融入你的日常。
         </p>
 
       </div>
 
+
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -774,8 +1170,8 @@
       </h2>
 
       <p>
-        每一种颜色，都有自己的角色、
-        氛围与故事。
+        每一种颜色，
+        都有自己的角色、伙伴、氛围与故事。
       </p>
 
     </div>
@@ -784,7 +1180,12 @@
     <div class="world-grid">
 
 
-      <article class="world-card olive">
+      <!-- OLIVE -->
+
+      <a
+        href="olive.html"
+        class="world-card olive"
+      >
 
         <div class="world-number">
           WORLD 01
@@ -799,10 +1200,16 @@
           一个让人慢下来的世界。
         </p>
 
-      </article>
+      </a>
 
 
-      <article class="world-card canyon">
+
+      <!-- CANYON -->
+
+      <a
+        href="canyon.html"
+        class="world-card canyon"
+      >
 
         <div class="world-number">
           WORLD 02
@@ -817,10 +1224,16 @@
           一个适合出发与探索的世界。
         </p>
 
-      </article>
+      </a>
 
 
-      <article class="world-card purple">
+
+      <!-- PURPLE -->
+
+      <a
+        href="purple.html"
+        class="world-card purple"
+      >
 
         <div class="world-number">
           WORLD 03
@@ -832,15 +1245,40 @@
 
         <p>
           夜色、城市与数字想象。
-          一个属于夜晚的世界。
+          一个属于夜晚与梦想的世界。
         </p>
 
-      </article>
+      </a>
+
+
+
+      <!-- WINE -->
+
+      <a
+        href="wine.html"
+        class="world-card wine"
+      >
+
+        <div class="world-number">
+          WORLD 04
+        </div>
+
+        <h3>
+          Wine
+        </h3>
+
+        <p>
+          深色、夜晚与安静的热情。
+          Rumi 与黑猫 Kuro 所生活的温柔世界。
+        </p>
+
+      </a>
 
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -862,8 +1300,8 @@
 
     <p>
       探索原创角色周边、数码配件、
-      服饰、毛绒玩偶以及更多
-      来自 IROVA 世界的日常物件。
+      服饰、包袋、毛绒玩偶以及更多
+      来自 IROVA Color World 的日常物件。
     </p>
 
 
@@ -877,6 +1315,7 @@
   </section>
 
 
+
   <!-- =========================
        BUSINESS
   ========================= -->
@@ -884,19 +1323,21 @@
   <section class="business">
 
     <p>
-      想了解 IROVA Studio？
+      品牌合作 · 产品开发 · 供应链 · 渠道 · 投资
     </p>
 
     <a
-      href="business.html"
+      href="business-zh.html"
       class="business-link"
     >
-      商务合作与伙伴 →
+      了解 IROVA Studio 商务合作 →
     </a>
 
   </section>
 
+
 </main>
+
 
 
 <!-- =========================
@@ -905,12 +1346,36 @@
 
 <footer>
 
+
   <div>
     © 2026 IROVA Studio
   </div>
 
 
   <div class="footer-links">
+
+
+    <a href="shop.html">
+      Shop
+    </a>
+
+
+    <a href="world.html">
+      Color World
+    </a>
+
+
+    <a href="journal.html">
+      Journal
+    </a>
+
+
+    <a
+      href="business-zh.html"
+    >
+      商务合作
+    </a>
+
 
     <a
       href="https://www.instagram.com/IROVAStudio/"
@@ -920,6 +1385,7 @@
       Instagram
     </a>
 
+
     <a
       href="https://x.com/IROVAStudio"
       target="_blank"
@@ -928,13 +1394,13 @@
       X
     </a>
 
-    <a href="business.html">
-      联系我们
-    </a>
 
   </div>
 
+
 </footer>
 
+
 </body>
+
 </html>
