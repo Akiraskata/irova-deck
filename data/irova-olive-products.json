@@ -1,0 +1,649 @@
+{
+  "brand": "IROVA",
+  "collection": "Olive",
+  "collection_ja": "オリーブ",
+  "logo": "ʕ•ᴥ•ʔ",
+  "asset_type": "concept_product_mockups",
+  "products": [
+    {
+      "id": "irova-olive-phone-case-smooth",
+      "slug": "phone-case-smooth",
+      "index": 1,
+      "category": "digital",
+      "phase": "begin",
+      "name": {
+        "zh": "光面手机壳",
+        "ja": "スマホケース・スムース",
+        "en": "Smooth phone case"
+      },
+      "description": {
+        "zh": "把设备配色延续到每天拿在手里的物件，小标志成为整个系列的起点。",
+        "ja": "デバイスの色を、毎日手にするものへ。小さなロゴから同色の世界が始まります。",
+        "en": "An everyday starting point: device colour, a muted finish and a small recognisable sign."
+      },
+      "image": "assets/irova-olive/images/irova-olive-phone-case-smooth.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-phone-case-ribbed",
+      "slug": "phone-case-ribbed",
+      "index": 2,
+      "category": "digital",
+      "phase": "begin",
+      "name": {
+        "zh": "纹理手机壳",
+        "ja": "スマホケース・リブ",
+        "en": "Ribbed phone case"
+      },
+      "description": {
+        "zh": "用表面纹理带来同色的另一种表达，让配件之间既统一又有变化。",
+        "ja": "同じ色に、異なる質感を。リブの表情でシリーズに変化を加えます。",
+        "en": "A second expression of the same colour, with a ribbed surface and a restrained logo."
+      },
+      "image": "assets/irova-olive/images/irova-olive-phone-case-ribbed.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-wrist-lanyard",
+      "slug": "wrist-lanyard",
+      "index": 3,
+      "category": "digital",
+      "phase": "begin",
+      "name": {
+        "zh": "手机腕绳",
+        "ja": "スマホハンドストラップ",
+        "en": "Phone wrist strap"
+      },
+      "description": {
+        "zh": "从手机延伸到手腕，用编织绳与奶油白织标连接随身搭配。",
+        "ja": "スマホから手首へ。編み紐とクリーム色の織りネームで持ち歩く色をつなぎます。",
+        "en": "A braided wrist loop and cream label connect the phone to your everyday carry."
+      },
+      "image": "assets/irova-olive/images/irova-olive-wrist-lanyard.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-earbud-case",
+      "slug": "earbud-case",
+      "index": 4,
+      "category": "digital",
+      "phase": "begin",
+      "name": {
+        "zh": "耳机保护套",
+        "ja": "イヤホンケース",
+        "en": "Earbud case"
+      },
+      "description": {
+        "zh": "把同一套色彩和符号缩小到耳机保护套，补齐日常数码小物。",
+        "ja": "イヤホンにも、同じ色と小さなサインを。身近なデジタル小物を揃えます。",
+        "en": "The same colour and sign at a smaller scale, completing the everyday device family."
+      },
+      "image": "assets/irova-olive/images/irova-olive-earbud-case.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-laptop-sleeve",
+      "slug": "laptop-sleeve",
+      "index": 5,
+      "category": "digital",
+      "phase": "extend",
+      "name": {
+        "zh": "电脑内胆包",
+        "ja": "PCスリーブ",
+        "en": "Laptop sleeve"
+      },
+      "description": {
+        "zh": "从手机配件延展到电脑收纳，让学习与通勤也拥有一致的色彩。",
+        "ja": "スマホからPCの収納へ。通学や通勤にも、同じ色のつながりを。",
+        "en": "Extend the device family to study and commuting with a softly structured laptop sleeve."
+      },
+      "image": "assets/irova-olive/images/irova-olive-laptop-sleeve.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-sticker-set",
+      "slug": "sticker-set",
+      "index": 6,
+      "category": "character",
+      "phase": "begin",
+      "name": {
+        "zh": "贴纸套装",
+        "ja": "ステッカーセット",
+        "en": "Sticker set"
+      },
+      "description": {
+        "zh": "让イロチャン先出现在熟悉的物件上，成为最轻巧的品牌入口。",
+        "ja": "いつもの持ち物にイロチャンを。小さなステッカーがブランドとの最初の出会いに。",
+        "en": "Let イロチャン appear on familiar things: a small, playful introduction to the brand."
+      },
+      "image": "assets/irova-olive/images/irova-olive-sticker-set.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-acrylic-keychain",
+      "slug": "acrylic-keychain",
+      "index": 7,
+      "category": "character",
+      "phase": "begin",
+      "name": {
+        "zh": "亚克力钥匙扣",
+        "ja": "アクリルキーホルダー",
+        "en": "Acrylic keychain"
+      },
+      "description": {
+        "zh": "把可以打出来的符号变成随身挂件，让手机、钥匙和包袋相互关联。",
+        "ja": "入力できる記号を、持ち歩けるチャームに。鍵やバッグに小さな仲間を。",
+        "en": "Turn a typeable symbol into a carryable charm for keys, straps and bags."
+      },
+      "image": "assets/irova-olive/images/irova-olive-acrylic-keychain.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-enamel-pin-set",
+      "slug": "enamel-pin-set",
+      "index": 8,
+      "category": "character",
+      "phase": "begin",
+      "name": {
+        "zh": "珐琅徽章套装",
+        "ja": "ピンバッジセット",
+        "en": "Enamel pin set"
+      },
+      "description": {
+        "zh": "以小尺寸的标志组合形成可交换、可搭配的角色小物。",
+        "ja": "小さなサインを組み合わせて。服やバッグに付けて楽しむピンセット。",
+        "en": "Small signs to arrange, collect and wear across a jacket or a bag."
+      },
+      "image": "assets/irova-olive/images/irova-olive-enamel-pin-set.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-embroidered-patch-set",
+      "slug": "embroidered-patch-set",
+      "index": 9,
+      "category": "character",
+      "phase": "begin",
+      "name": {
+        "zh": "刺绣章套装",
+        "ja": "刺繍ワッペンセット",
+        "en": "Embroidered patch set"
+      },
+      "description": {
+        "zh": "用织物触感连接角色与服饰，也为包袋和后续系列提供共同的标志语言。",
+        "ja": "布の質感で、キャラクターとウェアをつなぐ。バッグにも共通のサインを。",
+        "en": "A textile expression of the character, connecting clothing, bags and future collections."
+      },
+      "image": "assets/irova-olive/images/irova-olive-embroidered-patch-set.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-tshirt",
+      "slug": "tshirt",
+      "index": 10,
+      "category": "wear",
+      "phase": "begin",
+      "name": {
+        "zh": "T恤",
+        "ja": "Tシャツ",
+        "en": "Everyday T-shirt"
+      },
+      "description": {
+        "zh": "让 Olive 从设备进入穿搭，以胸前小标志保留轻松、日常的表达。",
+        "ja": "デバイスのOliveを、いつものコーデへ。胸元の小さなロゴで自然に楽しむ一枚。",
+        "en": "Bring Olive into an everyday outfit with a quiet sign at the chest."
+      },
+      "image": "assets/irova-olive/images/irova-olive-tshirt.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-hoodie",
+      "slug": "hoodie",
+      "index": 11,
+      "category": "wear",
+      "phase": "extend",
+      "name": {
+        "zh": "连帽卫衣",
+        "ja": "パーカー",
+        "en": "Pullover hoodie"
+      },
+      "description": {
+        "zh": "延伸季节与穿搭层次，用奶油白细节与其他 Olive 单品形成呼应。",
+        "ja": "季節と着こなしを広げる。クリーム色のディテールがOliveのアイテムと響き合います。",
+        "en": "Add another season and layer to the wardrobe, with cream details that echo the collection."
+      },
+      "image": "assets/irova-olive/images/irova-olive-hoodie.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-knit-beanie",
+      "slug": "knit-beanie",
+      "index": 12,
+      "category": "wear",
+      "phase": "extend",
+      "name": {
+        "zh": "针织帽",
+        "ja": "ニット帽",
+        "en": "Knit beanie"
+      },
+      "description": {
+        "zh": "用针织质感和小织标完成头部的同色搭配，让套装更完整。",
+        "ja": "ニットの質感と小さな織りネーム。頭から足元まで同色のコーデをつなぎます。",
+        "en": "Knit texture and a small woven sign complete the colour story above the shoulders."
+      },
+      "image": "assets/irova-olive/images/irova-olive-knit-beanie.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-socks",
+      "slug": "socks",
+      "index": 13,
+      "category": "wear",
+      "phase": "extend",
+      "name": {
+        "zh": "袜子",
+        "ja": "ソックス",
+        "en": "Colour-block socks"
+      },
+      "description": {
+        "zh": "用奶油白与 Olive 的比例变化，将颜色带到不需要大标志的细节里。",
+        "ja": "クリーム色とOliveのバランスで、足元にも色を。大きなロゴに頼らない小さな表現。",
+        "en": "Cream and Olive carry the colour into smaller outfit details."
+      },
+      "image": "assets/irova-olive/images/irova-olive-socks.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-sneakers",
+      "slug": "sneakers",
+      "index": 14,
+      "category": "wear",
+      "phase": "expand",
+      "name": {
+        "zh": "休闲鞋",
+        "ja": "スニーカー",
+        "en": "Lifestyle sneakers"
+      },
+      "description": {
+        "zh": "作为穿搭系列的长期延伸，让设备、衣服、包袋与鞋形成完整的一套。",
+        "ja": "ウェアの長期的な展開として。デバイス、服、バッグ、靴まで一つの色でつなぎます。",
+        "en": "A longer-term wardrobe extension, connecting the device, clothing, bag and footwear."
+      },
+      "image": "assets/irova-olive/images/irova-olive-sneakers.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-card-holder",
+      "slug": "card-holder",
+      "index": 15,
+      "category": "carry",
+      "phase": "extend",
+      "name": {
+        "zh": "卡包",
+        "ja": "カードケース",
+        "en": "Slim card holder"
+      },
+      "description": {
+        "zh": "以收敛的标志与简洁的收纳形态，延续每天出门的小物搭配。",
+        "ja": "控えめなロゴとシンプルな収納。毎日の外出に、同じ色の小物を。",
+        "en": "A small, restrained companion for the things you carry every day."
+      },
+      "image": "assets/irova-olive/images/irova-olive-card-holder.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-crossbody-bag",
+      "slug": "crossbody-bag",
+      "index": 16,
+      "category": "carry",
+      "phase": "extend",
+      "name": {
+        "zh": "斜挎包",
+        "ja": "ショルダーバッグ",
+        "en": "Crossbody bag"
+      },
+      "description": {
+        "zh": "从手机与随身小物出发，形成适合轻装出门的同色包袋方向。",
+        "ja": "スマホと身近な小物から。身軽な外出に合わせる、同色のバッグを考えます。",
+        "en": "A compact bag direction built around a phone and the small essentials of a day out."
+      },
+      "image": "assets/irova-olive/images/irova-olive-crossbody-bag.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-canvas-tote",
+      "slug": "canvas-tote",
+      "index": 17,
+      "category": "carry",
+      "phase": "begin",
+      "name": {
+        "zh": "帆布袋",
+        "ja": "トートバッグ",
+        "en": "Canvas tote"
+      },
+      "description": {
+        "zh": "让标志被自然看见，也让手机配件、服饰和日常用品进入同一个出门场景。",
+        "ja": "自然に見えるブランドのサイン。小物、ウェア、日用品を一緒に持ち出すトート。",
+        "en": "A visible brand sign that brings accessories, clothing and everyday objects into one outing."
+      },
+      "image": "assets/irova-olive/images/irova-olive-canvas-tote.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-zip-pouch",
+      "slug": "zip-pouch",
+      "index": 18,
+      "category": "carry",
+      "phase": "begin",
+      "name": {
+        "zh": "收纳包",
+        "ja": "ポーチ",
+        "en": "Zip pouch"
+      },
+      "description": {
+        "zh": "把零散的小物收在一起，作为随身套装与礼盒组合的连接单品。",
+        "ja": "小物をひとつにまとめる。持ち歩くセットやギフトをつなぐポーチ。",
+        "en": "Bring small objects together, connecting everyday carry sets and gift combinations."
+      },
+      "image": "assets/irova-olive/images/irova-olive-zip-pouch.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-backpack",
+      "slug": "backpack",
+      "index": 19,
+      "category": "carry",
+      "phase": "extend",
+      "name": {
+        "zh": "双肩背包",
+        "ja": "バックパック",
+        "en": "Everyday backpack"
+      },
+      "description": {
+        "zh": "把同色搭配扩展到通学与通勤，与电脑内胆包、保温杯形成组合。",
+        "ja": "通学や通勤にも、好きな色を。PCスリーブやボトルと組み合わせるバッグ。",
+        "en": "Extend the colour into study and commuting, alongside a laptop sleeve and bottle."
+      },
+      "image": "assets/irova-olive/images/irova-olive-backpack.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-weekender-bag",
+      "slug": "weekender-bag",
+      "index": 20,
+      "category": "carry",
+      "phase": "expand",
+      "name": {
+        "zh": "旅行袋",
+        "ja": "ボストンバッグ",
+        "en": "Weekender bag"
+      },
+      "description": {
+        "zh": "从每日出门走向短途旅行，用相同配色连接更多容量与使用场景。",
+        "ja": "毎日の外出から、週末の旅へ。同じ色で、持ち物とシーンを広げます。",
+        "en": "Move from daily outings to a short trip, keeping the same colour language at a larger scale."
+      },
+      "image": "assets/irova-olive/images/irova-olive-weekender-bag.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-carry-on-suitcase",
+      "slug": "carry-on-suitcase",
+      "index": 21,
+      "category": "carry",
+      "phase": "expand",
+      "name": {
+        "zh": "登机旅行箱",
+        "ja": "キャリーケース",
+        "en": "Carry-on suitcase concept"
+      },
+      "description": {
+        "zh": "作为系列的大尺寸方向，让一个小小的符号延展到完整旅行场景。",
+        "ja": "大きなサイズへの展開案。小さな記号から、旅のシーン全体へ世界を広げます。",
+        "en": "A larger-scale direction that carries the small symbol into a complete travel scene."
+      },
+      "image": "assets/irova-olive/images/irova-olive-carry-on-suitcase.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-folding-umbrella",
+      "slug": "folding-umbrella",
+      "index": 22,
+      "category": "carry",
+      "phase": "extend",
+      "name": {
+        "zh": "折叠伞",
+        "ja": "折りたたみ傘",
+        "en": "Folding umbrella"
+      },
+      "description": {
+        "zh": "把 Olive 带进雨天，收纳套与织标继续沿用包袋系列的视觉语言。",
+        "ja": "雨の日にもOliveを。ケースと織りネームでバッグと共通の表情をつくります。",
+        "en": "Carry Olive into a rainy day, with a sleeve and woven sign that echo the bag family."
+      },
+      "image": "assets/irova-olive/images/irova-olive-folding-umbrella.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-cloth-notebook",
+      "slug": "cloth-notebook",
+      "index": 23,
+      "category": "living",
+      "phase": "extend",
+      "name": {
+        "zh": "布面笔记本",
+        "ja": "クロスノート",
+        "en": "Cloth-bound notebook"
+      },
+      "description": {
+        "zh": "把设备色带到学习与记录场景，布面触感让日常文具更有统一感。",
+        "ja": "学びや記録の時間にも、デバイスの色を。布の質感で文具の世界を揃えます。",
+        "en": "Bring the device colour into study and note-taking through a tactile cloth cover."
+      },
+      "image": "assets/irova-olive/images/irova-olive-cloth-notebook.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-memo-book",
+      "slug": "memo-book",
+      "index": 24,
+      "category": "living",
+      "phase": "extend",
+      "name": {
+        "zh": "奶油白记事本",
+        "ja": "メモノート",
+        "en": "Cream memo notebook"
+      },
+      "description": {
+        "zh": "用奶油白作为 Olive 系列的留白，让同一套文具拥有轻重不同的层次。",
+        "ja": "Oliveの中に、クリーム色の余白を。同じ文具シリーズに軽やかな変化を。",
+        "en": "Use cream as breathing room within the Olive stationery family."
+      },
+      "image": "assets/irova-olive/images/irova-olive-memo-book.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-pen-set",
+      "slug": "pen-set",
+      "index": 25,
+      "category": "living",
+      "phase": "extend",
+      "name": {
+        "zh": "签字笔套装",
+        "ja": "ペンセット",
+        "en": "Pen set"
+      },
+      "description": {
+        "zh": "让色彩延续到最细小的桌面工具，与笔记本组成成套的记录用品。",
+        "ja": "小さなデスクツールにも、同じ色を。ノートと合わせて、書く時間を揃えます。",
+        "en": "Carry the colour into the smallest desk tools, paired with the notebooks."
+      },
+      "image": "assets/irova-olive/images/irova-olive-pen-set.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-insulated-bottle",
+      "slug": "insulated-bottle",
+      "index": 26,
+      "category": "living",
+      "phase": "begin",
+      "name": {
+        "zh": "保温水瓶",
+        "ja": "ステンレスボトル",
+        "en": "Insulated bottle"
+      },
+      "description": {
+        "zh": "将同色习惯带到通勤、学习与外出，连接服饰、包袋和随身用品。",
+        "ja": "通勤、通学、外出にも同じ色を。ウェアやバッグとつながる毎日のボトル。",
+        "en": "An everyday object connecting commuting, study, clothing and bags."
+      },
+      "image": "assets/irova-olive/images/irova-olive-insulated-bottle.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-travel-tumbler",
+      "slug": "travel-tumbler",
+      "index": 27,
+      "category": "living",
+      "phase": "extend",
+      "name": {
+        "zh": "随行保温杯",
+        "ja": "タンブラー",
+        "en": "Travel tumbler"
+      },
+      "description": {
+        "zh": "用更短的杯型扩展饮用场景，继续保持系列一致的小标志与配色。",
+        "ja": "短めのフォルムで、飲み物のシーンを広げる。同じ小さなロゴと配色を守ります。",
+        "en": "A shorter silhouette extends the drinkware family while keeping its quiet sign and palette."
+      },
+      "image": "assets/irova-olive/images/irova-olive-travel-tumbler.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-ceramic-mug",
+      "slug": "ceramic-mug",
+      "index": 28,
+      "category": "living",
+      "phase": "extend",
+      "name": {
+        "zh": "陶瓷马克杯",
+        "ja": "マグカップ",
+        "en": "Ceramic mug"
+      },
+      "description": {
+        "zh": "奶油白杯身与 Olive 细节，把随身用品的色彩语言自然带回家。",
+        "ja": "クリーム色の本体とOliveのディテール。持ち歩く色を、自然に家の中へ。",
+        "en": "Cream ceramic and Olive accents bring the everyday carry palette back home."
+      },
+      "image": "assets/irova-olive/images/irova-olive-ceramic-mug.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-cushion",
+      "slug": "cushion",
+      "index": 29,
+      "category": "living",
+      "phase": "expand",
+      "name": {
+        "zh": "抱枕",
+        "ja": "クッション",
+        "en": "Woven cushion"
+      },
+      "description": {
+        "zh": "把标志放大到柔软的居家物件上，让角色以另一种尺度陪伴日常。",
+        "ja": "柔らかな暮らしのアイテムに、大きなサインを。別のスケールで毎日を一緒に。",
+        "en": "A larger character sign on a soft object, adding another scale to everyday companionship."
+      },
+      "image": "assets/irova-olive/images/irova-olive-cushion.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-knit-throw",
+      "slug": "knit-throw",
+      "index": 30,
+      "category": "living",
+      "phase": "expand",
+      "name": {
+        "zh": "针织毯",
+        "ja": "ブランケット",
+        "en": "Knit throw"
+      },
+      "description": {
+        "zh": "以织物纹理和奶油白边缘延展居家氛围，小织标保持品牌识别。",
+        "ja": "ニットの質感とクリーム色の縁で、家の雰囲気を広げる。小さな織りネームを添えて。",
+        "en": "Knit texture, cream edges and a small woven sign extend the collection into the home."
+      },
+      "image": "assets/irova-olive/images/irova-olive-knit-throw.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-desk-mat",
+      "slug": "desk-mat",
+      "index": 31,
+      "category": "living",
+      "phase": "expand",
+      "name": {
+        "zh": "桌垫",
+        "ja": "デスクマット",
+        "en": "Desk mat"
+      },
+      "description": {
+        "zh": "让手机、电脑与文具在同一片 Olive 色里相遇，形成完整的桌面方向。",
+        "ja": "スマホ、PC、文具をひとつのOliveでつなぐ。デスク全体への展開案。",
+        "en": "Connect the phone, computer and stationery within one Olive desktop setting."
+      },
+      "image": "assets/irova-olive/images/irova-olive-desk-mat.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "irova-olive-gift-box",
+      "slug": "gift-box",
+      "index": 32,
+      "category": "living",
+      "phase": "extend",
+      "name": {
+        "zh": "礼盒包装",
+        "ja": "ギフトボックス",
+        "en": "Gift box packaging"
+      },
+      "description": {
+        "zh": "以统一的包装收束多个单品，让同色组合成为可以赠送的一整套。",
+        "ja": "複数のアイテムを、ひとつの包装へ。同色の組み合わせを贈れるセットに。",
+        "en": "Bring separate objects together as a gift, using one coherent packaging language."
+      },
+      "image": "assets/irova-olive/images/irova-olive-gift-box.webp",
+      "width": 1000,
+      "height": 1000
+    }
+  ]
+}
