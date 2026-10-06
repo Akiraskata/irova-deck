@@ -4,10 +4,11 @@
   const products=window.IROVA_DATA.products;
   const bySlug=new Map(products.map(product=>[product.slug,product]));
   const params=new URL(window.location.href).searchParams;
+  const supportedLanguages=['ja','zh','en'];
   let savedLanguage;
-  try { savedLanguage=localStorage.getItem('irova-olive-language'); } catch {}
+  try { savedLanguage=localStorage.getItem('irova-language'); } catch {}
   const state={
-    language:ui[params.get('lang')]?params.get('lang'):(ui[savedLanguage]?savedLanguage:'zh'),
+    language:supportedLanguages.includes(params.get('lang'))?params.get('lang'):(supportedLanguages.includes(savedLanguage)?savedLanguage:'ja'),
     category:categories.some(c=>c.id===params.get('category'))?params.get('category'):'all',
     phase:phases.some(p=>p.id===params.get('phase'))?params.get('phase'):'all',
     query:params.get('q')||'',
@@ -77,6 +78,14 @@
     document.title=text('pageTitle');
     document.querySelector('meta[name="description"]').content=text('heroCopy');
     nodes.language.value=state.language;
+    try { localStorage.setItem('irova-language',state.language); } catch {}
+    document.querySelectorAll('a[data-language-link]').forEach(link=>{
+      const href=link.getAttribute('href');
+      const url=new URL(href,document.baseURI);
+      url.searchParams.set('lang',state.language);
+      link.setAttribute('href',href.split(/[?#]/)[0]+url.search+url.hash);
+    });
+    document.querySelector('.main-nav').setAttribute('aria-label',text('navigation'));
     document.querySelectorAll('[data-i18n]').forEach(node=>node.textContent=text(node.dataset.i18n));
     document.querySelectorAll('[data-alt-product]').forEach(node=>node.alt='IROVA Olive '+name(bySlug.get(node.dataset.altProduct)));
     nodes.search.placeholder=text('searchPlaceholder');
@@ -183,7 +192,6 @@
   document.addEventListener('keydown',event=>{if(event.key==='Escape' && nodes.dialog.open && typeof nodes.dialog.close!=='function')closeProduct();});
   nodes.language.addEventListener('change',()=>{
     state.language=nodes.language.value;
-    try { localStorage.setItem('irova-olive-language',state.language); } catch {}
     translatePage();
   });
   translatePage();

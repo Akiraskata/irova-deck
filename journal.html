@@ -925,6 +925,63 @@
         flex-direction: column;
       }
     }
+
+    /* ========================================
+       OLIVE COLLECTION ENTRY
+    ======================================== */
+
+    .nav a.olive-collection-nav {
+      color: #69704b;
+    }
+
+    .nav a.olive-collection-nav:hover {
+      color: #353b29;
+    }
+
+    .olive-collection-action {
+      margin-top: 30px;
+    }
+
+    .olive-collection-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 48px;
+      max-width: 100%;
+      padding: 12px 26px;
+      border: 1px solid #69704b;
+      border-radius: 999px;
+      background: #69704b;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .olive-collection-button:hover {
+      background: #535a39;
+      border-color: #535a39;
+    }
+
+    .olive-collection-button:focus-visible,
+    .olive-collection-nav:focus-visible {
+      outline: 3px solid #69704b;
+      outline-offset: 4px;
+    }
+
+  
+    /* Shared language control */
+    .journal-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .journal-language-control{flex-shrink:0}
+    .journal-language-control select{font-family:inherit;font-weight:600;font-size:12px;color:#353b29;border:1px solid #ddd;border-radius:999px;background:#fff;min-height:44px;padding:8px 12px;cursor:pointer}
+    .journal-language-control select:focus-visible{outline:3px solid #69704b;outline-offset:3px}
+    .header-inner{gap:20px}.nav{gap:18px}.nav a{white-space:nowrap}
+    @media(min-width:981px) and (max-width:1180px){.header-inner{gap:14px}.nav{gap:14px}.nav a{font-size:11px}}
+    @media(max-width:980px){.header-inner{gap:10px}.nav{margin-left:auto}.journal-language-control select{font-size:11px;padding-inline:8px}.nav .cart{font-size:11px;padding:8px 10px}}
+
   </style>
 </head>
 
@@ -969,40 +1026,28 @@
     </a>
 
 
-    <nav class="nav">
+    <nav class="nav" aria-label="メインナビゲーション">
 
-      <a href="shop.html">
-        SHOP
-      </a>
+      <a href="shop.html" data-journal-i18n="navShop">SHOP</a>
 
-      <a href="world.html">
-        WORLD
-      </a>
+      <a href="world.html" data-journal-i18n="navWorld">WORLD</a>
 
-      <a href="shop.html#plush">
-        ぬいぐるみ
-      </a>
+      <a href="shop.html#plush" data-journal-i18n="navPlush">ぬいぐるみ</a>
 
-      <a href="shop.html#goods">
-        GOODS
-      </a>
+      <a href="shop.html#goods" data-journal-i18n="navGoods">GOODS</a>
 
-      <a href="shop.html#fashion">
-        FASHION
-      </a>
+      <a href="shop.html#fashion" data-journal-i18n="navFashion">FASHION</a>
 
-      <a href="journal.html" class="active">
-        JOURNAL
-      </a>
+      <a href="journal.html?lang=ja" class="active" data-journal-i18n="navJournal" data-language-link="">JOURNAL</a>
 
-      <a href="#" class="cart">
-        CART
-        <span>0</span>
+      <a href="olive-collection.html?lang=ja" class="olive-collection-nav" data-journal-i18n="navOlive" data-language-link="">OLIVE</a>
+
+      <a href="#" class="cart"><span data-journal-i18n="navCart">CART</span><span>0</span>
       </a>
 
     </nav>
 
-  </div>
+  <label class="journal-language-control"><span class="journal-sr-only" data-journal-i18n="language">言語を選ぶ</span><select id="journal-language"><option value="ja" selected>日本語</option><option value="zh">中文</option><option value="en">EN</option></select></label></div>
 
 </header>
 
@@ -1022,18 +1067,16 @@
         IROVA JOURNAL
       </div>
 
-      <h1>
-        Stories & Ideas.
-      </h1>
+      <h1 data-journal-i18n="heroTitle">Stories &amp; Ideas.</h1>
 
-      <p>
-        色から生まれるキャラクター、
-        その世界にある小さな物語、
-        そして毎日の暮らし。
-        <br>
-        IROVA JOURNALでは、
-        Color Worldの奥にあるストーリーを紹介します。
-      </p>
+      <p data-journal-i18n="heroCopy">色から生まれるキャラクター、その世界にある小さな物語、そして毎日の暮らし。<br>IROVA JOURNALでは、Color Worldの奥にあるストーリーを紹介します。</p>
+
+      <div class="olive-collection-action">
+        <a href="olive-collection.html?lang=ja" class="olive-collection-button" data-language-link="">
+          <span data-journal-i18n="oliveCta">Olive コレクションを見る</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
 
     </div>
 
@@ -1051,44 +1094,20 @@
 
       <a href="olive.html" class="feature-image">
 
-        <img
-          src="img/355.png"
-          alt="Olive World"
-        >
+        <img src="img/355.png" alt="オリーブの世界" data-journal-alt="imageAlt0">
 
       </a>
 
 
       <div class="feature-copy">
 
-        <div class="feature-label">
-          FEATURE STORY / OLIVE
-        </div>
+        <div class="feature-label" data-journal-i18n="featureLabel">FEATURE STORY / OLIVE</div>
 
-        <h2>
-          自然と、<br>
-          ゆっくり。
-        </h2>
+        <h2 data-journal-i18n="featureTitle">自然と、<br>ゆっくり。</h2>
 
-        <p>
-          森の緑、木のぬくもり、
-          小さな木の実。
-          <br><br>
-          Oliveは、
-          忙しい毎日の中にある
-          静かな時間から生まれたColor Worldです。
-          <br><br>
-          色、キャラクター、
-          そして暮らしがどのようにつながっていくのか。
-          Oliveの世界から紹介します。
-        </p>
+        <p data-journal-i18n="featureCopy">森の緑、木のぬくもり、小さな木の実。<br><br>Oliveは、忙しい毎日の中にある静かな時間から生まれたColor Worldです。<br><br>色、キャラクター、そして暮らしがどのようにつながっていくのか。Oliveの世界から紹介します。</p>
 
-        <a
-          href="olive.html"
-          class="read-link"
-        >
-          Olive Worldを読む →
-        </a>
+        <a href="olive.html" class="read-link" data-journal-i18n="featureLink">Olive Worldを読む →</a>
 
       </div>
 
@@ -1109,13 +1128,9 @@
 
         <div>
 
-          <div class="section-label">
-            STORIES
-          </div>
+          <div class="section-label" data-journal-i18n="storiesLabel">STORIES</div>
 
-          <h2 class="section-title">
-            Color Worldの物語。
-          </h2>
+          <h2 class="section-title" data-journal-i18n="storiesTitle">Color Worldの物語。</h2>
 
         </div>
 
@@ -1127,41 +1142,23 @@
 
         <!-- OLIVE -->
 
-        <a
-          href="olive.html"
-          class="story-card"
-        >
+        <a href="olive.html" class="story-card">
 
           <div class="story-image">
 
-            <img
-              src="img/342.png"
-              alt="Olive Character"
-            >
+            <img src="img/342.png" alt="オリーブのキャラクター" data-journal-alt="imageAlt1">
 
           </div>
 
           <div class="story-content">
 
-            <div class="story-meta">
-              OLIVE
-              <span>•</span>
-              CHARACTER
-            </div>
+            <div class="story-meta" data-journal-i18n="oliveMeta">OLIVE · CHARACTER</div>
 
-            <h3>
-              Oliveって、どんな子？
-            </h3>
+            <h3 data-journal-i18n="oliveStoryTitle">Oliveって、どんな子？</h3>
 
-            <p>
-              静かな森や木の実が好きなOlive。
-              キャラクターの性格と、
-              その世界をつくる空気を紹介します。
-            </p>
+            <p data-journal-i18n="oliveStoryCopy">静かな森や木の実が好きなOlive。キャラクターの性格と、その世界をつくる空気を紹介します。</p>
 
-            <span class="story-arrow">
-            READ →
-          </span>
+            <span class="story-arrow" data-journal-i18n="read">続きを読む →</span>
 
           </div>
 
@@ -1170,41 +1167,23 @@
 
         <!-- CANYON -->
 
-        <a
-          href="canyon.html"
-          class="story-card"
-        >
+        <a href="canyon.html" class="story-card">
 
           <div class="story-image">
 
-            <img
-              src="img/353.png"
-              alt="Canyon World"
-            >
+            <img src="img/353.png" alt="キャニオンの世界" data-journal-alt="imageAlt2">
 
           </div>
 
           <div class="story-content">
 
-            <div class="story-meta">
-              CANYON
-              <span>•</span>
-              TRAVEL
-            </div>
+            <div class="story-meta" data-journal-i18n="canyonMeta">CANYON · TRAVEL</div>
 
-            <h3>
-              まだ知らない景色へ。
-            </h3>
+            <h3 data-journal-i18n="canyonStoryTitle">まだ知らない景色へ。</h3>
 
-            <p>
-              夕暮れ、岩、大地、
-              そして遠くへ続く道。
-              Canyonが持つ旅と自由の感覚について。
-            </p>
+            <p data-journal-i18n="canyonStoryCopy">夕暮れ、岩、大地、そして遠くへ続く道。Canyonが持つ旅と自由の感覚について。</p>
 
-            <span class="story-arrow">
-            READ →
-          </span>
+            <span class="story-arrow" data-journal-i18n="read">続きを読む →</span>
 
           </div>
 
@@ -1213,41 +1192,23 @@
 
         <!-- PURPLE -->
 
-        <a
-          href="purple.html"
-          class="story-card"
-        >
+        <a href="purple.html" class="story-card">
 
           <div class="story-image">
 
-            <img
-              src="img/358.png"
-              alt="Purple World"
-            >
+            <img src="img/358.png" alt="パープルの世界" data-journal-alt="imageAlt3">
 
           </div>
 
           <div class="story-content">
 
-            <div class="story-meta">
-              PURPLE
-              <span>•</span>
-              NIGHT
-            </div>
+            <div class="story-meta" data-journal-i18n="purpleMeta">PURPLE · NIGHT</div>
 
-            <h3>
-              夜の向こうにある世界。
-            </h3>
+            <h3 data-journal-i18n="purpleStoryTitle">夜の向こうにある世界。</h3>
 
-            <p>
-              ネオン、音楽、デジタル、
-              静かな夜。
-              Purpleが持つ想像と夢の世界へ。
-            </p>
+            <p data-journal-i18n="purpleStoryCopy">ネオン、音楽、デジタル、静かな夜。Purpleが持つ想像と夢の世界へ。</p>
 
-            <span class="story-arrow">
-            READ →
-          </span>
+            <span class="story-arrow" data-journal-i18n="read">続きを読む →</span>
 
           </div>
 
@@ -1273,23 +1234,14 @@
 
         <div>
 
-          <div class="section-label">
-            COLOR WORLD
-          </div>
+          <div class="section-label" data-journal-i18n="worldsLabel">COLOR WORLD</div>
 
-          <h2 class="section-title">
-            あなたは、どの世界へ？
-          </h2>
+          <h2 class="section-title" data-journal-i18n="worldsTitle">あなたは、どの世界へ？</h2>
 
         </div>
 
 
-        <a
-          href="world.html"
-          class="section-link"
-        >
-          COLOR WORLDを見る →
-        </a>
+        <a href="world.html" class="section-link" data-journal-i18n="worldsLink">COLOR WORLDを見る →</a>
 
       </div>
 
@@ -1299,15 +1251,9 @@
 
         <!-- OLIVE -->
 
-        <a
-          href="olive.html"
-          class="world-story"
-        >
+        <a href="olive.html" class="world-story">
 
-          <img
-            src="img/355.png"
-            alt="Olive World"
-          >
+          <img src="img/355.png" alt="オリーブの世界" data-journal-alt="imageAlt0">
 
           <div class="world-overlay"></div>
 
@@ -1321,14 +1267,9 @@
               Olive
             </h3>
 
-            <p>
-              自然、森、木々、
-              ゆっくり流れる時間。
-            </p>
+            <p data-journal-i18n="oliveWorldCopy">自然、森、木々、ゆっくり流れる時間。</p>
 
-            <span>
-            Olive World →
-          </span>
+            <span data-journal-i18n="oliveWorldLink">Olive World →</span>
 
           </div>
 
@@ -1337,15 +1278,9 @@
 
         <!-- CANYON -->
 
-        <a
-          href="canyon.html"
-          class="world-story"
-        >
+        <a href="canyon.html" class="world-story">
 
-          <img
-            src="img/356.png"
-            alt="Canyon World"
-          >
+          <img src="img/356.png" alt="キャニオンの世界" data-journal-alt="imageAlt2">
 
           <div class="world-overlay"></div>
 
@@ -1359,14 +1294,9 @@
               Canyon
             </h3>
 
-            <p>
-              夕暮れ、荒野、
-              旅と自由。
-            </p>
+            <p data-journal-i18n="canyonWorldCopy">夕暮れ、荒野、旅と自由。</p>
 
-            <span>
-            Canyon World →
-          </span>
+            <span data-journal-i18n="canyonWorldLink">Canyon World →</span>
 
           </div>
 
@@ -1375,15 +1305,9 @@
 
         <!-- PURPLE -->
 
-        <a
-          href="purple.html"
-          class="world-story"
-        >
+        <a href="purple.html" class="world-story">
 
-          <img
-            src="img/359.png"
-            alt="Purple World"
-          >
+          <img src="img/359.png" alt="パープルの世界" data-journal-alt="imageAlt3">
 
           <div class="world-overlay"></div>
 
@@ -1397,14 +1321,9 @@
               Purple
             </h3>
 
-            <p>
-              夜、都市、ネオン、
-              想像と夢。
-            </p>
+            <p data-journal-i18n="purpleWorldCopy">夜、都市、ネオン、想像と夢。</p>
 
-            <span>
-            Purple World →
-          </span>
+            <span data-journal-i18n="purpleWorldLink">Purple World →</span>
 
           </div>
 
@@ -1429,50 +1348,24 @@
 
       <div class="idea-copy">
 
-        <div class="section-label">
-          COLOR & LIFESTYLE
-        </div>
+        <div class="section-label" data-journal-i18n="lifestyleLabel">COLOR &amp; LIFESTYLE</div>
 
-        <h2>
-          好きな色は、<br>
-          暮らし方にもなる。
-        </h2>
+        <h2 data-journal-i18n="lifestyleTitle">好きな色は、<br>暮らし方にもなる。</h2>
 
-        <p>
-          IROVAが考えているのは、
-          単に「同じ色の商品をそろえる」ことではありません。
-        </p>
+        <p data-journal-i18n="lifestyleIntro">IROVAが考えているのは、単に「同じ色の商品をそろえる」ことではありません。</p>
 
-        <p>
-          Oliveなら自然と落ち着き。
-          Canyonなら旅と自由。
-          Purpleなら夜と想像。
-        </p>
+        <p data-journal-i18n="lifestyleColors">Oliveなら自然と落ち着き。<br>Canyonなら旅と自由。<br>Purpleなら夜と想像。</p>
 
-        <p>
-          ひとつの色からキャラクターが生まれ、
-          世界が生まれ、
-          ファッションやバッグ、
-          小さなアクセサリーへ広がっていく。
-          それがIROVAのColor Worldです。
-        </p>
+        <p data-journal-i18n="lifestyleCopy">ひとつの色からキャラクターが生まれ、世界が生まれ、ファッションやバッグ、小さなアクセサリーへ広がっていく。それがIROVAのColor Worldです。</p>
 
-        <a
-          href="world.html"
-          class="section-link"
-        >
-          IROVA Color World →
-        </a>
+        <a href="world.html" class="section-link" data-journal-i18n="lifestyleLink">IROVA Color World →</a>
 
       </div>
 
 
       <div class="idea-image">
 
-        <img
-          src="img/343.png"
-          alt="IROVA Color Elements"
-        >
+        <img src="img/343.png" alt="IROVAの色のエレメント" data-journal-alt="imageAlt4">
 
       </div>
 
@@ -1494,13 +1387,9 @@
 
         <div>
 
-          <div class="section-label">
-            LATEST
-          </div>
+          <div class="section-label" data-journal-i18n="latestLabel">LATEST</div>
 
-          <h2 class="section-title">
-            最新の記事。
-          </h2>
+          <h2 class="section-title" data-journal-i18n="latestTitle">最新の記事。</h2>
 
         </div>
 
@@ -1510,10 +1399,7 @@
       <div class="latest-list">
 
 
-        <a
-          href="olive.html"
-          class="latest-item"
-        >
+        <a href="olive.html" class="latest-item">
 
         <span class="latest-date">
           2026.09.14
@@ -1523,9 +1409,7 @@
           OLIVE
         </span>
 
-          <span class="latest-title">
-          Olive World — 自然と、ゆっくり。
-        </span>
+          <span class="latest-title" data-journal-i18n="latestOlive">Olive World — 自然と、ゆっくり。</span>
 
           <span class="latest-arrow">
           →
@@ -1534,10 +1418,7 @@
         </a>
 
 
-        <a
-          href="canyon.html"
-          class="latest-item"
-        >
+        <a href="canyon.html" class="latest-item">
 
         <span class="latest-date">
           2026.09.14
@@ -1547,9 +1428,7 @@
           CANYON
         </span>
 
-          <span class="latest-title">
-          Canyon World — まだ知らない景色へ。
-        </span>
+          <span class="latest-title" data-journal-i18n="latestCanyon">Canyon World — まだ知らない景色へ。</span>
 
           <span class="latest-arrow">
           →
@@ -1558,10 +1437,7 @@
         </a>
 
 
-        <a
-          href="purple.html"
-          class="latest-item"
-        >
+        <a href="purple.html" class="latest-item">
 
         <span class="latest-date">
           2026.09.14
@@ -1571,9 +1447,7 @@
           PURPLE
         </span>
 
-          <span class="latest-title">
-          Purple World — 夜の向こうにある世界。
-        </span>
+          <span class="latest-title" data-journal-i18n="latestPurple">Purple World — 夜の向こうにある世界。</span>
 
           <span class="latest-arrow">
           →
@@ -1582,10 +1456,7 @@
         </a>
 
 
-        <a
-          href="world.html"
-          class="latest-item"
-        >
+        <a href="world.html" class="latest-item">
 
         <span class="latest-date">
           2026.09.14
@@ -1595,9 +1466,7 @@
           IROVA
         </span>
 
-          <span class="latest-title">
-          色から、世界が生まれる。
-        </span>
+          <span class="latest-title" data-journal-i18n="latestIrova">色から、世界が生まれる。</span>
 
           <span class="latest-arrow">
           →
@@ -1619,28 +1488,13 @@
 
   <section class="shop-cta">
 
-    <div class="label">
-      IROVA OFFICIAL SHOP
-    </div>
+    <div class="label" data-journal-i18n="shopLabel">IROVA OFFICIAL SHOP</div>
 
-    <h2>
-      Bring Your World<br>
-      Into Everyday Life.
-    </h2>
+    <h2 data-journal-i18n="shopTitle">Bring Your World<br>Into Everyday Life.</h2>
 
-    <p>
-      JOURNALで見つけたColor Worldを、
-      バッグ、ファッション、
-      マスコットや小さなアイテムとして
-      毎日の暮らしへ。
-    </p>
+    <p data-journal-i18n="shopCopy">JOURNALで見つけたColor Worldを、バッグ、ファッション、マスコットや小さなアイテムとして毎日の暮らしへ。</p>
 
-    <a
-      href="shop.html"
-      class="btn-white"
-    >
-      SHOPを見る →
-    </a>
+    <a href="shop.html" class="btn-white" data-journal-i18n="shopLink">SHOPを見る →</a>
 
   </section>
 
@@ -1666,10 +1520,7 @@
           IROVA Studio
         </h3>
 
-        <p>
-          Color-driven characters and lifestyle.
-          好きな色から、自分らしい世界へ。
-        </p>
+        <p data-journal-i18n="footerCopy">Color-driven characters and lifestyle.<br>好きな色から、自分らしい世界へ。</p>
 
       </div>
 
@@ -1680,21 +1531,13 @@
           SHOP
         </h4>
 
-        <a href="shop.html">
-          Official Shop
-        </a>
+        <a href="shop.html" data-journal-i18n="footerShop">Official Shop</a>
 
-        <a href="shop.html#plush">
-          ぬいぐるみ
-        </a>
+        <a href="shop.html#plush" data-journal-i18n="footerPlush">ぬいぐるみ</a>
 
-        <a href="shop.html#goods">
-          Goods
-        </a>
+        <a href="shop.html#goods" data-journal-i18n="footerGoods">Goods</a>
 
-        <a href="shop.html#fashion">
-          Fashion
-        </a>
+        <a href="shop.html#fashion" data-journal-i18n="footerFashion">Fashion</a>
 
       </div>
 
@@ -1730,17 +1573,11 @@
           IROVA
         </h4>
 
-        <a href="index.html">
-          Brand
-        </a>
+        <a href="index.html" data-journal-i18n="footerBrand">Brand</a>
 
-        <a href="journal.html">
-          Journal
-        </a>
+        <a href="journal.html?lang=ja" data-journal-i18n="footerJournal" data-language-link="">Journal</a>
 
-        <a href="business.html">
-          Business
-        </a>
+        <a href="business.html" data-journal-i18n="footerBusiness">Business</a>
 
         <a href="#">
           Instagram
@@ -1774,5 +1611,47 @@
 </footer>
 
 
-</body>
+<script id="journal-translations" type="application/json">{"ja":{"pageTitle":"JOURNAL — IROVA Studio","description":"IROVA Studio JOURNAL。Olive、Canyon、Purpleの物語、色、キャラクター、暮らしについて紹介します。","navigation":"メインナビゲーション","navShop":"SHOP","navWorld":"WORLD","navPlush":"ぬいぐるみ","navGoods":"GOODS","navFashion":"FASHION","navJournal":"JOURNAL","navOlive":"OLIVE","navCart":"CART","language":"言語を選ぶ","heroTitle":"Stories & Ideas.","heroCopy":"色から生まれるキャラクター、その世界にある小さな物語、そして毎日の暮らし。\nIROVA JOURNALでは、Color Worldの奥にあるストーリーを紹介します。","oliveCta":"Olive コレクションを見る","featureLabel":"FEATURE STORY / OLIVE","featureTitle":"自然と、\nゆっくり。","featureCopy":"森の緑、木のぬくもり、小さな木の実。\n\nOliveは、忙しい毎日の中にある静かな時間から生まれたColor Worldです。\n\n色、キャラクター、そして暮らしがどのようにつながっていくのか。Oliveの世界から紹介します。","featureLink":"Olive Worldを読む →","storiesLabel":"STORIES","storiesTitle":"Color Worldの物語。","read":"続きを読む →","oliveMeta":"OLIVE · CHARACTER","oliveStoryTitle":"Oliveって、どんな子？","oliveStoryCopy":"静かな森や木の実が好きなOlive。キャラクターの性格と、その世界をつくる空気を紹介します。","canyonMeta":"CANYON · TRAVEL","canyonStoryTitle":"まだ知らない景色へ。","canyonStoryCopy":"夕暮れ、岩、大地、そして遠くへ続く道。Canyonが持つ旅と自由の感覚について。","purpleMeta":"PURPLE · NIGHT","purpleStoryTitle":"夜の向こうにある世界。","purpleStoryCopy":"ネオン、音楽、デジタル、静かな夜。Purpleが持つ想像と夢の世界へ。","worldsLabel":"COLOR WORLD","worldsTitle":"あなたは、どの世界へ？","worldsLink":"COLOR WORLDを見る →","oliveWorldCopy":"自然、森、木々、ゆっくり流れる時間。","oliveWorldLink":"Olive World →","canyonWorldCopy":"夕暮れ、荒野、旅と自由。","canyonWorldLink":"Canyon World →","purpleWorldCopy":"夜、都市、ネオン、想像と夢。","purpleWorldLink":"Purple World →","lifestyleLabel":"COLOR & LIFESTYLE","lifestyleTitle":"好きな色は、\n暮らし方にもなる。","lifestyleIntro":"IROVAが考えているのは、単に「同じ色の商品をそろえる」ことではありません。","lifestyleColors":"Oliveなら自然と落ち着き。\nCanyonなら旅と自由。\nPurpleなら夜と想像。","lifestyleCopy":"ひとつの色からキャラクターが生まれ、世界が生まれ、ファッションやバッグ、小さなアクセサリーへ広がっていく。それがIROVAのColor Worldです。","lifestyleLink":"IROVA Color World →","latestLabel":"LATEST","latestTitle":"最新の記事。","latestOlive":"Olive World — 自然と、ゆっくり。","latestCanyon":"Canyon World — まだ知らない景色へ。","latestPurple":"Purple World — 夜の向こうにある世界。","latestIrova":"色から、世界が生まれる。","shopLabel":"IROVA OFFICIAL SHOP","shopTitle":"Bring Your World\nInto Everyday Life.","shopCopy":"JOURNALで見つけたColor Worldを、バッグ、ファッション、マスコットや小さなアイテムとして毎日の暮らしへ。","shopLink":"SHOPを見る →","footerCopy":"Color-driven characters and lifestyle.\n好きな色から、自分らしい世界へ。","footerShop":"Official Shop","footerPlush":"ぬいぐるみ","footerGoods":"Goods","footerFashion":"Fashion","footerBrand":"Brand","footerJournal":"Journal","footerBusiness":"Business","imageAlt0":"オリーブの世界","imageAlt1":"オリーブのキャラクター","imageAlt2":"キャニオンの世界","imageAlt3":"パープルの世界","imageAlt4":"IROVAの色のエレメント"},"zh":{"pageTitle":"品牌日志 — IROVA Studio","description":"IROVA Studio 品牌日志：探索 Olive、Canyon、Purple 的色彩、角色、故事与日常生活。","navigation":"主导航","navShop":"商店","navWorld":"色彩世界","navPlush":"毛绒玩偶","navGoods":"小物","navFashion":"服饰","navJournal":"品牌日志","navOlive":"OLIVE","navCart":"购物车","language":"选择语言","heroTitle":"故事与灵感。","heroCopy":"从颜色中诞生的角色，属于它们的小小故事，以及每天的生活。\n在 IROVA JOURNAL，探索 Color World 背后的灵感与故事。","oliveCta":"查看 Olive 系列","featureLabel":"精选故事 / OLIVE","featureTitle":"与自然一起，\n慢慢生活。","featureCopy":"森林的绿意、木头的温暖，还有小小的果实。\n\nOlive 是从忙碌日常中的安静时刻诞生的 Color World。\n\n颜色、角色与生活如何连接？从 Olive 的世界开始探索。","featureLink":"阅读 Olive World →","storiesLabel":"故事","storiesTitle":"Color World 的故事。","read":"阅读故事 →","oliveMeta":"OLIVE · 角色","oliveStoryTitle":"Olive 是怎样的角色？","oliveStoryCopy":"Olive 喜欢安静的森林和小小的果实。一起认识它的性格与它所在世界的氛围。","canyonMeta":"CANYON · 旅行","canyonStoryTitle":"走向还未见过的风景。","canyonStoryCopy":"黄昏、岩石、大地，以及延伸到远方的路。探索 Canyon 关于旅行与自由的感受。","purpleMeta":"PURPLE · 夜晚","purpleStoryTitle":"夜色另一端的世界。","purpleStoryCopy":"霓虹、音乐、数字世界与安静的夜晚。走进 Purple 的想象与梦境。","worldsLabel":"色彩世界","worldsTitle":"你想走进哪一个世界？","worldsLink":"探索 COLOR WORLD →","oliveWorldCopy":"自然、森林、树木，和缓缓流淌的时间。","oliveWorldLink":"探索 Olive World →","canyonWorldCopy":"黄昏、旷野、旅行与自由。","canyonWorldLink":"探索 Canyon World →","purpleWorldCopy":"夜晚、城市、霓虹、想象与梦。","purpleWorldLink":"探索 Purple World →","lifestyleLabel":"颜色与生活","lifestyleTitle":"喜欢的颜色，\n也能成为生活方式。","lifestyleIntro":"IROVA 的想法，不止是把相同颜色的产品放在一起。","lifestyleColors":"Olive 是自然与平静。\nCanyon 是旅行与自由。\nPurple 是夜晚与想象。","lifestyleCopy":"一种颜色孕育一个角色，一个世界，再延伸到服饰、包袋与小小的配件。这就是 IROVA 的 Color World。","lifestyleLink":"探索 IROVA Color World →","latestLabel":"最新文章","latestTitle":"最新的故事。","latestOlive":"Olive World — 与自然一起，慢慢生活。","latestCanyon":"Canyon World — 走向还未见过的风景。","latestPurple":"Purple World — 夜色另一端的世界。","latestIrova":"从颜色中，诞生一个世界。","shopLabel":"IROVA 官方商店","shopTitle":"把你的世界，\n带进每天的生活。","shopCopy":"把在 JOURNAL 发现的 Color World，化作包袋、服饰、角色小物与日常用品，带进每天的生活。","shopLink":"前往商店 →","footerCopy":"从颜色出发的角色与生活。\n从喜欢的颜色，走进属于自己的世界。","footerShop":"官方商店","footerPlush":"毛绒玩偶","footerGoods":"小物","footerFashion":"服饰","footerBrand":"品牌","footerJournal":"品牌日志","footerBusiness":"商务合作","imageAlt0":"Olive 的世界","imageAlt1":"Olive 角色","imageAlt2":"Canyon 的世界","imageAlt3":"Purple 的世界","imageAlt4":"IROVA 色彩元素"},"en":{"pageTitle":"JOURNAL — IROVA Studio","description":"IROVA Studio Journal: stories, colours, characters and everyday life from Olive, Canyon and Purple.","navigation":"Main navigation","navShop":"SHOP","navWorld":"WORLD","navPlush":"PLUSH","navGoods":"GOODS","navFashion":"FASHION","navJournal":"JOURNAL","navOlive":"OLIVE","navCart":"CART","language":"Choose language","heroTitle":"Stories & Ideas.","heroCopy":"Characters born from colour, little stories from their worlds, and everyday life.\nIROVA JOURNAL explores the stories behind each Color World.","oliveCta":"Explore the Olive collection","featureLabel":"FEATURE STORY / OLIVE","featureTitle":"With nature.\nTake it slowly.","featureCopy":"Forest greens, the warmth of wood, and little woodland seeds.\n\nOlive is a Color World born from quiet moments in busy everyday life.\n\nDiscover how colour, character and lifestyle come together, beginning with Olive.","featureLink":"Read Olive World →","storiesLabel":"STORIES","storiesTitle":"Stories from Color World.","read":"READ →","oliveMeta":"OLIVE · CHARACTER","oliveStoryTitle":"Meet Olive.","oliveStoryCopy":"Olive loves quiet forests and woodland seeds. Discover the character and the atmosphere that shapes its world.","canyonMeta":"CANYON · TRAVEL","canyonStoryTitle":"Towards unfamiliar horizons.","canyonStoryCopy":"Dusk, rocks, open land and a road stretching into the distance. Explore Canyon’s sense of travel and freedom.","purpleMeta":"PURPLE · NIGHT","purpleStoryTitle":"A world beyond the night.","purpleStoryCopy":"Neon, music, digital worlds and quiet nights. Step into Purple’s world of imagination and dreams.","worldsLabel":"COLOR WORLD","worldsTitle":"Which world will you choose?","worldsLink":"Explore COLOR WORLD →","oliveWorldCopy":"Nature, forests, trees and time that moves slowly.","oliveWorldLink":"Olive World →","canyonWorldCopy":"Dusk, wild landscapes, travel and freedom.","canyonWorldLink":"Canyon World →","purpleWorldCopy":"Night, cities, neon, imagination and dreams.","purpleWorldLink":"Purple World →","lifestyleLabel":"COLOR & LIFESTYLE","lifestyleTitle":"Your favourite colour.\nYour way of living.","lifestyleIntro":"IROVA’s idea goes beyond putting products of the same colour together.","lifestyleColors":"Olive is nature and calm.\nCanyon is travel and freedom.\nPurple is night and imagination.","lifestyleCopy":"One colour gives life to a character and a world, then grows into clothing, bags and little accessories. That is IROVA’s Color World.","lifestyleLink":"Explore IROVA Color World →","latestLabel":"LATEST","latestTitle":"The latest stories.","latestOlive":"Olive World — With nature. Take it slowly.","latestCanyon":"Canyon World — Towards unfamiliar horizons.","latestPurple":"Purple World — A world beyond the night.","latestIrova":"A world begins with colour.","shopLabel":"IROVA OFFICIAL SHOP","shopTitle":"Bring Your World\nInto Everyday Life.","shopCopy":"Bring the Color World you discovered in JOURNAL into everyday life through bags, clothing, mascots and little objects.","shopLink":"Visit the shop →","footerCopy":"Color-driven characters and lifestyle.\nBegin with your favourite colour. Find a world of your own.","footerShop":"Official Shop","footerPlush":"Plush","footerGoods":"Goods","footerFashion":"Fashion","footerBrand":"Brand","footerJournal":"Journal","footerBusiness":"Business","imageAlt0":"Olive World","imageAlt1":"Olive Character","imageAlt2":"Canyon World","imageAlt3":"Purple World","imageAlt4":"IROVA Color Elements"}}</script><script>
+(function () {
+  'use strict';
+  const translations=JSON.parse(document.getElementById('journal-translations').textContent);
+  const supported=['ja','zh','en'];
+  const control=document.getElementById('journal-language');
+  const params=new URL(window.location.href).searchParams;
+  let saved;
+  try { saved=localStorage.getItem('irova-language'); } catch {}
+  let language=supported.includes(params.get('lang'))?params.get('lang'):(supported.includes(saved)?saved:'ja');
+  function setLines(node,value) {
+    const fragment=document.createDocumentFragment();
+    value.split('\n').forEach((line,index)=>{
+      if(index)fragment.appendChild(document.createElement('br'));
+      fragment.appendChild(document.createTextNode(line));
+    });
+    node.replaceChildren(fragment);
+  }
+  function applyLanguage() {
+    const text=translations[language];
+    document.documentElement.lang={ja:'ja',zh:'zh-CN',en:'en'}[language];
+    document.title=text.pageTitle;
+    document.querySelector('meta[name="description"]').content=text.description;
+    control.value=language;
+    document.querySelector('.nav').setAttribute('aria-label',text.navigation);
+    document.querySelectorAll('[data-journal-i18n]').forEach(node=>setLines(node,text[node.dataset.journalI18n]));
+    document.querySelectorAll('[data-journal-alt]').forEach(node=>node.alt=text[node.dataset.journalAlt]);
+    document.querySelectorAll('a[data-language-link]').forEach(link=>{
+      const href=link.getAttribute('href');
+      const url=new URL(href,document.baseURI);
+      url.searchParams.set('lang',language);
+      link.setAttribute('href',href.split(/[?#]/)[0]+url.search+url.hash);
+    });
+    try { localStorage.setItem('irova-language',language); } catch {}
+    const url=new URL(window.location.href);
+    url.searchParams.set('lang',language);
+    try { history.replaceState(null,'',url.href); } catch {}
+  }
+  control.addEventListener('change',()=>{language=control.value;applyLanguage();});
+  applyLanguage();
+})();
+</script></body>
+
 </html>

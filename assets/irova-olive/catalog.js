@@ -2,8 +2,9 @@
   'use strict';
   const ui = {
     zh: {
+      navJournal: '品牌日志', navigation: '主导航',
       pageTitle: 'IROVA — Olive 系列与产品方向',
-      skip: '跳到产品', navCollection: 'OLIVE 系列', navCatalog: '全部产品', navDirection: '发展方向', navSite: '官网 ↗', language: '选择语言',
+      skip: '跳到产品', navCollection: 'OLIVE 系列', navCatalog: '全部产品', navDirection: '发展方向', navSite: '首页', language: '选择语言',
       heroEyebrow: 'COLOR WORLD 01 · OLIVE / オリーブ',
       heroTitle: '从一种颜色，\n连接整个日常。',
       heroCopy: '从你选择的设备颜色开始，让イロチャン走进手机配件、穿搭、出行与居家。每件小物，都属于同一个 Olive 世界。',
@@ -26,12 +27,13 @@
       modalNote: '当前图片为设计概念效果；材质、规格与上市计划以实际开发为准。',
       futureEyebrow: 'ONE COLOUR IS JUST THE BEGINNING', futureTitle: '下一种颜色，\n也可以拥有完整的日常。',
       futureCopy: '以 Olive 建立共同的产品语言，让不同色彩各自长成一个世界。', otherColors: '后续色彩方向',
-      backSite: '回到 IROVA 官网', shop: '探索 IROVA Shop', footerNote: 'OLIVE / オリーブ · DESIGN DIRECTION',
+      backSite: '返回首页', shop: '探索 IROVA Shop', footerNote: 'OLIVE / オリーブ · DESIGN DIRECTION',
       top: '回到页面顶部', captionTote: '随身的一整套', captionDevices: '从设备色开始', captionWear: '把颜色穿出去', captionLiving: '留在每个日常',
     },
     ja: {
+      navJournal: 'JOURNAL', navigation: 'メインナビゲーション',
       pageTitle: 'IROVA — Olive コレクションと商品展開',
-      skip: '商品へ移動', navCollection: 'OLIVE', navCatalog: 'すべてのデザイン', navDirection: 'これからの展開', navSite: '公式サイト ↗', language: '言語を選ぶ',
+      skip: '商品へ移動', navCollection: 'OLIVE', navCatalog: 'すべてのデザイン', navDirection: 'これからの展開', navSite: 'ホーム', language: '言語を選ぶ',
       heroEyebrow: 'COLOR WORLD 01 · OLIVE / オリーブ',
       heroTitle: 'ひとつの色から、\n毎日をつなぐ。',
       heroCopy: '自分で選んだデバイスの色から。イロチャンと一緒に、スマホ小物、ウェア、外出、暮らしまで、ひとつのOliveの世界へ。',
@@ -53,12 +55,13 @@
       modalNote: '画像はデザインのコンセプトです。素材、仕様、発売計画は実際の開発に合わせて決定します。',
       futureEyebrow: 'ONE COLOUR IS JUST THE BEGINNING', futureTitle: '次の色にも、\nひとつの暮らしを。',
       futureCopy: 'Oliveから共通の商品言語をつくり、色ごとにひとつの世界へ広げていきます。', otherColors: '今後の色の方向',
-      backSite: 'IROVA公式サイトへ', shop: 'IROVA Shopを見る', footerNote: 'OLIVE / オリーブ · DESIGN DIRECTION',
+      backSite: 'ホームへ戻る', shop: 'IROVA Shopを見る', footerNote: 'OLIVE / オリーブ · DESIGN DIRECTION',
       top: 'ページの先頭へ', captionTote: '持ち歩くひとつの世界', captionDevices: 'デバイスの色から', captionWear: '好きな色を着る', captionLiving: '毎日のそばに',
     },
     en: {
+      navJournal: 'Journal', navigation: 'Main navigation',
       pageTitle: 'IROVA — Olive Collection & Product Direction',
-      skip: 'Skip to products', navCollection: 'OLIVE', navCatalog: 'All designs', navDirection: 'Future direction', navSite: 'Official site ↗', language: 'Choose language',
+      skip: 'Skip to products', navCollection: 'OLIVE', navCatalog: 'All designs', navDirection: 'Future direction', navSite: 'Home', language: 'Choose language',
       heroEyebrow: 'COLOR WORLD 01 · OLIVE / オリーブ',
       heroTitle: 'One colour.\nA connected everyday.',
       heroCopy: 'Begin with the device colour you chose. Follow イロチャン from phone accessories to outfits, days out and life at home. Every object belongs to one Olive world.',
@@ -80,7 +83,7 @@
       modalNote: 'Images are design concepts. Materials, specifications and launch plans will follow actual product development.',
       futureEyebrow: 'ONE COLOUR IS JUST THE BEGINNING', futureTitle: 'The next colour.\nAnother complete everyday.',
       futureCopy: 'Build a shared product language with Olive, then let every colour grow into a world of its own.', otherColors: 'Future colour directions',
-      backSite: 'Back to IROVA', shop: 'Explore IROVA Shop', footerNote: 'OLIVE / オリーブ · DESIGN DIRECTION',
+      backSite: 'Back to home', shop: 'Explore IROVA Shop', footerNote: 'OLIVE / オリーブ · DESIGN DIRECTION',
       top: 'Back to top', captionTote: 'A world to carry', captionDevices: 'Begin with your device', captionWear: 'Wear the colour', captionLiving: 'In every little everyday',
     },
   };

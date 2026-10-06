@@ -1,200 +1,204 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#69704b">
-  <meta name="description" content="探索 IROVA Olive／オリーブ系列的32款产品概念：设备配件、角色小物、服饰穿搭、包袋出行与居家文具，以及未来产品开发方向。">
-  <title>IROVA — Olive 系列与产品方向</title>
-  <link rel="stylesheet" href="assets/irova-olive/collection.css">
+  <meta name="description" content="自分で選んだデバイスの色から。イロチャンと一緒に、スマホ小物、ウェア、外出、暮らしまで、ひとつのOliveの世界へ。">
+  <title>IROVA — Olive コレクションと商品展開</title>
+  <link rel="stylesheet" href="assets/irova-olive/collection.css?v=20261006-ja">
   <link rel="preload" as="image" href="assets/irova-olive/images/irova-olive-canvas-tote.webp">
-  <script defer src="assets/irova-olive/data.js"></script>
-  <script defer src="assets/irova-olive/catalog.js"></script>
-  <script defer src="assets/irova-olive/page.js"></script>
+  <script defer src="assets/irova-olive/data.js?v=20261006-ja"></script>
+  <script defer src="assets/irova-olive/catalog.js?v=20261006-ja"></script>
+  <script defer src="assets/irova-olive/page.js?v=20261006-ja"></script>
 </head>
 <body>
-  <a class="skip-link" href="#products" data-i18n="skip">跳到产品</a>
+  <a class="skip-link" href="#products" data-i18n="skip">商品へ移動</a>
   <header class="site-header">
     <a class="brand" href="https://www.irovastudio.com/" aria-label="IROVA Studio">
       <span class="brand-face" aria-hidden="true">ʕ•ᴥ•ʔ</span><span class="brand-word">IROVA<span>STUDIO</span></span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a class="active" href="#olive" data-i18n="navCollection">OLIVE 系列</a>
-      <a href="#products" data-i18n="navCatalog">全部产品</a>
-      <a href="#direction" data-i18n="navDirection">发展方向</a>
-      <a href="https://www.irovastudio.com/" data-i18n="navSite">官网 ↗</a>
+    <nav class="main-nav" aria-label="メインナビゲーション">
+      <a class="active" href="#olive" data-i18n="navCollection">OLIVE</a>
+      <a href="#products" data-i18n="navCatalog">すべてのデザイン</a>
+      <a href="#direction" data-i18n="navDirection">これからの展開</a>
+      <a href="journal.html?lang=ja" data-i18n="navJournal" data-language-link="">JOURNAL</a><a href="https://www.irovastudio.com/" data-i18n="navSite">ホーム</a>
     </nav>
-    <label class="language-control"><span class="sr-only" data-i18n="language">选择语言</span><select id="language"><option value="zh">中文</option><option value="ja">日本語</option><option value="en">EN</option></select></label>
+    <label class="language-control"><span class="sr-only" data-i18n="language">言語を選ぶ</span><select id="language"><option value="ja" selected>日本語</option><option value="zh">中文</option><option value="en">EN</option></select></label>
   </header>
   <main>
     <section class="hero wrap" id="olive">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="heroEyebrow">COLOR WORLD 01 · OLIVE / オリーブ</p>
         <h1>Olive<span>.</span></h1>
-        <h2 class="hero-title" data-i18n="heroTitle">从一种颜色，<br>连接整个日常。</h2>
-        <p class="body-copy" data-i18n="heroCopy">从你选择的设备颜色开始，让イロチャン走进手机配件、穿搭、出行与居家。每件小物，都属于同一个 Olive 世界。</p>
-        <div class="hero-actions"><a class="button button-dark" href="#products"><span data-i18n="explore">探索完整系列</span><span aria-hidden="true">↗</span></a><a class="text-link" href="#direction" data-i18n="seeDirection">看看发展方向</a></div>
-        <p class="concept-label"><span class="tiny-dot" aria-hidden="true"></span><span data-i18n="concept">产品概念系列 · 未来开发方向</span></p>
+        <h2 class="hero-title" data-i18n="heroTitle">ひとつの色から、
+毎日をつなぐ。</h2>
+        <p class="body-copy" data-i18n="heroCopy">自分で選んだデバイスの色から。イロチャンと一緒に、スマホ小物、ウェア、外出、暮らしまで、ひとつのOliveの世界へ。</p>
+        <div class="hero-actions"><a class="button button-dark" href="#products"><span data-i18n="explore">コレクションを見る</span><span aria-hidden="true">↗</span></a><a class="text-link" href="#direction" data-i18n="seeDirection">これからの展開を見る</a></div>
+        <p class="concept-label"><span class="tiny-dot" aria-hidden="true"></span><span data-i18n="concept">コンセプトコレクション · 今後の展開案</span></p>
       </div>
       <div class="hero-art" aria-label="IROVA Olive Collection">
         <div class="hero-orbit" aria-hidden="true"></div>
-        <figure class="hero-product hero-tote"><img src="assets/irova-olive/images/irova-olive-canvas-tote.webp" width="1000" height="1000" alt="IROVA Olive 帆布袋" data-alt-product="canvas-tote" fetchpriority="high"><figcaption data-i18n="captionTote">随身的一整套</figcaption></figure>
-        <figure class="hero-product hero-phone"><img src="assets/irova-olive/images/irova-olive-phone-case-smooth.webp" width="1000" height="1000" alt="IROVA Olive 手机壳" data-alt-product="phone-case-smooth"><figcaption data-i18n="captionDevices">从设备色开始</figcaption></figure>
-        <figure class="hero-product hero-hat"><img src="assets/irova-olive/images/irova-olive-knit-beanie.webp" width="1000" height="1000" alt="IROVA Olive 针织帽" data-alt-product="knit-beanie"><figcaption data-i18n="captionWear">把颜色穿出去</figcaption></figure>
-        <figure class="hero-product hero-bottle"><img src="assets/irova-olive/images/irova-olive-travel-tumbler.webp" width="1000" height="1000" alt="IROVA Olive 随行杯" data-alt-product="travel-tumbler"><figcaption data-i18n="captionLiving">留在每个日常</figcaption></figure>
+        <figure class="hero-product hero-tote"><img src="assets/irova-olive/images/irova-olive-canvas-tote.webp" width="1000" height="1000" alt="IROVA Olive トートバッグ" data-alt-product="canvas-tote" fetchpriority="high"><figcaption data-i18n="captionTote">持ち歩くひとつの世界</figcaption></figure>
+        <figure class="hero-product hero-phone"><img src="assets/irova-olive/images/irova-olive-phone-case-smooth.webp" width="1000" height="1000" alt="IROVA Olive スマホケース・スムース" data-alt-product="phone-case-smooth"><figcaption data-i18n="captionDevices">デバイスの色から</figcaption></figure>
+        <figure class="hero-product hero-hat"><img src="assets/irova-olive/images/irova-olive-knit-beanie.webp" width="1000" height="1000" alt="IROVA Olive ニット帽" data-alt-product="knit-beanie"><figcaption data-i18n="captionWear">好きな色を着る</figcaption></figure>
+        <figure class="hero-product hero-bottle"><img src="assets/irova-olive/images/irova-olive-travel-tumbler.webp" width="1000" height="1000" alt="IROVA Olive タンブラー" data-alt-product="travel-tumbler"><figcaption data-i18n="captionLiving">毎日のそばに</figcaption></figure>
         <span class="hero-art-tag">Olive / オリーブ <i aria-hidden="true"></i></span>
       </div>
     </section>
     <div class="collection-stats wrap">
-      <div><strong>32</strong><span data-i18n="statObjects">款产品设计</span></div>
-      <div><strong>05</strong><span data-i18n="statCategories">个生活分类</span></div>
-      <div><strong>03</strong><span data-i18n="statPhases">个发展阶段</span></div>
+      <div><strong>32</strong><span data-i18n="statObjects">のデザイン</span></div>
+      <div><strong>05</strong><span data-i18n="statCategories">つのカテゴリー</span></div>
+      <div><strong>03</strong><span data-i18n="statPhases">つの展開段階</span></div>
       <span class="stats-mark" aria-hidden="true">ʕ•ᴥ•ʔ</span>
     </div>
     <section class="bridge wrap">
       <p class="eyebrow">FROM A SYMBOL · TO YOUR EVERYDAY</p>
-      <h2 data-i18n="bridgeTitle">一个能打出来的符号，<br>慢慢长成可以带在身边的世界。</h2>
-      <p data-i18n="bridgeCopy">ʕ•ᴥ•ʔ 是共同的识别。Olive 是连接它们的颜色。从手掌里的小物，到穿在身上、带出门、放进家里的日常。</p>
+      <h2 data-i18n="bridgeTitle">入力できる小さな記号から、
+持ち歩けるひとつの世界へ。</h2>
+      <p data-i18n="bridgeCopy">共通のサインは ʕ•ᴥ•ʔ。つなぐ色はOlive。手のひらの小物から、身につけるもの、持ち出すもの、家で使うものへ。</p>
     </section>
     <section class="catalog wrap" id="products" aria-labelledby="catalog-title">
-      <div class="section-heading"><div><p class="eyebrow" data-i18n="catalogEyebrow">THE COMPLETE COLLECTION</p><h2 id="catalog-title" data-i18n="catalogTitle">从小物，到整个生活。</h2></div><p data-i18n="catalogCopy">按生活场景探索 32 款设计，也看看每件产品在这个系列里的位置。</p></div>
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="catalogEyebrow">THE COMPLETE COLLECTION</p><h2 id="catalog-title" data-i18n="catalogTitle">小物から、暮らし全体へ。</h2></div><p data-i18n="catalogCopy">32点のデザインを生活シーンから探しながら、それぞれの役割を見つけてください。</p></div>
       <div class="filter-bar">
-        <div id="category-controls" class="category-controls" role="group" aria-label="按类别筛选"></div>
+        <div id="category-controls" class="category-controls" role="group" aria-label="カテゴリーで絞り込む"></div>
         <div class="filter-bottom">
-          <label class="search-control"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only" data-i18n="searchLabel">搜索产品</span><input id="search" type="search" placeholder="搜索名称，例如：手机壳、包、マグ…" autocomplete="off"><button id="clear-search" type="button" class="clear-search" aria-label="清空搜索" hidden>×</button></label>
-          <label class="phase-control"><span class="sr-only" data-i18n="phaseLabel">开发阶段</span><select id="phase"><option value="all">所有开发阶段</option></select></label>
-          <output class="result-count" id="result-count" aria-live="polite">32 / 32 款设计</output>
+          <label class="search-control"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only" data-i18n="searchLabel">商品を検索</span><input id="search" type="search" placeholder="名前で検索：スマホ、バッグ、マグ…" autocomplete="off"><button id="clear-search" type="button" class="clear-search" aria-label="検索を消す" hidden>×</button></label>
+          <label class="phase-control"><span class="sr-only" data-i18n="phaseLabel">展開段階</span><select id="phase"><option value="all">すべての展開段階</option></select></label>
+          <output class="result-count" id="result-count" aria-live="polite">32 / 32 点のデザイン</output>
         </div>
       </div>
       <div id="product-sections">
         <section class="category-section" data-category="digital" aria-labelledby="heading-digital">
-<div class="category-heading"><div><p class="eyebrow">01 / DIGITAL EVERYDAY</p><h3 id="heading-digital"><span data-category-name>设备配件</span><small data-category-count>05</small></h3></div><p data-category-direction>从用户自己选择的设备色开始，把手机、耳机和电脑连接成一套。</p></div>
-<div class="product-grid"><button type="button" class="product-card" data-product="phone-case-smooth" aria-label="查看设计 · 光面手机壳">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-phone-case-smooth.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 光面手机壳"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>光面手机壳</strong><span class="product-secondary" data-product-secondary>スマホケース・スムース</span></button><button type="button" class="product-card" data-product="phone-case-ribbed" aria-label="查看设计 · 纹理手机壳">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-phone-case-ribbed.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 纹理手机壳"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>纹理手机壳</strong><span class="product-secondary" data-product-secondary>スマホケース・リブ</span></button><button type="button" class="product-card" data-product="wrist-lanyard" aria-label="查看设计 · 手机腕绳">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-wrist-lanyard.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 手机腕绳"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>手机腕绳</strong><span class="product-secondary" data-product-secondary>スマホハンドストラップ</span></button><button type="button" class="product-card" data-product="earbud-case" aria-label="查看设计 · 耳机保护套">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-earbud-case.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 耳机保护套"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>耳机保护套</strong><span class="product-secondary" data-product-secondary>イヤホンケース</span></button><button type="button" class="product-card" data-product="laptop-sleeve" aria-label="查看设计 · 电脑内胆包">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-laptop-sleeve.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 电脑内胆包"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>电脑内胆包</strong><span class="product-secondary" data-product-secondary>PCスリーブ</span></button></div></section>
+<div class="category-heading"><div><p class="eyebrow">01 / DIGITAL EVERYDAY</p><h3 id="heading-digital"><span data-category-name>デジタル小物</span><small data-category-count>05</small></h3></div><p data-category-direction>自分で選んだデバイスの色から。スマホ、イヤホン、PCまで、同色のセットへ。</p></div>
+<div class="product-grid"><button type="button" class="product-card" data-product="phone-case-smooth" aria-label="デザインを見る · スマホケース・スムース">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-phone-case-smooth.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive スマホケース・スムース"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>スマホケース・スムース</strong><span class="product-secondary" data-product-secondary>Smooth phone case</span></button><button type="button" class="product-card" data-product="phone-case-ribbed" aria-label="デザインを見る · スマホケース・リブ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-phone-case-ribbed.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive スマホケース・リブ"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>スマホケース・リブ</strong><span class="product-secondary" data-product-secondary>Ribbed phone case</span></button><button type="button" class="product-card" data-product="wrist-lanyard" aria-label="デザインを見る · スマホハンドストラップ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-wrist-lanyard.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive スマホハンドストラップ"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>スマホハンドストラップ</strong><span class="product-secondary" data-product-secondary>Phone wrist strap</span></button><button type="button" class="product-card" data-product="earbud-case" aria-label="デザインを見る · イヤホンケース">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-earbud-case.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive イヤホンケース"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>イヤホンケース</strong><span class="product-secondary" data-product-secondary>Earbud case</span></button><button type="button" class="product-card" data-product="laptop-sleeve" aria-label="デザインを見る · PCスリーブ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-laptop-sleeve.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive PCスリーブ"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>PCスリーブ</strong><span class="product-secondary" data-product-secondary>Laptop sleeve</span></button></div></section>
 <section class="category-section" data-category="character" aria-labelledby="heading-character">
-<div class="category-heading"><div><p class="eyebrow">02 / LITTLE COMPANIONS</p><h3 id="heading-character"><span data-category-name>角色小物</span><small data-category-count>04</small></h3></div><p data-category-direction>让イロチャン成为能贴、能挂、能佩戴的小小标志，带着品牌走进更多日常。</p></div>
-<div class="product-grid"><button type="button" class="product-card" data-product="sticker-set" aria-label="查看设计 · 贴纸套装">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-sticker-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 贴纸套装"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>贴纸套装</strong><span class="product-secondary" data-product-secondary>ステッカーセット</span></button><button type="button" class="product-card" data-product="acrylic-keychain" aria-label="查看设计 · 亚克力钥匙扣">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-acrylic-keychain.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 亚克力钥匙扣"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>亚克力钥匙扣</strong><span class="product-secondary" data-product-secondary>アクリルキーホルダー</span></button><button type="button" class="product-card" data-product="enamel-pin-set" aria-label="查看设计 · 珐琅徽章套装">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-enamel-pin-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 珐琅徽章套装"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>珐琅徽章套装</strong><span class="product-secondary" data-product-secondary>ピンバッジセット</span></button><button type="button" class="product-card" data-product="embroidered-patch-set" aria-label="查看设计 · 刺绣章套装">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-embroidered-patch-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 刺绣章套装"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>刺绣章套装</strong><span class="product-secondary" data-product-secondary>刺繍ワッペンセット</span></button></div></section>
+<div class="category-heading"><div><p class="eyebrow">02 / LITTLE COMPANIONS</p><h3 id="heading-character"><span data-category-name>キャラクター小物</span><small data-category-count>04</small></h3></div><p data-category-direction>イロチャンを貼る、付ける、身につける。小さなサインから日常へ広げます。</p></div>
+<div class="product-grid"><button type="button" class="product-card" data-product="sticker-set" aria-label="デザインを見る · ステッカーセット">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-sticker-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ステッカーセット"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ステッカーセット</strong><span class="product-secondary" data-product-secondary>Sticker set</span></button><button type="button" class="product-card" data-product="acrylic-keychain" aria-label="デザインを見る · アクリルキーホルダー">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-acrylic-keychain.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive アクリルキーホルダー"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>アクリルキーホルダー</strong><span class="product-secondary" data-product-secondary>Acrylic keychain</span></button><button type="button" class="product-card" data-product="enamel-pin-set" aria-label="デザインを見る · ピンバッジセット">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-enamel-pin-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ピンバッジセット"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ピンバッジセット</strong><span class="product-secondary" data-product-secondary>Enamel pin set</span></button><button type="button" class="product-card" data-product="embroidered-patch-set" aria-label="デザインを見る · 刺繍ワッペンセット">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-embroidered-patch-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 刺繍ワッペンセット"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>刺繍ワッペンセット</strong><span class="product-secondary" data-product-secondary>Embroidered patch set</span></button></div></section>
 <section class="category-section" data-category="wear" aria-labelledby="heading-wear">
-<div class="category-heading"><div><p class="eyebrow">03 / WEAR YOUR COLOUR</p><h3 id="heading-wear"><span data-category-name>服饰穿搭</span><small data-category-count>05</small></h3></div><p data-category-direction>从胸前的小标志到脚下的颜色，围绕 Olive 形成可以一起穿的整套搭配。</p></div>
-<div class="product-grid"><button type="button" class="product-card" data-product="tshirt" aria-label="查看设计 · T恤">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-tshirt.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive T恤"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>T恤</strong><span class="product-secondary" data-product-secondary>Tシャツ</span></button><button type="button" class="product-card" data-product="hoodie" aria-label="查看设计 · 连帽卫衣">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-hoodie.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 连帽卫衣"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>连帽卫衣</strong><span class="product-secondary" data-product-secondary>パーカー</span></button><button type="button" class="product-card" data-product="knit-beanie" aria-label="查看设计 · 针织帽">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-knit-beanie.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 针织帽"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>针织帽</strong><span class="product-secondary" data-product-secondary>ニット帽</span></button><button type="button" class="product-card" data-product="socks" aria-label="查看设计 · 袜子">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-socks.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 袜子"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>袜子</strong><span class="product-secondary" data-product-secondary>ソックス</span></button><button type="button" class="product-card" data-product="sneakers" aria-label="查看设计 · 休闲鞋">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-sneakers.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 休闲鞋"></span>
-<span class="product-meta"><span data-product-phase>阶段 03</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>休闲鞋</strong><span class="product-secondary" data-product-secondary>スニーカー</span></button></div></section>
+<div class="category-heading"><div><p class="eyebrow">03 / WEAR YOUR COLOUR</p><h3 id="heading-wear"><span data-category-name>ウェア・コーデ</span><small data-category-count>05</small></h3></div><p data-category-direction>胸元の小さなサインから、足元の色まで。Oliveで一緒に着られるコーデを。</p></div>
+<div class="product-grid"><button type="button" class="product-card" data-product="tshirt" aria-label="デザインを見る · Tシャツ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-tshirt.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive Tシャツ"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>Tシャツ</strong><span class="product-secondary" data-product-secondary>Everyday T-shirt</span></button><button type="button" class="product-card" data-product="hoodie" aria-label="デザインを見る · パーカー">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-hoodie.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive パーカー"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>パーカー</strong><span class="product-secondary" data-product-secondary>Pullover hoodie</span></button><button type="button" class="product-card" data-product="knit-beanie" aria-label="デザインを見る · ニット帽">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-knit-beanie.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ニット帽"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ニット帽</strong><span class="product-secondary" data-product-secondary>Knit beanie</span></button><button type="button" class="product-card" data-product="socks" aria-label="デザインを見る · ソックス">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-socks.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ソックス"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ソックス</strong><span class="product-secondary" data-product-secondary>Colour-block socks</span></button><button type="button" class="product-card" data-product="sneakers" aria-label="デザインを見る · スニーカー">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-sneakers.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive スニーカー"></span>
+<span class="product-meta"><span data-product-phase>段階 03</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>スニーカー</strong><span class="product-secondary" data-product-secondary>Lifestyle sneakers</span></button></div></section>
 <section class="category-section" data-category="carry" aria-labelledby="heading-carry">
-<div class="category-heading"><div><p class="eyebrow">04 / CARRY THE WORLD</p><h3 id="heading-carry"><span data-category-name>包袋出行</span><small data-category-count>08</small></h3></div><p data-category-direction>从卡包与轻装出门，延伸到通勤和旅行，让颜色随着生活的尺度一起变大。</p></div>
-<div class="product-grid"><button type="button" class="product-card" data-product="card-holder" aria-label="查看设计 · 卡包">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-card-holder.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 卡包"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>卡包</strong><span class="product-secondary" data-product-secondary>カードケース</span></button><button type="button" class="product-card" data-product="crossbody-bag" aria-label="查看设计 · 斜挎包">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-crossbody-bag.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 斜挎包"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>斜挎包</strong><span class="product-secondary" data-product-secondary>ショルダーバッグ</span></button><button type="button" class="product-card" data-product="canvas-tote" aria-label="查看设计 · 帆布袋">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-canvas-tote.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 帆布袋"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>帆布袋</strong><span class="product-secondary" data-product-secondary>トートバッグ</span></button><button type="button" class="product-card" data-product="zip-pouch" aria-label="查看设计 · 收纳包">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-zip-pouch.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 收纳包"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>收纳包</strong><span class="product-secondary" data-product-secondary>ポーチ</span></button><button type="button" class="product-card" data-product="backpack" aria-label="查看设计 · 双肩背包">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-backpack.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 双肩背包"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>双肩背包</strong><span class="product-secondary" data-product-secondary>バックパック</span></button><button type="button" class="product-card" data-product="weekender-bag" aria-label="查看设计 · 旅行袋">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-weekender-bag.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 旅行袋"></span>
-<span class="product-meta"><span data-product-phase>阶段 03</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>旅行袋</strong><span class="product-secondary" data-product-secondary>ボストンバッグ</span></button><button type="button" class="product-card" data-product="carry-on-suitcase" aria-label="查看设计 · 登机旅行箱">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-carry-on-suitcase.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 登机旅行箱"></span>
-<span class="product-meta"><span data-product-phase>阶段 03</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>登机旅行箱</strong><span class="product-secondary" data-product-secondary>キャリーケース</span></button><button type="button" class="product-card" data-product="folding-umbrella" aria-label="查看设计 · 折叠伞">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-folding-umbrella.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 折叠伞"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>折叠伞</strong><span class="product-secondary" data-product-secondary>折りたたみ傘</span></button></div></section>
+<div class="category-heading"><div><p class="eyebrow">04 / CARRY THE WORLD</p><h3 id="heading-carry"><span data-category-name>バッグ・お出かけ</span><small data-category-count>08</small></h3></div><p data-category-direction>カードケースから身軽な外出、通勤、旅へ。暮らしのスケールと一緒に色を広げます。</p></div>
+<div class="product-grid"><button type="button" class="product-card" data-product="card-holder" aria-label="デザインを見る · カードケース">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-card-holder.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive カードケース"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>カードケース</strong><span class="product-secondary" data-product-secondary>Slim card holder</span></button><button type="button" class="product-card" data-product="crossbody-bag" aria-label="デザインを見る · ショルダーバッグ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-crossbody-bag.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ショルダーバッグ"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ショルダーバッグ</strong><span class="product-secondary" data-product-secondary>Crossbody bag</span></button><button type="button" class="product-card" data-product="canvas-tote" aria-label="デザインを見る · トートバッグ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-canvas-tote.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive トートバッグ"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>トートバッグ</strong><span class="product-secondary" data-product-secondary>Canvas tote</span></button><button type="button" class="product-card" data-product="zip-pouch" aria-label="デザインを見る · ポーチ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-zip-pouch.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ポーチ"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ポーチ</strong><span class="product-secondary" data-product-secondary>Zip pouch</span></button><button type="button" class="product-card" data-product="backpack" aria-label="デザインを見る · バックパック">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-backpack.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive バックパック"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>バックパック</strong><span class="product-secondary" data-product-secondary>Everyday backpack</span></button><button type="button" class="product-card" data-product="weekender-bag" aria-label="デザインを見る · ボストンバッグ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-weekender-bag.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ボストンバッグ"></span>
+<span class="product-meta"><span data-product-phase>段階 03</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ボストンバッグ</strong><span class="product-secondary" data-product-secondary>Weekender bag</span></button><button type="button" class="product-card" data-product="carry-on-suitcase" aria-label="デザインを見る · キャリーケース">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-carry-on-suitcase.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive キャリーケース"></span>
+<span class="product-meta"><span data-product-phase>段階 03</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>キャリーケース</strong><span class="product-secondary" data-product-secondary>Carry-on suitcase concept</span></button><button type="button" class="product-card" data-product="folding-umbrella" aria-label="デザインを見る · 折りたたみ傘">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-folding-umbrella.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 折りたたみ傘"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>折りたたみ傘</strong><span class="product-secondary" data-product-secondary>Folding umbrella</span></button></div></section>
 <section class="category-section" data-category="living" aria-labelledby="heading-living">
-<div class="category-heading"><div><p class="eyebrow">05 / COLOUR AT HOME</p><h3 id="heading-living"><span data-category-name>居家文具</span><small data-category-count>10</small></h3></div><p data-category-direction>把外出时的色彩带回桌面与家中，再用统一包装将多个单品组成礼物。</p></div>
-<div class="product-grid"><button type="button" class="product-card" data-product="cloth-notebook" aria-label="查看设计 · 布面笔记本">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-cloth-notebook.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 布面笔记本"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>布面笔记本</strong><span class="product-secondary" data-product-secondary>クロスノート</span></button><button type="button" class="product-card" data-product="memo-book" aria-label="查看设计 · 奶油白记事本">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-memo-book.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 奶油白记事本"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>奶油白记事本</strong><span class="product-secondary" data-product-secondary>メモノート</span></button><button type="button" class="product-card" data-product="pen-set" aria-label="查看设计 · 签字笔套装">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-pen-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 签字笔套装"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>签字笔套装</strong><span class="product-secondary" data-product-secondary>ペンセット</span></button><button type="button" class="product-card" data-product="insulated-bottle" aria-label="查看设计 · 保温水瓶">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-insulated-bottle.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 保温水瓶"></span>
-<span class="product-meta"><span data-product-phase>阶段 01</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>保温水瓶</strong><span class="product-secondary" data-product-secondary>ステンレスボトル</span></button><button type="button" class="product-card" data-product="travel-tumbler" aria-label="查看设计 · 随行保温杯">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-travel-tumbler.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 随行保温杯"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>随行保温杯</strong><span class="product-secondary" data-product-secondary>タンブラー</span></button><button type="button" class="product-card" data-product="ceramic-mug" aria-label="查看设计 · 陶瓷马克杯">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-ceramic-mug.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 陶瓷马克杯"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>陶瓷马克杯</strong><span class="product-secondary" data-product-secondary>マグカップ</span></button><button type="button" class="product-card" data-product="cushion" aria-label="查看设计 · 抱枕">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-cushion.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 抱枕"></span>
-<span class="product-meta"><span data-product-phase>阶段 03</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>抱枕</strong><span class="product-secondary" data-product-secondary>クッション</span></button><button type="button" class="product-card" data-product="knit-throw" aria-label="查看设计 · 针织毯">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-knit-throw.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 针织毯"></span>
-<span class="product-meta"><span data-product-phase>阶段 03</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>针织毯</strong><span class="product-secondary" data-product-secondary>ブランケット</span></button><button type="button" class="product-card" data-product="desk-mat" aria-label="查看设计 · 桌垫">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-desk-mat.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 桌垫"></span>
-<span class="product-meta"><span data-product-phase>阶段 03</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>桌垫</strong><span class="product-secondary" data-product-secondary>デスクマット</span></button><button type="button" class="product-card" data-product="gift-box" aria-label="查看设计 · 礼盒包装">
-<span class="product-media"><img src="assets/irova-olive/images/irova-olive-gift-box.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive 礼盒包装"></span>
-<span class="product-meta"><span data-product-phase>阶段 02</span><span class="arrow" aria-hidden="true">↗</span></span>
-<strong class="product-name" data-product-name>礼盒包装</strong><span class="product-secondary" data-product-secondary>ギフトボックス</span></button></div></section>
+<div class="category-heading"><div><p class="eyebrow">05 / COLOUR AT HOME</p><h3 id="heading-living"><span data-category-name>暮らし・文具</span><small data-category-count>10</small></h3></div><p data-category-direction>持ち出す色を、デスクや家へ。共通の包装で複数のアイテムをギフトにまとめます。</p></div>
+<div class="product-grid"><button type="button" class="product-card" data-product="cloth-notebook" aria-label="デザインを見る · クロスノート">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-cloth-notebook.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive クロスノート"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>クロスノート</strong><span class="product-secondary" data-product-secondary>Cloth-bound notebook</span></button><button type="button" class="product-card" data-product="memo-book" aria-label="デザインを見る · メモノート">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-memo-book.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive メモノート"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>メモノート</strong><span class="product-secondary" data-product-secondary>Cream memo notebook</span></button><button type="button" class="product-card" data-product="pen-set" aria-label="デザインを見る · ペンセット">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-pen-set.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ペンセット"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ペンセット</strong><span class="product-secondary" data-product-secondary>Pen set</span></button><button type="button" class="product-card" data-product="insulated-bottle" aria-label="デザインを見る · ステンレスボトル">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-insulated-bottle.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ステンレスボトル"></span>
+<span class="product-meta"><span data-product-phase>段階 01</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ステンレスボトル</strong><span class="product-secondary" data-product-secondary>Insulated bottle</span></button><button type="button" class="product-card" data-product="travel-tumbler" aria-label="デザインを見る · タンブラー">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-travel-tumbler.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive タンブラー"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>タンブラー</strong><span class="product-secondary" data-product-secondary>Travel tumbler</span></button><button type="button" class="product-card" data-product="ceramic-mug" aria-label="デザインを見る · マグカップ">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-ceramic-mug.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive マグカップ"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>マグカップ</strong><span class="product-secondary" data-product-secondary>Ceramic mug</span></button><button type="button" class="product-card" data-product="cushion" aria-label="デザインを見る · クッション">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-cushion.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive クッション"></span>
+<span class="product-meta"><span data-product-phase>段階 03</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>クッション</strong><span class="product-secondary" data-product-secondary>Woven cushion</span></button><button type="button" class="product-card" data-product="knit-throw" aria-label="デザインを見る · ブランケット">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-knit-throw.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ブランケット"></span>
+<span class="product-meta"><span data-product-phase>段階 03</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ブランケット</strong><span class="product-secondary" data-product-secondary>Knit throw</span></button><button type="button" class="product-card" data-product="desk-mat" aria-label="デザインを見る · デスクマット">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-desk-mat.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive デスクマット"></span>
+<span class="product-meta"><span data-product-phase>段階 03</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>デスクマット</strong><span class="product-secondary" data-product-secondary>Desk mat</span></button><button type="button" class="product-card" data-product="gift-box" aria-label="デザインを見る · ギフトボックス">
+<span class="product-media"><img src="assets/irova-olive/images/irova-olive-gift-box.webp" width="1000" height="1000" loading="lazy" decoding="async" alt="IROVA Olive ギフトボックス"></span>
+<span class="product-meta"><span data-product-phase>段階 02</span><span class="arrow" aria-hidden="true">↗</span></span>
+<strong class="product-name" data-product-name>ギフトボックス</strong><span class="product-secondary" data-product-secondary>Gift box packaging</span></button></div></section>
       </div>
-      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">ʕ•ᴥ•ʔ</span><h3 data-i18n="noResults">暂时没有找到这件小物。</h3><p data-i18n="noResultsCopy">试试另一种名称，或回到完整系列。</p><button class="button button-dark" type="button" id="reset-filters" data-i18n="reset">查看全部产品</button></div>
+      <div id="empty-state" class="empty-state" hidden><span aria-hidden="true">ʕ•ᴥ•ʔ</span><h3 data-i18n="noResults">この小物は見つかりませんでした。</h3><p data-i18n="noResultsCopy">別の名前で探すか、すべてのデザインをご覧ください。</p><button class="button button-dark" type="button" id="reset-filters" data-i18n="reset">すべてのデザインを見る</button></div>
     </section>
     <section class="roadmap" id="direction" aria-labelledby="direction-title">
       <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow" data-i18n="roadmapEyebrow">A DIRECTION TO GROW</p><h2 id="direction-title" data-i18n="roadmapTitle">让这个系列，<br>一步一步长大。</h2></div><p data-i18n="roadmapCopy">从品牌识别开始，形成同色搭配，再延展到更完整的生活场景。这是 IROVA 的产品发展建议。</p></div>
+        <div class="section-heading"><div><p class="eyebrow" data-i18n="roadmapEyebrow">A DIRECTION TO GROW</p><h2 id="direction-title" data-i18n="roadmapTitle">この世界を、
+少しずつ広げていく。</h2></div><p data-i18n="roadmapCopy">ブランドのサインから、同色のコーデへ。そして暮らしのシーン全体へ。IROVAの商品展開の提案です。</p></div>
         <ol class="phase-grid" id="phase-grid"></ol>
-        <p class="roadmap-note" data-i18n="roadmapNote">阶段表示建议的拓展顺序，不代表已经打样或确定上市时间。</p>
+        <p class="roadmap-note" data-i18n="roadmapNote">段階は展開順序の提案です。試作済み、または発売時期の決定を示すものではありません。</p>
       </div>
     </section>
     <section class="future wrap">
-      <div><p class="eyebrow" data-i18n="futureEyebrow">ONE COLOUR IS JUST THE BEGINNING</p><h2 data-i18n="futureTitle">下一种颜色，<br>也可以拥有完整的日常。</h2><p data-i18n="futureCopy">以 Olive 建立共同的产品语言，让不同色彩各自长成一个世界。</p><a class="text-link" href="https://www.irovastudio.com/shop.html"><span data-i18n="shop">探索 IROVA Shop</span><span aria-hidden="true">↗</span></a></div>
-      <div class="colour-directions" aria-label="后续色彩方向"><div class="colour-label"><span aria-hidden="true" style="--swatch:#70754f"></span><strong>Olive</strong><small>オリーブ</small></div><div class="colour-label"><span aria-hidden="true" style="--swatch:#bc835c"></span><strong>Canyon</strong><small>キャニオン</small></div><div class="colour-label"><span aria-hidden="true" style="--swatch:#9180a4"></span><strong>Purple</strong><small>パープル</small></div><div class="colour-label"><span aria-hidden="true" style="--swatch:#784656"></span><strong>Wine</strong><small>ワイン</small></div></div>
+      <div><p class="eyebrow" data-i18n="futureEyebrow">ONE COLOUR IS JUST THE BEGINNING</p><h2 data-i18n="futureTitle">次の色にも、
+ひとつの暮らしを。</h2><p data-i18n="futureCopy">Oliveから共通の商品言語をつくり、色ごとにひとつの世界へ広げていきます。</p><a class="text-link" href="https://www.irovastudio.com/shop.html"><span data-i18n="shop">IROVA Shopを見る</span><span aria-hidden="true">↗</span></a></div>
+      <div class="colour-directions" aria-label="今後の色の方向"><div class="colour-label"><span aria-hidden="true" style="--swatch:#70754f"></span><strong>Olive</strong><small>オリーブ</small></div><div class="colour-label"><span aria-hidden="true" style="--swatch:#bc835c"></span><strong>Canyon</strong><small>キャニオン</small></div><div class="colour-label"><span aria-hidden="true" style="--swatch:#9180a4"></span><strong>Purple</strong><small>パープル</small></div><div class="colour-label"><span aria-hidden="true" style="--swatch:#784656"></span><strong>Wine</strong><small>ワイン</small></div></div>
     </section>
   </main>
-  <footer class="site-footer wrap"><div class="footer-logo" aria-hidden="true">ʕ•ᴥ•ʔ<span>IROVA</span></div><div><p class="footer-tagline">Color Makes You Special.</p><p class="footer-note" data-i18n="footerNote">OLIVE / オリーブ · DESIGN DIRECTION</p><a href="https://www.irovastudio.com/" data-i18n="backSite">回到 IROVA 官网</a><span class="copyright">© 2026 IROVA Studio</span></div><a class="back-top" href="#olive" aria-label="回到页面顶部">↑</a></footer>
-  <dialog id="product-dialog" class="product-dialog" aria-labelledby="modal-title"><button class="modal-close" type="button" id="close-dialog" aria-label="关闭详情">×</button><div class="modal-scroll" id="modal-content"></div></dialog>
-  <noscript><p class="noscript-note">这是 IROVA Olive 产品概念系列。启用 JavaScript 后可以使用分类、搜索和详情。 / Enable JavaScript to use filters, search and design details.</p></noscript>
+  <footer class="site-footer wrap"><div class="footer-logo" aria-hidden="true">ʕ•ᴥ•ʔ<span>IROVA</span></div><div><p class="footer-tagline">Color Makes You Special.</p><p class="footer-note" data-i18n="footerNote">OLIVE / オリーブ · DESIGN DIRECTION</p><a href="journal.html?lang=ja" data-i18n="navJournal" data-language-link="" class="footer-journal-link">JOURNAL</a><a href="https://www.irovastudio.com/" data-i18n="backSite">ホームへ戻る</a><span class="copyright">© 2026 IROVA Studio</span></div><a class="back-top" href="#olive" aria-label="ページの先頭へ">↑</a></footer>
+  <dialog id="product-dialog" class="product-dialog" aria-labelledby="modal-title"><button class="modal-close" type="button" id="close-dialog" aria-label="詳細を閉じる">×</button><div class="modal-scroll" id="modal-content"></div></dialog>
+  <noscript><p class="noscript-note">IROVA Oliveのコンセプトコレクションです。JavaScriptを有効にすると、カテゴリー、検索、デザイン詳細を利用できます。</p></noscript>
 </body>
 </html>
