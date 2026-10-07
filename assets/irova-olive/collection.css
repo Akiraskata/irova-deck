@@ -19,3 +19,6 @@
 
 .footer-journal-link{margin-right:18px}
 @media(min-width:851px) and (max-width:1100px){.main-nav{gap:14px}}
+
+/* Approved IROVA master, frozen 2026-10-07. */
+.irova-official-logo{display:block;width:104px;height:63px;object-fit:contain}.stats-mark img{display:block;width:84px;height:30px}.footer-logo img{display:block;width:168px;height:102px}.footer-logo{font-size:0;line-height:1}@media(max-width:850px){.irova-official-logo{width:96px;height:58px}}@media(max-width:580px){.footer-logo img{width:120px;height:73px}.collection-stats .stats-mark img{width:70px;height:25px}}
